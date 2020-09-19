@@ -18,13 +18,14 @@ jobs:
           node-version: "12.x"
 
       - name: 构建文档
-        run: yarn && yarn build
+        run: yarn && yarn docs:build
+        
       - name: 写入域名信息
-        run: echo "wikimc.yunqiaold.com" > .vuepress/dist/CNAME
+        run: echo "wikimc.yunqiaold.com" > ./dist/CNAME
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: .vuepress/dist
+          FOLDER: ./dist
