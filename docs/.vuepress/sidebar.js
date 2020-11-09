@@ -1,21 +1,18 @@
 module.exports = {
-        '/':[
+        '/java-edition':[
             {
-                title: '测试菜单',
+                title: '插件',
                 collapsable: false,
                 sidebarDepth: 0,
                 children: [
-                   ['/bedrock-edition/test.md','子菜单1'],
-                    ['/bedrock-edition/plugins/plugin.md','插件']
-
-                ]
-            },
-            {
-                title: '测试菜单2',
-                collapsable: false,
-                children: [
-                    ['README.md', '子菜单1']
+                   ['/java-edition/plugins/essentials.md','essentials基础插件'],
+                   ['/java-edition/plugins/multiverse.md','multiverse多世界插件'],
+                   ['/java-edition/plugins/vault.md','vault前置插件'],
+                   ['/java-edition/plugins/residence.md','residence领地插件'],
+                   ['/java-edition/plugins/outher.md','其它插件']
                 ]
             }
         ]
 };
+
+
