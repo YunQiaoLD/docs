@@ -1,6 +1,6 @@
 module.exports = {
-	title: "声呐快起床",
-	description: "不然我就不干了",
+	title: "Minecraft文档站",
+	description: "",
 	dest: "./dist",
 	port: "7777",
 	head: [["link", { rel: "icon", href: "/logo.gif" }]],
@@ -11,6 +11,9 @@ module.exports = {
 		"./nav.js", // 使用相对路径
 		"./sidebar.js", // 使用绝对路径
 	],
+	/*plugins: {
+		"vuepress-plugin-auto-sidebar": {}
+	},*/
 	themeConfig: {
 		nav: require("./nav"),
 		sidebar: require("./sidebar"),

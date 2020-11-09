@@ -1,6 +1,21 @@
 module.exports = {
-	// "/technical-summary/github/": require("../technical-summary/github/sidebar"),
-	// "/technical-summary/vue-component/": require("../technical-summary/vue-component/sidebar"),
-	// "/interview/": require("../interview/sidebar"),
-	// "/reprint/": require("../reprint/sidebar"),
+        '/':[
+            {
+                title: '测试菜单',
+                collapsable: false,
+                sidebarDepth: 0,
+                children: [
+                   ['/bedrock-edition/test.md','子菜单1'],
+                    ['/bedrock-edition/plugins/plugin.md','插件']
+
+                ]
+            },
+            {
+                title: '测试菜单2',
+                collapsable: false,
+                children: [
+                    ['README.md', '子菜单1']
+                ]
+            }
+        ]
 };

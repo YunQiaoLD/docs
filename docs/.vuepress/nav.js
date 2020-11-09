@@ -11,4 +11,5 @@ module.exports = [
 		text: "基岩版",
 		link: "/bedrock-edition/",
 	},
+
 ];
