@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Residence 领地插件 | Minecraft文档站</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/logo.gif">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.2aa4fc64.js" as="script"><link rel="preload" href="/assets/js/2.7c18b3f7.js" as="script"><link rel="preload" href="/assets/js/13.3fcccb48.js" as="script"><link rel="prefetch" href="/assets/js/10.5d887ca9.js"><link rel="prefetch" href="/assets/js/11.62615717.js"><link rel="prefetch" href="/assets/js/12.bb96e16e.js"><link rel="prefetch" href="/assets/js/14.990aae40.js"><link rel="prefetch" href="/assets/js/3.804d668d.js"><link rel="prefetch" href="/assets/js/4.1cfc2f80.js"><link rel="prefetch" href="/assets/js/5.447f0bc7.js"><link rel="prefetch" href="/assets/js/6.83acb231.js"><link rel="prefetch" href="/assets/js/7.bf9879c2.js"><link rel="prefetch" href="/assets/js/8.b249ef4e.js"><link rel="prefetch" href="/assets/js/9.a721d616.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Minecraft文档站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/java-edition/" class="nav-link router-link-active">
+  Java版
+</a></div><div class="nav-item"><a href="/bedrock-edition/" class="nav-link">
+  基岩版
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/java-edition/" class="nav-link router-link-active">
+  Java版
+</a></div><div class="nav-item"><a href="/bedrock-edition/" class="nav-link">
+  基岩版
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>插件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-edition/plugins/essentials.html" class="sidebar-link">essentials基础插件</a></li><li><a href="/java-edition/plugins/multiverse.html" class="sidebar-link">multiverse多世界插件</a></li><li><a href="/java-edition/plugins/vault.html" class="sidebar-link">vault前置插件</a></li><li><a href="/java-edition/plugins/residence.html" aria-current="page" class="active sidebar-link">residence领地插件</a></li><li><a href="/java-edition/plugins/outher.html" class="sidebar-link">其它插件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="residence-领地插件"><a href="#residence-领地插件" class="header-anchor">#</a> Residence 领地插件</h1> <h2 id="插件介绍"><a href="#插件介绍" class="header-anchor">#</a> 插件介绍</h2> <ul><li><p>玩家可以自由设置保护的范围、权限、信息等大量内容。</p></li> <li><p>多种自定义领地购买方式，三维，XoY，多种方法任你选。</p></li> <li><p>在删除领地的时候可以退款！</p></li> <li><p>可以设置多个领地权限组来区分不同玩家的不同权限。</p></li> <li><p>自动圈地，不上线 X 天自动删除领地，删除领地退钱，再也不需要多余的附属插件！</p></li> <li><p>拥有 Gui 引导菜单，省略大量麻烦的指令！这些甚至还能自定义（/res set 或/res pset）!</p></li> <li><p>圈地可视化，再也不怕自己圈了多大的地也不知道了！</p></li> <li><p>可以暂时购买或 Lease 他人领地！（默认不开启）</p></li> <li><p>Lease 领地时间结束后可以让领地恢复原样!</p></li> <li><p>可以设置领地专属的聊天前缀。</p></li> <li><p>拥有及其详细的领地信息，让你一下子了解领地的全部!</p></li> <li><p>拥有多种常用语言文本，了解指令如张飞吃豆芽!【英语，法语，捷克语，简体中文，繁体中文】</p></li> <li><p>多种 PVP 检测方式！先判断领地 pvp，还是先判断其他插件的 pvp，任你选择！</p></li> <li><p>拥有领地专用的商店功能，甚至可以给这家店“五星好评”。</p></li> <li><p>全新的 Action Bar/大字标题显示方法，让你的领地更加特别。</p></li> <li><p>远程传送可以有延时，防止在进行 PVP 时传送！</p></li> <li><p>可以随时踢出在你领地内的玩家，并用简单的指令拒之于外！</p></li> <li><p>超过 90 种自定义领地标志(Flag)，安全又可靠！</p></li> <li><p>你甚至可以编辑 进入/离开 的各种信息！</p></li> <li><p>(2020-3-20)袭击者功能，闪电战攻击他人领地（默认关闭）！</p></li> <li><p>配置文件高度自由，超多功能任你选择！</p></li> <li><p>自带随机传送插件，再也不用担心其他的随机传送让你进领地了！</p></li> <li><p>只需要【/res 】即可了解所有指令用法！自带超级详细的中文教程！</p></li></ul> <h2 id="插件安装"><a href="#插件安装" class="header-anchor">#</a> 插件安装</h2> <h3 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h3> <p><code>Residence领地插件:</code> <a href="https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-16.11480/">作者付费下载地址</a> | <a href="https://zrips.net/Residence/">免费版本下载地址</a></p> <p>免费版与付费版功能相同,如果有条件可以购买付费版本支持作者</p> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <p><code>关闭服务器</code><br> <code>打开plugins文件夹</code><br> <code>放入Vault前置插件</code><br> <code>启动服务器</code><br> <code>安装完成！</code></p> <h2 id="命令"><a href="#命令" class="header-anchor">#</a> 命令</h2> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>更为详细的指令介绍可以在服务器中查看【鼠标接触指令即可看见详细信息】
+<span class="token punctuation">[</span><span class="token punctuation">]</span>为必填项目，&lt;<span class="token punctuation">&gt;</span>是选填项目，例如&lt;领地名<span class="token punctuation">&gt;</span>，不填则选择为你当前领地，(true=允许<span class="token punctuation">,</span>false=不允许)
+true/false可以缩写成t/f<span class="token punctuation">,</span>remove/dedefault是还原系统默认配置
+指令离线下载：  Command.yml (7.12 KB<span class="token punctuation">,</span> <span class="token key atrule">下载次数</span><span class="token punctuation">:</span> 632)
+总指令：
+/res <span class="token punctuation">?</span> —— 查看帮助
+/resadmin —— 管理员专用指令，当指令用/resadmin代替/res时，指令不考虑权限问题。
+领地创建与删除：
+/res create <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> —— 创建一个领地
+/res remove &lt;领地名<span class="token punctuation">&gt;</span> —— 删除一个领地
+/res subzone <span class="token punctuation">[</span>子领地名<span class="token punctuation">]</span> —— 在所处的领地中创建一个子领地
+/res auto <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> <span class="token punctuation">[</span>范围<span class="token punctuation">]</span> —— 自动在你站着的位置为中心，创建你能创建最大的领地
+/res select <span class="token punctuation">[</span>x<span class="token punctuation">]</span> <span class="token punctuation">[</span>y<span class="token punctuation">]</span> <span class="token punctuation">[</span>z<span class="token punctuation">]</span> —— 选取以你为中心需要被保护的区域，（Z=高度，X/Y=横轴）
+/res select size —— 显示所选区域大小
+/res select cost —— 显示已选择区域价格
+/res select auto <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span>  —— 打开自动选择区域
+/res select expand <span class="token punctuation">[</span>数值<span class="token punctuation">]</span> —— 选区向面对的方向选择扩展数值大小
+/res contract &lt;领地<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>缩小单位<span class="token punctuation">]</span> —— 从你面对的方向缩小领地
+/res select shift <span class="token punctuation">[</span>数值<span class="token punctuation">]</span> —— 选区向面对的方向平移
+/res select vert —— 高度从天空扩展到基岩
+/res select sky —— 高度扩展到天框
+/res select bedrock —— 高度扩展都基岩
+/res select chunk —— 选择目前所在区块
+/res select worldedit —— 使用Worldedit的选区作为领地选区
+/res area add <span class="token punctuation">[</span>领地<span class="token punctuation">]</span> <span class="token punctuation">[</span>区域ID<span class="token punctuation">]</span> —— 为领地添加物理区域
+/res area remove <span class="token punctuation">[</span>领地<span class="token punctuation">]</span> <span class="token punctuation">[</span>区域ID<span class="token punctuation">]</span> —— 移除领地的物理区域
+/res area remove <span class="token punctuation">[</span>领地<span class="token punctuation">]</span> <span class="token punctuation">[</span>区域ID<span class="token punctuation">]</span> —— 替换领地的物理区域
+       【注】 可以与其他领地区域重叠。
+/res setmain &lt;领地<span class="token punctuation">&gt;</span> —— 设置主领地
+/resadmin server <span class="token punctuation">[</span>领地<span class="token punctuation">]</span> —— 创建一个属于服务器所有的领地
+
+领地权限与名称：
+/res padd &lt;领地名<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> —— 向玩家添加基本权限
+/res pdel &lt;领地名<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> —— 删除玩家的基本权限
+/res pset &lt;领地名<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> <span class="token punctuation">[</span>权限<span class="token punctuation">]</span> <span class="token punctuation">[</span>true/false/remove<span class="token punctuation">]</span> —— 给不同的玩家上设置权限
+/res set &lt;领地名<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>权限<span class="token punctuation">]</span> <span class="token punctuation">[</span>true/false/remove<span class="token punctuation">]</span> —— 在不同的领地内设置权限
+       【注】(以上两指令，不输入标志及其后面的内容打开GUI面板）
+/res pset &lt;领地<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> removeall —— 删除一个玩家所有权限
+/res rename <span class="token punctuation">[</span>旧名称<span class="token punctuation">]</span> <span class="token punctuation">[</span>新名称<span class="token punctuation">]</span> <span class="token punctuation">-</span>重命名领地。
+       【注】如果需要重命名子领地，必须使用全名称(主领地.子领地)<span class="token punctuation">,</span>而新名称不用全名称。
+/res mirror <span class="token punctuation">[</span>原领地名<span class="token punctuation">]</span> <span class="token punctuation">[</span>目标领地名<span class="token punctuation">]</span> <span class="token punctuation">-</span>从原领地复制权限到目标领地，但前提是你是两个领地的所有者。
+/res gset &lt;领地名<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>组名<span class="token punctuation">]</span> <span class="token punctuation">[</span>标志<span class="token punctuation">]</span> <span class="token punctuation">[</span>true/false/remove<span class="token punctuation">]</span>  —— 在不同的权限组里设置标志
+/res reset &lt;领地<span class="token punctuation">&gt;</span> —— 将领地的所有权限重置.
+/res lset &lt;领地<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>blacklist/ignorelist<span class="token punctuation">]</span> <span class="token punctuation">[</span>材料<span class="token punctuation">]</span> —— 将某物品加入黑名单以阻止这种物品被放置在领地中
+/res lset &lt;领地<span class="token punctuation">&gt;</span> Info —— 忽略名单选项
+
+领地信息：
+/res message &lt;领地名<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>enter/leave<span class="token punctuation">]</span> <span class="token punctuation">[</span>信息<span class="token punctuation">]</span> —— 自定义玩家进入或离开领地的消息，
+       【注】（enter=进入<span class="token punctuation">,</span>leave=离开）（信息可以是彩色<span class="token important">&amp;的）</span>
+/res info —— 显示目前所处的领地信息，如果在领地外使用该指令，将会显示自己的领地信息
+/res list <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> —— 列出玩家拥有的领地信息
+/res listall &lt;页码<span class="token punctuation">&gt;</span> —— 列出玩家所有领地
+/res area list <span class="token punctuation">[</span>领地<span class="token punctuation">]</span> &lt;页码<span class="token punctuation">&gt;</span> —— 列出领地的物理区域
+/res area listall <span class="token punctuation">[</span>领地<span class="token punctuation">]</span> &lt;页码<span class="token punctuation">&gt;</span> —— 列出所有区域的坐标和详细信息
+/res lists —— 预定义的权限列表可以应用到领地上
+/res lists add &lt;列表名<span class="token punctuation">&gt;</span> —— 添加一个列表
+/res lists remove &lt;列表名<span class="token punctuation">&gt;</span> —— 删除一个列表
+/res lists apply &lt;列表名<span class="token punctuation">&gt;</span> &lt;领地<span class="token punctuation">&gt;</span> —— 将列表应用于领地
+/res lists set &lt;列表名<span class="token punctuation">&gt;</span> &lt;权限<span class="token punctuation">&gt;</span> &lt;值<span class="token punctuation">&gt;</span> —— 设置列表全局权限
+/res lists pset &lt;列表名<span class="token punctuation">&gt;</span> &lt;玩家<span class="token punctuation">&gt;</span> &lt;权限<span class="token punctuation">&gt;</span> &lt;值<span class="token punctuation">&gt;</span> —— 设置列表玩家权限
+/res lists view &lt;列表名<span class="token punctuation">&gt;</span> —— 设置列表组权限
+/res lists view &lt;列表名<span class="token punctuation">&gt;</span> —— 查看列表
+/res listhidden &lt;玩家<span class="token punctuation">&gt;</span> &lt;页码<span class="token punctuation">&gt;</span> —— 列出指定玩家拥有的隐藏领地
+
+传送相关：
+/res tp <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> —— 传送到指定领地
+/res tpset —— 设置领地中的传送位置（当玩家输入/res tp <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span>时，将会传送至您在领地内设置的传送位置）
+/res unstuck —— 将您移动到你所在的领地外
+/res rt —— 将你传送到世界上的随机位置
+袭击者相关：
+/res attack <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> —— 对领地进行袭击
+/res defend <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> —— 对领地进行防卫
+
+领地使用：
+/res show &lt;领地<span class="token punctuation">&gt;</span> —— 显示领地的边界
+/res bank <span class="token punctuation">[</span>deposit/withdraw<span class="token punctuation">]</span> &lt;领地<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>数额<span class="token punctuation">]</span> —— 管理领地银行
+       【注】(deposit=存款<span class="token punctuation">,</span>withdraw=取款)
+/res resbank <span class="token punctuation">[</span>deposit/withdraw<span class="token punctuation">]</span> <span class="token punctuation">[</span>数量<span class="token punctuation">]</span> —— 从领地银行借贷
+/res give <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> —— 将所选领地给予给另外一名玩家！(该玩家须在线，且你是领地所有者。)
+/res compass &lt;领地名字<span class="token punctuation">&gt;</span> —— 设置指南者指向领地
+/res shop —— 管理领地商店
+/res shop list —— 显示所有作为商店的领地
+/res shop vote &lt;领地<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span>分数<span class="token punctuation">]</span> —— 为领地商店评分
+/res shop like &lt;领地<span class="token punctuation">&gt;</span> —— 为领地商店点赞
+/res shop votes &lt;领地<span class="token punctuation">&gt;</span> &lt;页码<span class="token punctuation">&gt;</span> —— 显示当前或指定领地商店的评分列表
+/res shop likes &lt;领地<span class="token punctuation">&gt;</span> &lt;页码<span class="token punctuation">&gt;</span> —— 显示当前或指定领地商店的赞列表
+/res shop setdesc <span class="token punctuation">[</span>描述文字<span class="token punctuation">]</span> —— 设置领地商店描述<span class="token punctuation">,</span> 支持颜色代码<span class="token punctuation">,</span> 用 /n 表示换行
+/res shop createboard <span class="token punctuation">[</span>位置<span class="token punctuation">]</span> —— 在选区位置建立商店宣传板. <span class="token punctuation">[</span>位置<span class="token punctuation">]</span> 表示宣传板的起始位置
+/res shop deleteboard —— 右击宣传板的告示牌以删除宣传板
+
+领地聊天频道：
+/res rc &lt;领地<span class="token punctuation">&gt;</span> —— 加入当前领地或者指定领地的聊天频道
+/res rc leave —— 如果你在一个领地频道内<span class="token punctuation">,</span> 你将会离开此频道
+/res rc setcolor <span class="token punctuation">[</span>颜色代码<span class="token punctuation">]</span> —— 设置领地频道文字颜色
+/res rc setprefix <span class="token punctuation">[</span>新前缀<span class="token punctuation">]</span> —— 设置领地频道前缀
+/res rc kick <span class="token punctuation">[</span>玩家<span class="token punctuation">]</span> —— 从频道中踢出玩家
+
+
+插件相关：
+/res version —— 显示领地插件的版本
+/res tool —— 显示领地圈地和查看信息的工具类型
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br></div></div><h2 id="权限"><a href="#权限" class="header-anchor">#</a> 权限</h2> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>加粗为重要权限，有（OP）代表OP权限并且默认OP拥有，有（default)代表玩家权限，默认拥有
+默认不需要给权限，如出现权限错误请看Q<span class="token important">&amp;A</span>
+本权限引自Wiki翻译，进行了实用性精简
+residence.group.<span class="token punctuation">[</span>groupname<span class="token punctuation">]</span> <span class="token punctuation">-</span> 自定义玩家所在的Residence权限组。
+residence.flag.<span class="token punctuation">[</span>flag<span class="token punctuation">]</span> <span class="token punctuation">-</span> 允许玩家使用某个标志(flag)
+residence.max.res.<span class="token punctuation">[</span>number<span class="token punctuation">]</span> <span class="token punctuation">-</span> 设置玩家可拥有的最大领地数量。
+residence.create.subzone <span class="token punctuation">-</span> (Default) 允许创建子领地。
+residence.expand <span class="token punctuation">-</span> (Default) 允许扩张领地。
+residence.create <span class="token punctuation">-</span> (Default) 允许玩家创建领地。
+residence.randomtp <span class="token punctuation">-</span> (Default) 允许在领地内使用 /res rt 指令进行随机传送。
+residence.versioncheck <span class="token punctuation">-</span> (OP) 允许接收插件更新检查。
+residence.command.<span class="token punctuation">[</span>commandName<span class="token punctuation">]</span> <span class="token punctuation">-</span> 允许玩家使用某个指令
+residence.tpdelaybypass <span class="token punctuation">-</span> 无视领地传送延迟。
+residence.randomtp.delaybypass <span class="token punctuation">-</span> 无视随机传送延迟。
+residence.randomtp.cooldownbypass <span class="token punctuation">-</span> 无视随机传送冷却。
+residence.admin.tp <span class="token punctuation">-</span> (OP) 无视TP权限。
+residence.admin.move <span class="token punctuation">-</span> (OP) 无视移动权限。
+residence.nofly.bypass <span class="token punctuation">-</span> (OP) 无视禁止飞行。
+residence.max.subzones.<span class="token punctuation">[</span>number<span class="token punctuation">]</span> <span class="token punctuation">-</span> 设置可拥有的最大子领地数量。
+residence.delete <span class="token punctuation">-</span> (Default) 允许删除你自己的领地。
+residence.delete.subzone <span class="token punctuation">-</span> (Default) 允许删除你自己的子领地。
+residence.rename <span class="token punctuation">-</span> (Default) 允许为领地改名。
+residence.expand.subzone <span class="token punctuation">-</span> (Default) 允许扩张子领地。
+residence.contract <span class="token punctuation">-</span> (Default) 允许合并自己的领地。
+residence.resize <span class="token punctuation">-</span> (Default) 允许重新设置领地的大小。
+residence.buy <span class="token punctuation">-</span> 允许玩家goumai领地。
+residence.sell <span class="token punctuation">-</span> 允许玩家chushou领地。
+residence.market.evict <span class="token punctuation">-</span> 允许通过武力将玩家驱逐出领地。
+residence.command.message.enter <span class="token punctuation">-</span> 允许修改进入领地时发送的信息。
+residence.command.message.leave <span class="token punctuation">-</span> 允许修改离开领地时发送的信息。
+residence.nofly.bypass <span class="token punctuation">-</span> (OP) 无视领地禁止飞行设置。
+residence.flag.command.bypass <span class="token punctuation">-</span> (OP) 无视领地禁止输入指令设置。
+residence.bypass.build <span class="token punctuation">-</span> 无视领地禁止放置方块设置。
+residence.bypass.destroy <span class="token punctuation">-</span> 无视领地禁止破坏方块设置。
+residence.admin <span class="token punctuation">-</span> (OP) 管理员权限，可以使用 /resadmin 指令.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h2 id="袭击者功能"><a href="#袭击者功能" class="header-anchor">#</a> 袭击者功能</h2> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>袭击者属于测试功能，还有待增加功能和优化，相关设定尚未完成
+PS<span class="token punctuation">:</span>我很好奇一个保护插件为什么装个小游戏功能
+.袭击者规则：
+袭击者可以袭击在线玩家的领地，需要该袭击者没有进入冷却
+保卫者可以在准备时间内进行准备（或者逃跑），领地主可以邀请其他玩家来保卫领地，这需要保卫者的领地主进行再次确认
+袭击者可以邀请其他玩家来一起袭击，袭击发起者不需要同意其他袭击者的加入
+宣布该领地将要被袭击的时候，任何玩家都会被踢出领地（包括防卫者）
+保卫者不能在这期间使用容器，这是为了保证箱子内物品不被移动到另一个领地
+袭击者将会获得 move 权限，但不能使用tp，袭击者死亡后必须步行回到领地
+保卫者可以设置传送到领地，袭击开始时，保卫者和袭击者将会在同一条床上，只有保卫者的领地主可以进行传送，其他的保卫者得步行到需要保卫的领地内
+袭击者可以建造或破坏方块（只能在允许的时间内）
+允许袭击者打开一切箱子和拿走一切物品（将在未来实现可以打开多少箱子，拿走多少东西）
+袭击结束后，所有人（包括领地主）会被踢出领地，并且一切恢复正常
+当玩家获得袭击者冷却时间后，他将无法再次袭击，也无法被其他玩家袭击
+袭击玩家和袭击领地的时间可以相同，也可以不同
+输入指令 /res attack <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> <span class="token punctuation">-</span> 对领地进行袭击
+输入指令 /res defend <span class="token punctuation">[</span>领地名<span class="token punctuation">]</span> <span class="token punctuation">-</span> 对领地进行防卫
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h2> <p><code>config.yml</code></p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment"># 这是领地插件的全局设置。 汉化：羽神</span>
+<span class="token comment"># 译者注：作者在Chinese.yml中flag翻译为权限，但这里为了防止误导，会将flag翻译为“标志”，请注意和权限插件的权限区分开。</span>
+<span class="token key atrule">Global</span><span class="token punctuation">:</span>
+  <span class="token comment"># 是否启用UUID</span>
+  <span class="token comment"># 如果你不知道这是什么就不要动它</span>
+  <span class="token key atrule">UUIDConvertion</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 如果你用的是盗版服务器，最好设置为true。这可以帮助你解决UUID的问题。</span>
+  <span class="token key atrule">OfflineMode</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 在登录的时候，玩家拥有 residence.versioncheck 权限时会提示版本信息。</span>
+  <span class="token key atrule">versionCheck</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 这会加载 &lt;language&gt;。yml 文件当作领地插件的语言信息。</span>
+  <span class="token comment"># 领地插件所有的语言信息都在这里。 (还没做完)</span>
+  <span class="token key atrule">Language</span><span class="token punctuation">:</span> English
+  <span class="token comment"># 木斧头是默认的圈地工具。</span>
+  <span class="token comment"># 你可以修改成其他工具，物品ID在这里: http://www.minecraftwiki.net/wiki/Data_values</span>
+  <span class="token key atrule">SelectionToolId</span><span class="token punctuation">:</span> WOODEN_HOE
+  <span class="token key atrule">Selection</span><span class="token punctuation">:</span>
+    <span class="token comment"># 如果设置为 true，所有的选择都会无视Y轴，即从天空到基岩。</span>
+    <span class="token key atrule">IgnoreY</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 如果设置为 true， 现有领地的选择都会从顶部选择到到底部。</span>
+    <span class="token comment"># 如果设置为 false， 现有领地的选择将会一样。</span>
+    <span class="token key atrule">IgnoreYInSubzone</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 如果设置为 true， 玩家只需要付X*Z大小方块的价钱。</span>
+    <span class="token comment"># 这会让领地的价格缩小256倍，所以在启用此功能前请调整好价格。</span>
+    <span class="token key atrule">NoCostForYBlocks</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 这个选项可以决定你可以用什么工具来查看领地信息，默认是线。</span>
+  <span class="token comment"># 只需要拿着这个道具，在领地内任意一个地方点一下即可查看领地信息</span>
+  <span class="token key atrule">InfoToolId</span><span class="token punctuation">:</span> STRING
+  <span class="token key atrule">Optimizations</span><span class="token punctuation">:</span>
+    <span class="token comment"># 这会稍微的改变用户组 CanTeleport 的行为，这包括了服务器的总体判定方式。</span>
+    <span class="token comment"># 如果这个选项设置为 false 并且 CanTeleport 设置为 false， 玩家不能选择传送到其他玩家的领地，只有领地主才可以传送。</span>
+    <span class="token comment"># 如果这个选项设置为 true 而 CanTeleport 设置为 false， 玩家不能传送到任何领地</span>
+    <span class="token comment"># 这只适用于 /res tp 指令</span>
+    <span class="token key atrule">CanTeleportIncludeOwner</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 这是你主要世界的名字。 通常设置为 'world'。 大小写很重要。</span>
+    <span class="token key atrule">DefaultWorld</span><span class="token punctuation">:</span> world
+    <span class="token key atrule">DisabledWorlds</span><span class="token punctuation">:</span>
+      <span class="token comment"># 设置哪个世界不启用插件。</span>
+      <span class="token key atrule">List</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token comment"># 是否在这些世界禁用所有的监听器(即领地插件的权限等)。</span>
+      <span class="token key atrule">DisableListeners</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 是否在这些世界禁用领地插件的指令</span>
+      <span class="token key atrule">DisableCommands</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 设置间隔多少秒会检查一次标志内容</span>
+    <span class="token comment"># 保持 10 秒会有利于检查。</span>
+    <span class="token key atrule">ItemPickUpDelay</span><span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token key atrule">AutomaticResidenceCreation</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，/res auto 会检查新领地是否会与其他领地发生重叠。</span>
+      <span class="token comment"># 如果设置为 false，服务器可以获得一些优化，但会导致新领地覆盖了旧领地</span>
+      <span class="token key atrule">CheckCollision</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 使用自动创建领地指令时，如果该领地名字已经被使用，则会在新领地名字中增加参数。</span>
+      <span class="token key atrule">IncrementFormat</span><span class="token punctuation">:</span> _<span class="token punctuation">[</span>number<span class="token punctuation">]</span>
+    <span class="token key atrule">GlobalChat</span><span class="token punctuation">:</span>
+      <span class="token comment"># 开启或关闭玩家在领地中是否可以修改领地聊天信息。</span>
+      <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token comment"># 修改添加的聊天标题。如果你启用了聊天管理，你需要添加 {residence} 变量，来显示聊天标题。</span>
+      <span class="token key atrule">SelfModify</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Format</span><span class="token punctuation">:</span> <span class="token string">&quot;&amp;c[&amp;e%1&amp;c]&quot;</span>
+    <span class="token comment"># 如果设置为 true， 任何传送都会检查是否拥有 tp 标志，没有将会被取消传送。</span>
+    <span class="token comment"># 这可以保护玩家使用其他第三方传送方式进行传送，比如 esentials插件的/tpa。</span>
+    <span class="token key atrule">BlockAnyTeleportation</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 请将这个选项尽可能设置得低，或你可以使用 residence.max.res.[number] 权限</span>
+    <span class="token comment"># 例如你给玩家的最大圈地数量是10，你需要将这个选项设置为 15，或是 30， 或者又是 35，此选项可以制造一些缓冲区，以防万一。</span>
+    <span class="token key atrule">MaxResCount</span><span class="token punctuation">:</span> <span class="token number">30</span>
+    <span class="token comment"># 请将这个选项尽可能设置得低，或你可以使用 residence.max.rents.[number] 权限</span>
+    <span class="token comment"># 例如你给玩家的最大zujie数量是10，你需要将这个选项设置为 15，或是 30， 或者又是 35，此选项可以制造一些缓冲区，以防万一。</span>
+    <span class="token key atrule">MaxRentCount</span><span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token comment"># 请将这个选项尽可能设置得低，或你可以使用 residence.max.subzones.[number] 权限</span>
+    <span class="token comment"># 例如你给玩家的最大子领地数量是10，你需要将这个选项设置为 15，或是 30， 或者又是 35，此选项可以制造一些缓冲区，以防万一。</span>
+    <span class="token key atrule">MaxSubzoneCount</span><span class="token punctuation">:</span> <span class="token number">5</span>
+    <span class="token comment"># 请将这个选项尽可能设置得低，或你可以使用 residence.max.subzonedepth。[number] 权限</span>
+    <span class="token comment"># 例如你给玩家的最大子领地高度是10，你需要将这个选项设置为 15，或是 30， 或者又是 35，此选项可以制造一些缓冲区，以防万一。</span>
+    <span class="token key atrule">MaxSubzoneDepthCount</span><span class="token punctuation">:</span> <span class="token number">5</span>
+    <span class="token comment"># 如果设置为 true，领地插件的pvp标志会覆盖Overridepvp权限</span>
+    <span class="token comment"># 在领地内，Overridepvp 标志会尝试覆盖其他pvp保护插件的权限。</span>
+    <span class="token key atrule">OverridePvp</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">KickLocation</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，当玩家被踢出领地的时候， 他会传送到下面的这个坐标</span>
+      <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">World</span><span class="token punctuation">:</span> world
+      <span class="token key atrule">X</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+      <span class="token key atrule">Y</span><span class="token punctuation">:</span> <span class="token number">63.0</span>
+      <span class="token key atrule">Z</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+      <span class="token comment"># 设置小于 0 - 抬头， 大于 0 - 低头。 角度范围为 -90到 90。</span>
+      <span class="token key atrule">Pitch</span><span class="token punctuation">:</span> <span class="token number">0.0</span>
+      <span class="token comment"># 设置头的转向。 角度范围为 -180 到 180。</span>
+      <span class="token key atrule">Yaw</span><span class="token punctuation">:</span> <span class="token number">0.0</span>
+    <span class="token key atrule">FlyLandLocation</span><span class="token punctuation">:</span>
+      <span class="token comment"># 因为 fly(飞行) 标志或其他方法让玩家着陆，玩家将会传送到哪个坐标。</span>
+      <span class="token key atrule">World</span><span class="token punctuation">:</span> world
+      <span class="token key atrule">X</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+      <span class="token key atrule">Y</span><span class="token punctuation">:</span> <span class="token number">63.0</span>
+      <span class="token key atrule">Z</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+      <span class="token comment"># 设置小于 0 - 抬头， 大于 0 - 低头。 角度范围为 -90到 90。</span>
+      <span class="token key atrule">Pitch</span><span class="token punctuation">:</span> <span class="token number">0.0</span>
+      <span class="token comment"># 设置头的转向。 角度范围为 -180 到 180。</span>
+      <span class="token key atrule">Yaw</span><span class="token punctuation">:</span> <span class="token number">0.0</span>
+    <span class="token key atrule">ShortInfo</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，玩家使用 /res info 会检查是否有权限，只会在聊天框显示名字，将鼠标移动到上面，则可以显示标志列表</span>
+      <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">Vote</span><span class="token punctuation">:</span>
+      <span class="token comment"># 玩家可以投票的范围，通常设置为 0 到 10 格。</span>
+      <span class="token key atrule">RangeFrom</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token key atrule">RangeTo</span><span class="token punctuation">:</span> <span class="token number">10</span>
+      <span class="token comment"># 如果设置为 true，玩家只能像使用商店那样来投票。</span>
+      <span class="token key atrule">OnlyLike</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">ConsoleLogs</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，在引导菜单(GUI)改变的标志会显示到控制台。</span>
+      <span class="token key atrule">ShowFlagChanges</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">Intervals</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果玩家有 heal/food 的标志，每隔多少秒会回复玩家的 生命值/饥饿度。</span>
+      <span class="token comment"># 设置大的数值可以优化服务器资源。</span>
+      <span class="token key atrule">Heal</span><span class="token punctuation">:</span> <span class="token number">1</span>
+      <span class="token key atrule">Feed</span><span class="token punctuation">:</span> <span class="token number">5</span>
+    <span class="token comment"># 如果没有pvp标志没有设置，下面这些药水效果将会被无视。</span>
+    <span class="token key atrule">NegativePotionEffects</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> blindness
+      <span class="token punctuation">-</span> confusion
+      <span class="token punctuation">-</span> harm
+      <span class="token punctuation">-</span> hunger
+      <span class="token punctuation">-</span> poison
+      <span class="token punctuation">-</span> slow
+      <span class="token punctuation">-</span> slow_digging
+      <span class="token punctuation">-</span> weakness
+      <span class="token punctuation">-</span> wither
+    <span class="token key atrule">NegativeLingeringPotions</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> slowness
+      <span class="token punctuation">-</span> instant_damage
+      <span class="token punctuation">-</span> poison
+      <span class="token punctuation">-</span> slowness
+    <span class="token comment"># 调整 wspeed1 和 wspeed2 标志的速度。 它可以设置为0 到 5.</span>
+    <span class="token key atrule">WalkSpeed</span><span class="token punctuation">:</span>
+      <span class="token key atrule">&quot;1&quot;</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+      <span class="token key atrule">&quot;2&quot;</span><span class="token punctuation">:</span> <span class="token number">2.0</span>
+  <span class="token comment"># 移动标志的检查间隔。</span>
+  <span class="token comment"># 减小该数值可以缓解服务器压力。</span>
+  <span class="token comment"># 增大这个选项会导致玩家移动到更远距离才能被传送回去。</span>
+  <span class="token key atrule">MoveCheckInterval</span><span class="token punctuation">:</span> <span class="token number">500</span>
+  <span class="token key atrule">Tp</span><span class="token punctuation">:</span>
+    <span class="token comment"># 设置领地传送的等待时间</span>
+    <span class="token comment"># 设置为0则取消等待</span>
+    <span class="token key atrule">TeleportDelay</span><span class="token punctuation">:</span> <span class="token number">3</span>
+    <span class="token comment"># 玩家传送到领地时，是否显示标题信息。</span>
+    <span class="token key atrule">TeleportTitleMessage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment">#译者注：随机传送的设置</span>
+  <span class="token key atrule">RandomTeleportation</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+      <span class="token key atrule">world_nether</span><span class="token punctuation">:</span>
+        <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">MaxCoord</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+        <span class="token key atrule">MinCoord</span><span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token key atrule">CenterX</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token key atrule">CenterZ</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token key atrule">world</span><span class="token punctuation">:</span>
+        <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">MaxCoord</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+        <span class="token key atrule">MinCoord</span><span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token key atrule">CenterX</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token key atrule">CenterZ</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token key atrule">world_the_end</span><span class="token punctuation">:</span>
+        <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">MaxCoord</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+        <span class="token key atrule">MinCoord</span><span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token key atrule">CenterX</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token key atrule">CenterZ</span><span class="token punctuation">:</span> <span class="token number">0</span>
+    <span class="token comment"># 玩家需要等待多久才能使用一次该指令。</span>
+    <span class="token key atrule">Cooldown</span><span class="token punctuation">:</span> <span class="token number">5</span>
+    <span class="token comment"># 尝试多少次传送的落地点。</span>
+    <span class="token comment"># 请将这个选项保持尽可能低，因为玩家过几秒后还能再次使用此指令。</span>
+    <span class="token key atrule">MaxTries</span><span class="token punctuation">:</span> <span class="token number">20</span>
+  <span class="token comment"># 领地经过多少秒保存一次。</span>
+  <span class="token key atrule">SaveInterval</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token comment"># 新的保存机制会有更小的占用和更快的保存/读取时间。</span>
+  <span class="token comment"># 文件越大，影响越大。</span>
+  <span class="token key atrule">NewSaveMechanic</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">Backup</span><span class="token punctuation">:</span>
+    <span class="token key atrule">AutoCleanUp</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果你开启自动删除备份，插件会自动选择超过时间的备份自动删除。</span>
+      <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">Days</span><span class="token punctuation">:</span> <span class="token number">30</span>
+    <span class="token comment"># 是否让你的备份文件使用ZIP格式压缩。</span>
+    <span class="token comment"># 这不会对备份文件产生影响</span>
+    <span class="token key atrule">UseZip</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment">#译者注：会进行备份的文件。</span>
+    <span class="token key atrule">IncludeFiles</span><span class="token punctuation">:</span>
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">forsale</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">leases</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">permlists</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">rent</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">flags</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">groups</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">config</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">AutoCleanUp</span><span class="token punctuation">:</span>
+    <span class="token comment"># 玩家没有登录超过多少天，插件会自动清楚玩家的领地。</span>
+    <span class="token comment"># 玩家可以通过 residence.cleanbypass 权限来绕过自动删除领地。</span>
+    <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 会删除多少天没有登录的玩家。</span>
+    <span class="token key atrule">Days</span><span class="token punctuation">:</span> <span class="token number">60</span>
+    <span class="token comment"># 你是否想让这地区变回原来的样子？</span>
+    <span class="token comment"># 它会将领地变回先前的样子。</span>
+    <span class="token key atrule">Regenerate</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 启用功能的世界</span>
+    <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> world
+  <span class="token key atrule">Lwc</span><span class="token punctuation">:</span>
+    <span class="token comment"># 删除领地时，同时删除所有该领地的LWC保护。</span>
+    <span class="token key atrule">OnDelete</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 购买领地时，删除所有该领地LWC保护。</span>
+    <span class="token key atrule">OnBuy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 领地无反应时，删除所有该领地的LWC保护。</span>
+    <span class="token key atrule">OnUnrent</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 被删除保护的物品。</span>
+    <span class="token key atrule">MaterialList</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> CHEST
+      <span class="token punctuation">-</span> TRAPPED_CHEST
+      <span class="token punctuation">-</span> furnace
+      <span class="token punctuation">-</span> dispenser
+  <span class="token key atrule">AntiGreef</span><span class="token punctuation">:</span>
+    <span class="token key atrule">TNT</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，在领地外会允许TNT在 62 (默认) 格高度下爆炸。</span>
+      <span class="token comment"># 这允许设置TNT的最大爆炸高度。</span>
+      <span class="token key atrule">ExplodeBelow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">level</span><span class="token punctuation">:</span> <span class="token number">62</span>
+    <span class="token key atrule">Creeper</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true 在领地歪会允许爬行者在 62 (默认) 格高度下爆炸。</span>
+      <span class="token comment"># 这会让游戏更加逼真。</span>
+      <span class="token key atrule">ExplodeBelow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">level</span><span class="token punctuation">:</span> <span class="token number">62</span>
+    <span class="token key atrule">Flow</span><span class="token punctuation">:</span>
+      <span class="token comment"># 允许液体流动的最大高度。</span>
+      <span class="token comment"># 这不会影响到领地内。</span>
+      <span class="token key atrule">Level</span><span class="token punctuation">:</span> <span class="token number">63</span>
+      <span class="token comment"># 如果设置为 true，岩浆不会在领地外的地方流动</span>
+      <span class="token key atrule">NoLavaFlow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 如果设置为 true，水不会在领地歪的地方流动。</span>
+      <span class="token key atrule">NoWaterFlow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> world
+    <span class="token key atrule">Place</span><span class="token punctuation">:</span>
+      <span class="token comment"># 从哪一层开始组织岩浆和水的放置。</span>
+      <span class="token comment"># 这不会影响到领地内。</span>
+      <span class="token key atrule">Level</span><span class="token punctuation">:</span> <span class="token number">63</span>
+      <span class="token comment"># 如果设置为 true，玩家不能在领地外放置岩浆。</span>
+      <span class="token key atrule">NoLavaPlace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 如果设置为 true，玩家不能在领地外放置水。</span>
+      <span class="token key atrule">NoWaterPlace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> world
+    <span class="token key atrule">BlockFall</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，将会删除掉落在在不同的地区的方块</span>
+      <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 从哪一层开始允许掉落</span>
+      <span class="token comment"># 这不会影响到领地内。</span>
+      <span class="token key atrule">Level</span><span class="token punctuation">:</span> <span class="token number">62</span>
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> world
+    <span class="token key atrule">ResCleaning</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置会 true，会在玩家离开后清除领地内方块，包括所有在blocks列表的方块，他们都会变成空气方块。</span>
+      <span class="token comment"># 阻止附近方块接近领地，并清除方块。(Effective way to prevent residence creating near greefing target and then remove it)</span>
+      <span class="token comment"># 注意! 如果在大型领地清理，会造成很大的服务器负担，所有服务器拥有大领地请不要使用这个，最大限制是1500万个区块。</span>
+      <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token comment"># 从哪一层高度开始替换。</span>
+      <span class="token key atrule">Level</span><span class="token punctuation">:</span> <span class="token number">63</span>
+      <span class="token comment"># 被替换的方块。</span>
+      <span class="token comment"># 默认的方块是岩浆和水。</span>
+      <span class="token key atrule">Blocks</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> WATER
+        <span class="token punctuation">-</span> LAVA
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> world
+    <span class="token key atrule">Flags</span><span class="token punctuation">:</span>
+      <span class="token comment"># 如果设置为 true，除领地主之外，标志将会被保护，改变后领地内玩家当前的标志不会被改变。</span>
+      <span class="token comment"># 比如你改变了pvp的标志，但是你不能马上击杀该领地内的玩家。</span>
+      <span class="token key atrule">Prevent</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">list</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> pvp
+  <span class="token comment"># 如果你没有权限插件，这将是默认的权限组。</span>
+  <span class="token key atrule">DefaultGroup</span><span class="token punctuation">:</span> default
+  <span class="token comment"># 开启 / 关闭zulin系统。</span>
+  <span class="token key atrule">UseLeaseSystem</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 设置zulin或chuzu的信息格式</span>
+  <span class="token comment"># 如何正确使用，更多信息请查看 http://www.tutorialspoint.com/java/java_date_time.htm</span>
+  <span class="token key atrule">DateFormat</span><span class="token punctuation">:</span> E yyyy.MM.dd 'at' hh<span class="token punctuation">:</span>mm<span class="token punctuation">:</span>ss a zzz
+  <span class="token comment"># 设置zulin或chuzu的信息格式</span>
+  <span class="token comment"># 如何正确使用，更多信息请查看 http://www.tutorialspoint.com/java/java_date_time.htm</span>
+  <span class="token key atrule">DateFormatShort</span><span class="token punctuation">:</span> MM.dd hh<span class="token punctuation">:</span>mm
+  <span class="token comment"># 设置时区信息，这可以调整不同时区玩家在服务器内的时间</span>
+  <span class="token comment"># 其他的时区请看 http://www.mkyong.com/java/java-display-list-of-timezone-with-gmt/</span>
+  <span class="token key atrule">TimeZone</span><span class="token punctuation">:</span> Asia/Shanghai
+  <span class="token comment"># 开启 / 关闭删除领地返还金钱。</span>
+  <span class="token key atrule">ResMoneyBack</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 设置zulin的检查间隔 (需要开启zulin系统)。</span>
+  <span class="token key atrule">LeaseCheckInterval</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token comment"># 如果玩家有金钱，允许自动续zu，如果没有开启经济系统，这选项将没有用。</span>
+  <span class="token key atrule">LeaseAutoRenew</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 是否将权限插件与此config权限同时使用。</span>
+  <span class="token key atrule">EnablePermissions</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 使用 Permissions / PermissionsBukkit 插件，或者使用其他旧版的权限插件，请将它设置为 true</span>
+  <span class="token key atrule">LegacyPermissions</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 开启 / 关闭领地插件的经济系统 (支持iConomy， MineConomy， Essentials， BOSEconomy，和 RealEconomy)。</span>
+  <span class="token key atrule">EnableEconomy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置为 None 会检查默认的经济系统，如 vault API 和其他支持经济的系统。</span>
+  <span class="token comment"># 自定义经济系统的话需要可以直接访问</span>
+  <span class="token comment"># 支持的插件: Vault， iConomy， MineConomy， Essentials， BOSEconomy， RealEconomy， CMIEconomy， None</span>
+  <span class="token key atrule">Type</span><span class="token punctuation">:</span> None
+  <span class="token comment"># 开启此选项，会在聊天框显示额外的信息，例如显示购买/zujie时的基础信息。</span>
+  <span class="token key atrule">ExtraEnterMessage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">Sell</span><span class="token punctuation">:</span>
+    <span class="token comment"># 如果设置为 true，可以允许出售子领地。建议设置为false。</span>
+    <span class="token key atrule">Subzone</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 开启 / 关闭zulin系统。</span>
+  <span class="token key atrule">EnableRentSystem</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">Rent</span><span class="token punctuation">:</span>
+    <span class="token comment"># 保护 领地/子领地在zulin期间不会被删除。</span>
+    <span class="token key atrule">PreventRemoval</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 如果设置为true，可从领地银行里取钱续zu</span>
+    <span class="token key atrule">DeductFromBank</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 如果设置为true，如果玩家的领地银行没有足够的钱续zu，则会从玩家的账户中扣钱。</span>
+    <span class="token comment"># 这会覆盖银行扣钱的行为</span>
+    <span class="token key atrule">DeductFromBankThenPlayer</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">Inform</span><span class="token punctuation">:</span>
+      <span class="token comment"># 是否开启zulin时间提示</span>
+      <span class="token key atrule">OnEnding</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 还有多少时间时提示zulin时间将要结束</span>
+      <span class="token key atrule">Before</span><span class="token punctuation">:</span> <span class="token number">1440</span>
+      <span class="token comment"># 玩家登录多少秒后通知zulin时间结束</span>
+      <span class="token key atrule">Delay</span><span class="token punctuation">:</span> <span class="token number">60</span>
+    <span class="token key atrule">DefaultValues</span><span class="token punctuation">:</span>
+      <span class="token comment"># chuzu的默认值</span>
+      <span class="token key atrule">AllowRenewing</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">StayInMarket</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">AllowAutoPay</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 如果设置为 true， 当玩家没有开启自动续zu，则开启此值</span>
+      <span class="token key atrule">PlayerAutoPay</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">Schematics</span><span class="token punctuation">:</span>
+      <span class="token comment"># 实验选项!!! 如果设置为 true，backup标志为true时会恢复备份的领地。</span>
+      <span class="token comment"># 为了安全，只有领地创始人可以修改此标志。备份权限可以设置备份标志节点。</span>
+      <span class="token key atrule">RestoreAfterRentEnds</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 如果设置为 true，只有backup标志设置为true时才会备份</span>
+      <span class="token comment"># 如果设置为 false，领地会在每次zulin之前保存，并恢复到原来的样子。</span>
+      <span class="token comment"># 保持这个选项设置为 false，在一些zulin领地保存时会造成一些轻微的服务器负担。</span>
+      <span class="token key atrule">SaveOnFlagChange</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置zu金到期的检查间隔 (需要zulin系统开启)。</span>
+  <span class="token key atrule">RentCheckInterval</span><span class="token punctuation">:</span> <span class="token number">10</span>
+  <span class="token comment"># 是否开启聊天频道。</span>
+  <span class="token key atrule">ResidenceChatEnable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">Messages</span><span class="token punctuation">:</span>
+    <span class="token comment"># 设置领地 进入(enter)/离开(lease)/拒绝(deny)和其他更多信息显示在哪里。 可用选择: ActionBar， TitleBar， ChatBox</span>
+    <span class="token comment"># TitleBar 可以使用 %subtitle% 来显示子领地信息</span>
+    <span class="token key atrule">GeneralMessages</span><span class="token punctuation">:</span> ChatBox
+  <span class="token key atrule">ActionBar</span><span class="token punctuation">:</span>
+    <span class="token key atrule">ShowOnSelection</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 领地聊天的颜色。</span>
+  <span class="token key atrule">ResidenceChatColor</span><span class="token punctuation">:</span> DARK_PURPLE
+  <span class="token key atrule">ResidenceChatPrefixLength</span><span class="token punctuation">:</span> <span class="token number">16</span>
+  <span class="token comment"># 是否忽略通常的标志并且只有OP和拥有 'residence.admin' 权限的人去改变。</span>
+  <span class="token key atrule">AdminOnlyCommands</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 设置为 true 拥有服务器OP管理员。</span>
+  <span class="token key atrule">AdminOPs</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置为 true ，服务器管理员需要使用 /resadmin 指令来执行管理员权限，或者拥有 residence.admin 权限来执行。</span>
+  <span class="token key atrule">AdminFullAccess</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 这是你多时间插件的名字，如果你没有多世界插件请无视它。</span>
+  <span class="token comment"># 只有多世界插件设置正确，领地插件才会正确加载其他世界。</span>
+  <span class="token key atrule">MultiWorldPlugin</span><span class="token punctuation">:</span> Multiverse<span class="token punctuation">-</span>Core
+  <span class="token comment"># 设置为 true，可以让子领地继承主领地内容</span>
+  <span class="token key atrule">ResidenceFlagsInherit</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置为 false，将会允许玩家布置zulin领地。</span>
+  <span class="token key atrule">PreventRentModify</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置为 true，当删除子领地时进行保护，防止子领地与父领地的主人不是同一个的情况。</span>
+  <span class="token key atrule">PreventSubZoneRemoval</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置为 false，领地在发现错误的时候仍然会尝试继续加载。</span>
+  <span class="token key atrule">StopOnSaveFault</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">ResidenceNameRegex</span><span class="token punctuation">:</span> <span class="token string">'[^a-zA-Z0-9\-\_]'</span>
+  <span class="token comment"># 设置为 true，会将领地zulin和zujie到期的信息发送至控制台。</span>
+  <span class="token key atrule">ShowIntervalMessages</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 设置为 true，新玩家放置箱子到地上时会引导玩家。</span>
+  <span class="token key atrule">ShowNoobMessage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 设置为 true，当玩家没有领地时，并且附近拥有他放置的箱子则会自动圈地。。</span>
+  <span class="token comment"># 只有当他在服务器没有任何领地时会这样做。</span>
+  <span class="token key atrule">NewPlayer</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 设置为 true，这个领地的创建将会是免费的</span>
+    <span class="token comment"># 设置为 false，如果他有钱，则会自动扣除他的钱。</span>
+    <span class="token key atrule">Free</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 箱子放在身边的距离。如果设置为 5，领地将会圈 5+5+1 = 11 方块大小</span>
+    <span class="token key atrule">Range</span><span class="token punctuation">:</span>
+      <span class="token key atrule">X</span><span class="token punctuation">:</span> <span class="token number">5</span>
+      <span class="token key atrule">Y</span><span class="token punctuation">:</span> <span class="token number">5</span>
+      <span class="token key atrule">Z</span><span class="token punctuation">:</span> <span class="token number">5</span>
+  <span class="token comment"># 实验功能 - 下面选项的ID是MOD物品可以使用 'container' 和 'use' 标志的物品。</span>
+  <span class="token key atrule">CustomContainers</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token key atrule">CustomBothClick</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token key atrule">CustomRightClick</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token key atrule">Visualizer</span><span class="token punctuation">:</span>
+    <span class="token comment"># 如果开启，玩家会在选择领地的时候看见粒子效果</span>
+    <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 玩家显示粒子效果的范围</span>
+    <span class="token comment"># 保持这个选项小于 30，因为玩家只能看见16格内的效果。</span>
+    <span class="token key atrule">Range</span><span class="token punctuation">:</span> <span class="token number">16</span>
+    <span class="token comment"># 显示效果持续多长 (5000 = 5秒) 。</span>
+    <span class="token key atrule">ShowFor</span><span class="token punctuation">:</span> <span class="token number">5000</span>
+    <span class="token comment"># 多少秒更新一次玩家显示的粒子效果</span>
+    <span class="token key atrule">updateInterval</span><span class="token punctuation">:</span> <span class="token number">20</span>
+    <span class="token comment"># 间隔多少的方块显示一粒子效果</span>
+    <span class="token key atrule">RowSpacing</span><span class="token punctuation">:</span> <span class="token number">2</span>
+    <span class="token comment"># 粒子在共线时间隔的方块</span>
+    <span class="token key atrule">CollumnSpacing</span><span class="token punctuation">:</span> <span class="token number">2</span>
+    <span class="token comment"># 设置需要跳过多少粒子</span>
+    <span class="token comment"># 这是创建移动粒子效果的选项并且会改进选择粒子的美观度。</span>
+    <span class="token comment"># 当数量越大，你可以缩进的时间间隔就越多</span>
+    <span class="token key atrule">SkipBy</span><span class="token punctuation">:</span> <span class="token number">5</span>
+    <span class="token comment"># 一边显示的最大粒子数</span>
+    <span class="token key atrule">FrameCap</span><span class="token punctuation">:</span> <span class="token number">500</span>
+    <span class="token comment"># 侧面显示的最大粒子数</span>
+    <span class="token key atrule">SidesCap</span><span class="token punctuation">:</span> <span class="token number">2000</span>
+    <span class="token comment"># 特殊粒子名字。 possible: explode， largeexplode， hugeexplosion， fireworksSpark， splash， wake， crit， magicCrit</span>
+    <span class="token comment">#  smoke， largesmoke， spell， instantSpell， mobSpell， mobSpellAmbient， witchMagic， dripWater， dripLava， angryVillager， happyVillager， townaura</span>
+    <span class="token comment">#  note， portal， enchantmenttable， flame， lava， footstep， cloud， reddust， snowballpoof， snowshovel， slime， heart， barrier</span>
+    <span class="token comment">#  droplet， take， mobappearance</span>
+
+    <span class="token comment"># 如果你是spigot类服务器，还可以使用:</span>
+    <span class="token comment"># click2， click1， bow_fire， door_toggle， iron_door_toggle， trapdoor_toggle， iron_trapdoor_toggle， fence_gate_toggle， door_close， iron_door_close， trapdoor_close， iron_trapdoor_close， fence_gate_close， extinguish， record_play， ghast_shriek， ghast_shoot， blaze_shoot， zombie_chew_wooden_door， zombie_chew_iron_door， zombie_destroy_door， smoke， step_sound， potion_break， ender_signal， mobspawner_flames， brewing_stand_brew， chorus_flower_grow， chorus_flower_death， portal_travel， endereye_launch， firework_shoot， villager_plant_grow， dragon_breath， anvil_break， anvil_use， anvil_land， enderdragon_shoot， wither_break_block， wither_shoot， zombie_infect， zombie_converted_villager， bat_takeoff， end_gateway_spawn， enderdragon_growl，</span>
+    <span class="token key atrule">Selected</span><span class="token punctuation">:</span>
+      <span class="token key atrule">Frame</span><span class="token punctuation">:</span> happyVillager
+      <span class="token key atrule">Sides</span><span class="token punctuation">:</span> reddust
+    <span class="token key atrule">Overlap</span><span class="token punctuation">:</span>
+      <span class="token key atrule">Frame</span><span class="token punctuation">:</span> FLAME
+      <span class="token key atrule">Sides</span><span class="token punctuation">:</span> FLAME
+    <span class="token comment"># 玩家进入领地是否显示粒子效果。 只会在主领地有效</span>
+    <span class="token key atrule">EnterAnimation</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 玩家被推出领时是否显示粒子效果</span>
+  <span class="token key atrule">BounceAnimation</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">GUI</span><span class="token punctuation">:</span>
+    <span class="token comment"># 打开标志引导菜单(GUI)</span>
+    <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 当标志为true时显示的物品</span>
+    <span class="token key atrule">setTrue</span><span class="token punctuation">:</span> GREEN_WOOL
+    <span class="token comment"># 当权限显示为false时显示的物品</span>
+    <span class="token key atrule">setFalse</span><span class="token punctuation">:</span> RED_WOOL
+    <span class="token comment"># 当权限显示为remove时显示的物品</span>
+    <span class="token key atrule">setRemove</span><span class="token punctuation">:</span> LIGHT_GRAY_WOOL
+  <span class="token comment"># 默认 = false。 开启它，有 nomobs 标志的领地将会定期清理怪物。</span>
+  <span class="token comment"># 这对服务器造成的负担是非常严重的，所以在你需要的时候再打开它。</span>
+  <span class="token key atrule">AutoMobRemoval</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 多少秒进行一次检查。请进来保持数值够大。</span>
+    <span class="token key atrule">Interval</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token key atrule">EnforceAreaInsideArea</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">EnableSpout</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">EnableLeaseMoneyAccount</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 如果设置为 true，增加对 kCouldron 服务端的支持。 Action bar 信息和选择可视化等内容会被禁用。</span>
+  <span class="token key atrule">Couldroncompatibility</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">DynMap</span><span class="token punctuation">:</span>
+  <span class="token comment"># 是否开启对 DynMap 的支持</span>
+  <span class="token key atrule">Use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 显示隐藏的标志</span>
+  <span class="token key atrule">ShowFlags</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 如果设置为true，会从dynmap中隐藏设置为true的标志。</span>
+  <span class="token key atrule">HideHidden</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">Layer</span><span class="token punctuation">:</span>
+    <span class="token comment"># 开启 3D 区域</span>
+    <span class="token key atrule">3dRegions</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 显示子领地的深度</span>
+    <span class="token key atrule">SubZoneDepth</span><span class="token punctuation">:</span> <span class="token number">2</span>
+  <span class="token key atrule">Border</span><span class="token punctuation">:</span>
+    <span class="token comment"># 颜色代码。 从这网站选择颜色 http://www.w3schools.com/colors/colors_picker.asp</span>
+    <span class="token key atrule">Color</span><span class="token punctuation">:</span> <span class="token string">&quot;#FF0000&quot;</span>
+    <span class="token comment"># 透明度。 0.3 意味着只显示 30% 颜色</span>
+    <span class="token key atrule">Opacity</span><span class="token punctuation">:</span> <span class="token number">0.3</span>
+    <span class="token comment"># 边框厚度</span>
+    <span class="token key atrule">Weight</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token key atrule">Fill</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Opacity</span><span class="token punctuation">:</span> <span class="token number">0.3</span>
+    <span class="token key atrule">Color</span><span class="token punctuation">:</span> <span class="token string">&quot;#FFFF00&quot;</span>
+    <span class="token key atrule">ForRent</span><span class="token punctuation">:</span> <span class="token string">&quot;#33cc33&quot;</span>
+    <span class="token key atrule">Rented</span><span class="token punctuation">:</span> <span class="token string">&quot;#99ff33&quot;</span>
+    <span class="token key atrule">ForSale</span><span class="token punctuation">:</span> <span class="token string">&quot;#0066ff&quot;</span>
+  <span class="token comment"># 在列表上显示的区域</span>
+  <span class="token key atrule">VisibleRegions</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token comment"># 在游戏地图上隐藏的区域</span>
+  <span class="token key atrule">HiddenRegions</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token comment"># 发展中选项</span>
+<span class="token key atrule">Raid</span><span class="token punctuation">:</span>
+  <span class="token comment"># 这是决定你服务器是否使用袭击功能</span>
+  <span class="token comment"># 当启用此功能的时候，袭击者仍然可以在该领地进行移动，即使 move 的标志为 false</span>
+  <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 袭击开始前的时间</span>
+  <span class="token comment"># 这时间将会允许回到领地并做好保卫领地来与袭击者对抗</span>
+  <span class="token key atrule">PreTimer</span><span class="token punctuation">:</span> <span class="token number">120</span>
+  <span class="token comment"># 这个时间是袭击的时间</span>
+  <span class="token comment"># 这个时间将允许袭击者偷走物品并杀害防卫者</span>
+  <span class="token key atrule">Timer</span><span class="token punctuation">:</span> <span class="token number">120</span>
+  <span class="token comment"># 这是领地免受袭击的保护时间</span>
+  <span class="token comment"># 默认是 79200 秒，也就是22小时，如果重启会刷新时间</span>
+  <span class="token key atrule">Cooldown</span><span class="token punctuation">:</span> <span class="token number">79200</span>
+  <span class="token comment"># 这是玩家免受袭击的保护时间</span>
+  <span class="token comment"># 这个情况适用于玩家有多个领地，防止玩家再次受到袭击</span>
+  <span class="token comment"># 默认是 79200 秒，也就是22小时，如果重启会刷新时间</span>
+  <span class="token key atrule">PlayerCooldown</span><span class="token punctuation">:</span> <span class="token number">79200</span>
+  <span class="token key atrule">Allow</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Attacker</span><span class="token punctuation">:</span>
+      <span class="token comment"># 允许袭击者打破方块，即使 destroy 标志设置为 false</span>
+      <span class="token comment"># 这只适用于袭击者袭击的时间</span>
+      <span class="token key atrule">blockBreak</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 允许袭击者放置方块，即使 place 标志设置为 false</span>
+      <span class="token comment"># 这只适用于袭击者袭击的时间</span>
+      <span class="token key atrule">blockPlace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">Defender</span><span class="token punctuation">:</span>
+      <span class="token comment"># 允许保卫者打破方块，即使 destroy 标志设置为 false</span>
+      <span class="token comment"># 这只适用于袭击者袭击的时间</span>
+      <span class="token key atrule">blockBreak</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 允许保卫者放置方块，即使 place 标志设置为 false</span>
+      <span class="token comment"># 这只适用于袭击者袭击的时间</span>
+      <span class="token key atrule">blockPlace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 允许袭击者传送至领地，包括使用 /res tp 或其他第三方传送插件</span>
+      <span class="token comment"># 这只适用于袭击者袭击的时间</span>
+      <span class="token comment"># 请记住，如果袭击者没有此权限，他将无法在袭击的领地上进行传送</span>
+      <span class="token key atrule">Teleport</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token comment"># 在袭击者袭击时间和受保护的时间，允许袭击者使用容器，如箱子</span>
+      <span class="token comment"># 这只适用于袭击者袭击的时间和受保护的时间</span>
+      <span class="token comment"># 设置为 false 可以保证玩家在受保护的时候将物品移动到另外一个不被攻击的领地</span>
+      <span class="token comment"># 在袭击时间内，袭击者将会被允许打开任何的容器</span>
+      <span class="token key atrule">containerUsage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 当设置为 false 时，玩家处于同一队伍 (袭击者 或 保卫者) 会无法对队友进行伤害</span>
+  <span class="token key atrule">FriendlyFire</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br><span class="line-number">428</span><br><span class="line-number">429</span><br><span class="line-number">430</span><br><span class="line-number">431</span><br><span class="line-number">432</span><br><span class="line-number">433</span><br><span class="line-number">434</span><br><span class="line-number">435</span><br><span class="line-number">436</span><br><span class="line-number">437</span><br><span class="line-number">438</span><br><span class="line-number">439</span><br><span class="line-number">440</span><br><span class="line-number">441</span><br><span class="line-number">442</span><br><span class="line-number">443</span><br><span class="line-number">444</span><br><span class="line-number">445</span><br><span class="line-number">446</span><br><span class="line-number">447</span><br><span class="line-number">448</span><br><span class="line-number">449</span><br><span class="line-number">450</span><br><span class="line-number">451</span><br><span class="line-number">452</span><br><span class="line-number">453</span><br><span class="line-number">454</span><br><span class="line-number">455</span><br><span class="line-number">456</span><br><span class="line-number">457</span><br><span class="line-number">458</span><br><span class="line-number">459</span><br><span class="line-number">460</span><br><span class="line-number">461</span><br><span class="line-number">462</span><br><span class="line-number">463</span><br><span class="line-number">464</span><br><span class="line-number">465</span><br><span class="line-number">466</span><br><span class="line-number">467</span><br><span class="line-number">468</span><br><span class="line-number">469</span><br><span class="line-number">470</span><br><span class="line-number">471</span><br><span class="line-number">472</span><br><span class="line-number">473</span><br><span class="line-number">474</span><br><span class="line-number">475</span><br><span class="line-number">476</span><br><span class="line-number">477</span><br><span class="line-number">478</span><br><span class="line-number">479</span><br><span class="line-number">480</span><br><span class="line-number">481</span><br><span class="line-number">482</span><br><span class="line-number">483</span><br><span class="line-number">484</span><br><span class="line-number">485</span><br><span class="line-number">486</span><br><span class="line-number">487</span><br><span class="line-number">488</span><br><span class="line-number">489</span><br><span class="line-number">490</span><br><span class="line-number">491</span><br><span class="line-number">492</span><br><span class="line-number">493</span><br><span class="line-number">494</span><br><span class="line-number">495</span><br><span class="line-number">496</span><br><span class="line-number">497</span><br><span class="line-number">498</span><br><span class="line-number">499</span><br><span class="line-number">500</span><br><span class="line-number">501</span><br><span class="line-number">502</span><br><span class="line-number">503</span><br><span class="line-number">504</span><br><span class="line-number">505</span><br><span class="line-number">506</span><br><span class="line-number">507</span><br><span class="line-number">508</span><br><span class="line-number">509</span><br><span class="line-number">510</span><br><span class="line-number">511</span><br><span class="line-number">512</span><br><span class="line-number">513</span><br><span class="line-number">514</span><br><span class="line-number">515</span><br><span class="line-number">516</span><br><span class="line-number">517</span><br><span class="line-number">518</span><br><span class="line-number">519</span><br><span class="line-number">520</span><br><span class="line-number">521</span><br><span class="line-number">522</span><br><span class="line-number">523</span><br><span class="line-number">524</span><br><span class="line-number">525</span><br><span class="line-number">526</span><br></div></div><p><code>Groups.yml</code> 领地权限组设置，设置领地大小与价格的地方</p> <p><a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTM2NTUzMXwxZjczYzJmNHwxNjA0ODkzODAyfDg4MTg4NHw2MzEzNDM%3D">完整版下载</a></p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment"># 这里的组是相对于 '&lt;worldname&gt;。yml' 文件的权限组，汉化：羽神</span>
+<span class="token key atrule">Groups</span><span class="token punctuation">:</span>
+  <span class="token key atrule">Default</span><span class="token punctuation">:</span> <span class="token comment">#权限组名字, 不要删除此组</span>
+    <span class="token comment"># 玩家可以自定义领地的信息</span>
+    <span class="token comment"># 修改注释下面的内容可以将此配置镜像放置到其他组</span>
+    <span class="token comment">#Mirror:</span>
+    <span class="token comment">#- 'group1'</span>
+    <span class="token comment">#- 'group2'</span>
+    <span class="token key atrule">Residence</span><span class="token punctuation">:</span>
+      <span class="token comment"># 这决定是否能创建领地。 这可以被 'residence。create' 权限覆盖</span>
+      <span class="token key atrule">CanCreate</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 玩家可拥有的最大领地数量。</span>
+      <span class="token key atrule">MaxResidences</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 玩家可拥有的最大物理区块。</span>
+      <span class="token key atrule">MaxAreasPerResidence</span><span class="token punctuation">:</span> <span class="token number">2</span>
+      <span class="token comment"># 方块向东西方向最远可以选择到达多大 (X)。</span>
+      <span class="token key atrule">MaxEastWest</span><span class="token punctuation">:</span> <span class="token number">16</span>
+      <span class="token comment"># (可选) 方块向东西方向最小可选择到达多小 (X)。</span>
+      <span class="token key atrule">MinEastWest</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 方块向南北方向最远可以选择到达多大 (Z)。</span>
+      <span class="token key atrule">MaxNorthSouth</span><span class="token punctuation">:</span> <span class="token number">16</span>
+      <span class="token comment"># (可选) 方块向南北方向最小可选择到达多小 (Z)。</span>
+      <span class="token key atrule">MinNorthSouth</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 方块最高可以选择多高 (Y)。</span>
+      <span class="token key atrule">MaxUpDown</span><span class="token punctuation">:</span> <span class="token number">256</span>
+      <span class="token comment"># (可选) 方块最低应该选择多高 (Y)。</span>
+      <span class="token key atrule">MinUpDown</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 领地最低可以保护到哪一层。</span>
+      <span class="token key atrule">MinHeight</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token comment"># 领地最高可以保护到哪一层。</span>
+      <span class="token key atrule">MaxHeight</span><span class="token punctuation">:</span>
+        <span class="token number">255</span>
+        <span class="token comment"># 一个领地内最多可拥有多少个子领地。</span>
+      <span class="token key atrule">MaxSubzonesInArea</span><span class="token punctuation">:</span>
+        <span class="token number">3</span>
+        <span class="token comment"># 子领地可到达的最大深度？The maximum recursive depth that subzones can go。</span>
+        <span class="token comment"># 子领地选择必须在父领地最大深度2之内。</span>
+        <span class="token comment"># 设置为0取消子领地。</span>
+      <span class="token key atrule">SubzoneDepth</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># (可选) 方块向东西方向最远可以选择到达多大 (X)。</span>
+      <span class="token key atrule">SubzoneMaxEastWest</span><span class="token punctuation">:</span> <span class="token number">16</span>
+      <span class="token comment"># (可选) 方块向东西方向最小可选择到达多小 (X)。</span>
+      <span class="token key atrule">SubzoneMinEastWest</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># (可选) 方块向南北方向最远可以选择到达多大 (Z)。</span>
+      <span class="token key atrule">SubzoneMaxNorthSouth</span><span class="token punctuation">:</span> <span class="token number">16</span>
+      <span class="token comment"># (可选) 方块向南北方向最小可选择到达多小 (Z)。</span>
+      <span class="token key atrule">SubzoneMinNorthSouth</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># (可选) 方块最高可以选择多高 (Y)。</span>
+      <span class="token key atrule">SubzoneMaxUpDown</span><span class="token punctuation">:</span> <span class="token number">256</span>
+      <span class="token comment"># (可选) 方块最低应该选择多高 (Y)。</span>
+      <span class="token key atrule">SubzoneMinUpDown</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 是否允许传送到领地。</span>
+      <span class="token key atrule">CanTeleport</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 允许使用 /res unstuck, 来让自己退出因某种原因卡住的领地。</span>
+      <span class="token key atrule">Unstuck</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 允许使用 /res kick, 来踢出领地的玩家。</span>
+      <span class="token key atrule">Kick</span><span class="token punctuation">:</span> <span class="token boolean important">False</span>
+      <span class="token comment"># 允许使用 /res select 指令, 如果关闭它则只能使用选取工具。</span>
+      <span class="token key atrule">SelectCommandAccess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 允许标志组访问 Blacklist/Ignorelist 列表的东西。</span>
+      <span class="token key atrule">ItemListAccess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token comment"># 这是设置领地进入或离开的信息。</span>
+    <span class="token key atrule">Messaging</span><span class="token punctuation">:</span>
+      <span class="token comment"># 是否允许玩家修改信息。</span>
+      <span class="token key atrule">CanChange</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 这是在创建新领地时，默认的进入领地信息。</span>
+      <span class="token comment"># 使用 %zone 可以显示当前子领地名称而不显示父领地前缀。</span>
+      <span class="token comment"># 设置为空则禁用。</span>
+      <span class="token key atrule">DefaultEnter</span><span class="token punctuation">:</span> <span class="token string">&quot;欢迎 %player 来到 %residence, 领地主是 %owner。&quot;</span>
+      <span class="token comment"># 这是在创建新领地时，默认的离开领地信息。</span>
+      <span class="token comment"># 使用 %zone 可以显示当前子领地名称而不显示父领地前缀。</span>
+      <span class="token comment"># 设置为空则禁用。</span>
+      <span class="token key atrule">DefaultLeave</span><span class="token punctuation">:</span> <span class="token string">&quot;你离开了 %residence。&quot;</span>
+    <span class="token comment"># 这是设置zulin系统的。</span>
+    <span class="token key atrule">Lease</span><span class="token punctuation">:</span>
+      <span class="token comment"># 最大可以chuzu多少天。</span>
+      <span class="token key atrule">MaxDays</span><span class="token punctuation">:</span> <span class="token number">16</span>
+      <span class="token comment"># 续zu时最大可以使用指令 '/res lease renew' 来添加多少天。</span>
+      <span class="token key atrule">RenewIncrement</span><span class="token punctuation">:</span> <span class="token number">14</span>
+    <span class="token comment"># 有关chuzu系统的设置</span>
+    <span class="token key atrule">Rent</span><span class="token punctuation">:</span>
+      <span class="token comment"># 决定玩家最大可以zu多少个领地。</span>
+      <span class="token key atrule">MaxRents</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 决定玩家最大可以chuzu多少个领地</span>
+      <span class="token key atrule">MaxRentables</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token comment"># 决定可zu用的最大天数</span>
+      <span class="token key atrule">MaxRentDays</span><span class="token punctuation">:</span> <span class="token number">31</span>
+    <span class="token comment"># 这是领地插件的经济系统。</span>
+    <span class="token key atrule">Economy</span><span class="token punctuation">:</span>
+      <span class="token comment"># 玩家是否可以购买领地。</span>
+      <span class="token key atrule">CanBuy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 玩家是否可以出售领地。</span>
+      <span class="token key atrule">CanSell</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token comment"># 在购买时，是否忽略大小或价格的限制。</span>
+      <span class="token key atrule">IgnoreLimits</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token comment"># 在创建新领地时，每一格所花费的价格。</span>
+      <span class="token key atrule">BuyCost</span><span class="token punctuation">:</span> <span class="token number">0.5</span>
+      <span class="token comment"># 在删除领地时，每一格所返还的价格。</span>
+      <span class="token comment"># 注意，需要在config中开启 ResMoneyBack 选项，此功能才能启用。</span>
+      <span class="token key atrule">SellCost</span><span class="token punctuation">:</span> <span class="token number">0.25</span>
+      <span class="token comment"># zulin每个方块的价格 (需要zulin系统的开启)。</span>
+      <span class="token key atrule">RenewCost</span><span class="token punctuation">:</span> <span class="token number">0.2</span>
+    <span class="token comment"># 标志的检查方式:</span>
+    <span class="token comment"># 1: 玩家</span>
+    <span class="token comment"># 2: 权限组</span>
+    <span class="token comment"># 3: 领地主</span>
+    <span class="token comment"># 4: 和其他未定义的组，例如经济API (通常开启)。</span>
+    <span class="token comment"># 标志一般为关闭。</span>
+    <span class="token comment"># 这是设置覆盖全局设置的标志。</span>
+    <span class="token key atrule">Flags</span><span class="token punctuation">:</span>
+      <span class="token comment"># 特殊允许某些组在一开始拥有某些标志。</span>
+      <span class="token key atrule">Permission</span><span class="token punctuation">:</span>
+        <span class="token comment">#build: true</span>
+      <span class="token comment"># 特殊允许用户的普通权限中拥有额外标志。</span>
+      <span class="token key atrule">Default</span><span class="token punctuation">:</span>
+        <span class="token comment">#build: true</span>
+      <span class="token comment"># 特殊允许在创建领地时拥有额外标志。</span>
+      <span class="token key atrule">CreatorDefault</span><span class="token punctuation">:</span>
+        <span class="token comment">#build: true</span>
+      <span class="token comment"># 特殊允许本标志组在其他标志组中拥有的特殊标志。</span>
+      <span class="token key atrule">GroupDefault</span><span class="token punctuation">:</span>
+        <span class="token comment">#default: #权限组名</span>
+        <span class="token comment">#build: false</span>
+      <span class="token comment"># 这是允许标志组在领地之外拥有特殊标志。</span>
+      <span class="token comment"># 这里的标志是首先检查的，会覆盖全局设定。。</span>
+      <span class="token key atrule">World</span><span class="token punctuation">:</span>
+        Global<span class="token punctuation">:</span><span class="token comment">#标志应用到全局</span>
+          <span class="token comment">#build: false</span>
+        WorldNameHere<span class="token punctuation">:</span><span class="token comment">#或者应用到某个世界</span>
+          <span class="token comment">#build: false</span>
+  <span class="token key atrule">NextGroup</span><span class="token punctuation">:</span> <span class="token comment">#权限组名字, 玩家应该拥有 residence.group.nextgroup 权限才能成为这个领地用户组成员</span>
+    <span class="token key atrule">Residence</span><span class="token punctuation">:</span>
+      <span class="token key atrule">CanCreate</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">MaxResidences</span><span class="token punctuation">:</span> <span class="token number">4</span>
+      <span class="token key atrule">MaxAreasPerResidence</span><span class="token punctuation">:</span> <span class="token number">2</span>
+      <span class="token key atrule">MaxEastWest</span><span class="token punctuation">:</span> <span class="token number">20</span>
+      <span class="token key atrule">MaxNorthSouth</span><span class="token punctuation">:</span> <span class="token number">20</span>
+      <span class="token key atrule">MaxUpDown</span><span class="token punctuation">:</span> <span class="token number">20</span>
+      <span class="token key atrule">MinHeight</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token key atrule">MaxHeight</span><span class="token punctuation">:</span> <span class="token number">255</span>
+      <span class="token key atrule">SubzoneDepth</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token key atrule">CanTeleport</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Unstuck</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Kick</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">SelectCommandAccess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">ItemListAccess</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">Messaging</span><span class="token punctuation">:</span>
+      <span class="token key atrule">CanChange</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">DefaultEnter</span><span class="token punctuation">:</span> <span class="token string">&quot;欢迎 %player 来到 %residence, 领地主人是 %owner。&quot;</span>
+      <span class="token key atrule">DefaultLeave</span><span class="token punctuation">:</span> <span class="token string">&quot;现在离开了 %residence。&quot;</span>
+    <span class="token key atrule">Lease</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MaxDays</span><span class="token punctuation">:</span> <span class="token number">16</span>
+      <span class="token key atrule">RenewIncrement</span><span class="token punctuation">:</span> <span class="token number">14</span>
+    <span class="token key atrule">Rent</span><span class="token punctuation">:</span>
+      <span class="token key atrule">MaxRents</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token key atrule">MaxRentables</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token key atrule">MaxRentDays</span><span class="token punctuation">:</span> <span class="token number">31</span>
+    <span class="token key atrule">Economy</span><span class="token punctuation">:</span>
+      <span class="token key atrule">CanBuy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">CanSell</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">IgnoreLimits</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+      <span class="token key atrule">BuyCost</span><span class="token punctuation">:</span> <span class="token number">0.7</span>
+      <span class="token key atrule">SellCost</span><span class="token punctuation">:</span> <span class="token number">0.3</span>
+      <span class="token key atrule">RenewCost</span><span class="token punctuation">:</span> <span class="token number">0.3</span>
+
+<span class="token comment"># 你可以手动设定组里一个玩家的情况, 这将覆盖他所在组的权限。</span>
+<span class="token key atrule">GroupAssignments</span><span class="token punctuation">:</span>
+  <span class="token key atrule">bekvon</span><span class="token punctuation">:</span> default
+  <span class="token key atrule">player</span><span class="token punctuation">:</span> default
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br></div></div><p><code>Flag.yml</code> 所有领地标志(Flag)设置的地方，超过 90+种！</p> <p>汉化版本：4.9.1.3</p> <p>详细 Flag 的用法请看 <a href="https://github.com/bluesadi/ResidenceChineseTutorial/wiki/%E6%A0%87%E5%BF%97%E7%9A%84%E9%BB%98%E8%AE%A4%E8%AE%BE%E7%BD%AE%E5%92%8C%E8%A1%8C%E4%B8%BA-Flag-Default-Settings-and-Behavior">中文 Wiki</a></p> <p><a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTM2NTUzMnwzOTkyYmFmNnwxNjA0ODkzODAyfDg4MTg4NHw2MzEzNDM%3D">完整版下载地址</a></p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment"># 这是标志的全局设置. 汉化:羽神</span>
+<span class="token key atrule">Global</span><span class="token punctuation">:</span>
+  <span class="token comment"># 这些标志会应用到全部地方，不只有领地内.</span>
+  <span class="token key atrule">Flags</span><span class="token punctuation">:</span>
+    <span class="token comment"># 这是玩家在全世界拥有的标志, 这会覆盖每一个标志组。</span>
+    <span class="token key atrule">Global</span><span class="token punctuation">:</span>
+      <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">ignite</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">firespread</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">damage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">creeper</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">tnt</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">pvp</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 这是每一个权限组可用的标志, 除了特殊的标志。</span>
+  <span class="token key atrule">FlagPermission</span><span class="token punctuation">:</span>
+    <span class="token key atrule">move</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">place</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">destroy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">container</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">pvp</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">tp</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">ignite</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">firespread</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">flow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">lavaflow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">waterflow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">creeper</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">tnt</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">monsters</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">animals</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">animalkilling</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">mobkilling</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">vehicledestroy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">trade</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">shear</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">leash</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">nofly</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">subzone</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">healing</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">piston</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">diode</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">lever</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">button</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">door</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">table</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">enchant</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">brew</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">bed</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">cake</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">note</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">trample</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">burn</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">explode</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">fireball</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">command</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">day</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">night</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">chat</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">hidden</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">overridepvp</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">keepinv</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">keepexp</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">shop</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">bank</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">anvil</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">admin</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">anvilbreak</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">backup</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">beacon</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">canimals</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">chorustp</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">cmonsters</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">commandblock</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">coords</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">craft</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">dragongrief</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">dye</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">damage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">decay</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">dryup</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">egg</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">enderpearl</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">fallinprotection</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">falldamage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">feed</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">friendlyfire</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">flowinprotection</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">flowerpot</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">grow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">glow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">hotfloor</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">hook</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">iceform</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">icemelt</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">itemdrop</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">itempickup</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">jump2</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">jump3</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">mobexpdrop</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">mobitemdrop</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">nanimals</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">nmonsters</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">fly</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">nomobs</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">nodurability</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">pressure</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">pistonprotection</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">rain</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">redstone</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">respawn</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">riding</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">shoot</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">sun</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">snowtrail</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">spread</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">snowball</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">sanimals</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">smonsters</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">title</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">trusted</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">witherspawn</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">phantomspawn</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">witherdamage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">witherdestruction</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">wspeed1</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">wspeed2</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># This sets GUI items to represent each flag, if not given, then gray wool will be used</span>
+  <span class="token key atrule">FlagGui</span><span class="token punctuation">:</span>
+    <span class="token key atrule">animalkilling</span><span class="token punctuation">:</span> CHICKEN
+    <span class="token key atrule">animals</span><span class="token punctuation">:</span> PIG_SPAWN_EGG
+    <span class="token key atrule">bed</span><span class="token punctuation">:</span> WHITE_BED
+    <span class="token key atrule">brew</span><span class="token punctuation">:</span> BREWING_STAND
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> BRICKS
+    <span class="token key atrule">burn</span><span class="token punctuation">:</span> TORCH
+    <span class="token key atrule">button</span><span class="token punctuation">:</span> OAK_BUTTON
+    <span class="token key atrule">cake</span><span class="token punctuation">:</span> CAKE
+    <span class="token key atrule">canimals</span><span class="token punctuation">:</span> SHEEP_SPAWN_EGG
+    <span class="token key atrule">chat</span><span class="token punctuation">:</span> WRITABLE_BOOK
+    <span class="token key atrule">cmonsters</span><span class="token punctuation">:</span> CREEPER_SPAWN_EGG
+    <span class="token key atrule">command</span><span class="token punctuation">:</span> COMMAND_BLOCK
+    <span class="token key atrule">container</span><span class="token punctuation">:</span> CHEST_MINECART
+    <span class="token key atrule">creeper</span><span class="token punctuation">:</span> CREEPER_SPAWN_EGG
+    <span class="token key atrule">destroy</span><span class="token punctuation">:</span> END_STONE
+    <span class="token key atrule">diode</span><span class="token punctuation">:</span> REPEATER
+    <span class="token key atrule">door</span><span class="token punctuation">:</span> OAK_DOOR
+    <span class="token key atrule">enchant</span><span class="token punctuation">:</span> ENCHANTING_TABLE
+    <span class="token key atrule">explode</span><span class="token punctuation">:</span> TNT_MINECART
+    <span class="token key atrule">fireball</span><span class="token punctuation">:</span> FIRE_CHARGE
+    <span class="token key atrule">firespread</span><span class="token punctuation">:</span> BLAZE_POWDER
+    <span class="token key atrule">flow</span><span class="token punctuation">:</span> LILY_PAD
+    <span class="token key atrule">healing</span><span class="token punctuation">:</span> POTION
+    <span class="token key atrule">ignite</span><span class="token punctuation">:</span> FLINT_AND_STEEL
+    <span class="token key atrule">lavaflow</span><span class="token punctuation">:</span> LAVA_BUCKET
+    <span class="token key atrule">leash</span><span class="token punctuation">:</span> LEAD
+    <span class="token key atrule">lever</span><span class="token punctuation">:</span> LEVER
+    <span class="token key atrule">mobkilling</span><span class="token punctuation">:</span> ROTTEN_FLESH
+    <span class="token key atrule">monsters</span><span class="token punctuation">:</span> SPAWNER
+    <span class="token key atrule">move</span><span class="token punctuation">:</span> LEATHER_BOOTS
+    <span class="token key atrule">nanimals</span><span class="token punctuation">:</span> COW_SPAWN_EGG
+    <span class="token key atrule">nmonsters</span><span class="token punctuation">:</span> SKELETON_SPAWN_EGG
+    <span class="token key atrule">nofly</span><span class="token punctuation">:</span> ORANGE_CARPET
+    <span class="token key atrule">nomobs</span><span class="token punctuation">:</span> BARRIER
+    <span class="token key atrule">note</span><span class="token punctuation">:</span> NOTE_BLOCK
+    <span class="token key atrule">piston</span><span class="token punctuation">:</span> PISTON
+    <span class="token key atrule">place</span><span class="token punctuation">:</span> SEA_LANTERN
+    <span class="token key atrule">pvp</span><span class="token punctuation">:</span> WOODEN_SWORD
+    <span class="token key atrule">sanimals</span><span class="token punctuation">:</span> RABBIT_SPAWN_EGG
+    <span class="token key atrule">shear</span><span class="token punctuation">:</span> SHEARS
+    <span class="token key atrule">smonsters</span><span class="token punctuation">:</span> ZOMBIE_SPAWN_EGG
+    <span class="token key atrule">subzone</span><span class="token punctuation">:</span> GRAY_STAINED_GLASS_PANE
+    <span class="token key atrule">table</span><span class="token punctuation">:</span> CRAFTING_TABLE
+    <span class="token key atrule">tnt</span><span class="token punctuation">:</span> TNT
+    <span class="token key atrule">tp</span><span class="token punctuation">:</span> END_PORTAL_FRAME
+    <span class="token key atrule">trade</span><span class="token punctuation">:</span> EMERALD
+    <span class="token key atrule">trample</span><span class="token punctuation">:</span> DIRT
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> STONE_PRESSURE_PLATE
+    <span class="token key atrule">vehicledestroy</span><span class="token punctuation">:</span> MINECART
+    <span class="token key atrule">waterflow</span><span class="token punctuation">:</span> WATER_BUCKET
+    <span class="token key atrule">anvil</span><span class="token punctuation">:</span> ANVIL
+    <span class="token key atrule">admin</span><span class="token punctuation">:</span> BEDROCK
+    <span class="token key atrule">anvilbreak</span><span class="token punctuation">:</span> ANVIL
+    <span class="token key atrule">backup</span><span class="token punctuation">:</span> BOOKSHELF
+    <span class="token key atrule">bank</span><span class="token punctuation">:</span> ENDER_CHEST
+    <span class="token key atrule">beacon</span><span class="token punctuation">:</span> BEACON
+    <span class="token key atrule">chorustp</span><span class="token punctuation">:</span> CHORUS_FRUIT
+    <span class="token key atrule">commandblock</span><span class="token punctuation">:</span> COMMAND_BLOCK
+    <span class="token key atrule">coords</span><span class="token punctuation">:</span> COMPASS
+    <span class="token key atrule">craft</span><span class="token punctuation">:</span> STONE
+    <span class="token key atrule">dragongrief</span><span class="token punctuation">:</span> DIRT
+    <span class="token key atrule">day</span><span class="token punctuation">:</span> DANDELION
+    <span class="token key atrule">dye</span><span class="token punctuation">:</span> ORANGE_DYE
+    <span class="token key atrule">damage</span><span class="token punctuation">:</span> GOLDEN_SWORD
+    <span class="token key atrule">decay</span><span class="token punctuation">:</span> OAK_LEAVES
+    <span class="token key atrule">dryup</span><span class="token punctuation">:</span> BLUE_STAINED_GLASS_PANE
+    <span class="token key atrule">egg</span><span class="token punctuation">:</span> EGG
+    <span class="token key atrule">enderpearl</span><span class="token punctuation">:</span> ENDER_PEARL
+    <span class="token key atrule">fallinprotection</span><span class="token punctuation">:</span> SAND
+    <span class="token key atrule">falldamage</span><span class="token punctuation">:</span> LEATHER_BOOTS
+    <span class="token key atrule">feed</span><span class="token punctuation">:</span> COOKED_BEEF
+    <span class="token key atrule">friendlyfire</span><span class="token punctuation">:</span> SUNFLOWER
+    <span class="token key atrule">flowinprotection</span><span class="token punctuation">:</span> OAK_BOAT
+    <span class="token key atrule">flowerpot</span><span class="token punctuation">:</span> FLOWER_POT
+    <span class="token key atrule">grow</span><span class="token punctuation">:</span> WHEAT_SEEDS
+    <span class="token key atrule">glow</span><span class="token punctuation">:</span> SEA_LANTERN
+    <span class="token key atrule">hotfloor</span><span class="token punctuation">:</span> MAGMA_BLOCK
+    <span class="token key atrule">hidden</span><span class="token punctuation">:</span> GLASS_PANE
+    <span class="token key atrule">hook</span><span class="token punctuation">:</span> FISHING_ROD
+    <span class="token key atrule">iceform</span><span class="token punctuation">:</span> ICE
+    <span class="token key atrule">icemelt</span><span class="token punctuation">:</span> ICE
+    <span class="token key atrule">itemdrop</span><span class="token punctuation">:</span> FEATHER
+    <span class="token key atrule">itempickup</span><span class="token punctuation">:</span> GUNPOWDER
+    <span class="token key atrule">jump2</span><span class="token punctuation">:</span> SLIME_BLOCK
+    <span class="token key atrule">jump3</span><span class="token punctuation">:</span> SLIME_BLOCK
+    <span class="token key atrule">keepinv</span><span class="token punctuation">:</span> LEATHER_HELMET
+    <span class="token key atrule">keepexp</span><span class="token punctuation">:</span> GOLDEN_APPLE
+    <span class="token key atrule">mobexpdrop</span><span class="token punctuation">:</span> MELON_SEEDS
+    <span class="token key atrule">mobitemdrop</span><span class="token punctuation">:</span> COCOA_BEANS
+    <span class="token key atrule">night</span><span class="token punctuation">:</span> BLACK_WOOL
+    <span class="token key atrule">fly</span><span class="token punctuation">:</span> ORANGE_CARPET
+    <span class="token key atrule">nodurability</span><span class="token punctuation">:</span> ANVIL
+    <span class="token key atrule">overridepvp</span><span class="token punctuation">:</span> IRON_SWORD
+    <span class="token key atrule">pressure</span><span class="token punctuation">:</span> LIGHT_WEIGHTED_PRESSURE_PLATE
+    <span class="token key atrule">pistonprotection</span><span class="token punctuation">:</span> STICKY_PISTON
+    <span class="token key atrule">rain</span><span class="token punctuation">:</span> BLUE_ORCHID
+    <span class="token key atrule">redstone</span><span class="token punctuation">:</span> SUNFLOWER
+    <span class="token key atrule">respawn</span><span class="token punctuation">:</span> SUNFLOWER
+    <span class="token key atrule">riding</span><span class="token punctuation">:</span> SADDLE
+    <span class="token key atrule">shoot</span><span class="token punctuation">:</span> ARROW
+    <span class="token key atrule">sun</span><span class="token punctuation">:</span> SUNFLOWER
+    <span class="token key atrule">shop</span><span class="token punctuation">:</span> ITEM_FRAME
+    <span class="token key atrule">snowtrail</span><span class="token punctuation">:</span> SNOW
+    <span class="token key atrule">spread</span><span class="token punctuation">:</span> SNOWBALL
+    <span class="token key atrule">snowball</span><span class="token punctuation">:</span> SNOWBALL
+    <span class="token key atrule">trusted</span><span class="token punctuation">:</span> STONE
+    <span class="token key atrule">witherspawn</span><span class="token punctuation">:</span> WITHER_SKELETON_SKULL
+    <span class="token key atrule">witherdamage</span><span class="token punctuation">:</span> WITHER_SKELETON_SKULL
+    <span class="token key atrule">witherdestruction</span><span class="token punctuation">:</span> WITHER_SKELETON_SKULL
+    <span class="token key atrule">wspeed1</span><span class="token punctuation">:</span> POTION
+    <span class="token key atrule">wspeed2</span><span class="token punctuation">:</span> POTION
+    <span class="token key atrule">testing</span><span class="token punctuation">:</span> WHITE_WOOL
+    <span class="token key atrule">phantomspawn</span><span class="token punctuation">:</span> BROWN_WOOL
+    <span class="token key atrule">title</span><span class="token punctuation">:</span> PAPER
+  <span class="token comment"># 这是在所有领地中的默认标志.</span>
+  <span class="token key atrule">ResidenceDefault</span><span class="token punctuation">:</span>
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">destroy</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">container</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">pvp</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">tnt</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">creeper</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">ignite</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">firespread</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">vehicledestroy</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">animalkilling</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">hook</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">shear</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">leash</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">pistonprotection</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">tp</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">explode</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token comment"># 在创建领地时领地主拥有的权限.</span>
+  <span class="token key atrule">CreatorDefault</span><span class="token punctuation">:</span>
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">destroy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">move</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">ignite</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">container</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">animalkilling</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">mobkilling</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">vehicledestroy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">trade</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">shear</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">leash</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 出zu领地时拥有的权限.</span>
+  <span class="token key atrule">RentedDefault</span><span class="token punctuation">:</span>
+    <span class="token key atrule">container</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">ignite</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">move</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">trade</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">mobkilling</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">shear</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">destroy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">vehicledestroy</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">leash</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">animalkilling</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">admin</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token comment"># 这是打包的标志, 所以你可用用 /res pset 玩家名 redstone true 来执行此标志包, 玩家会一次拥有包内全部标志, 一些类似的权限冲突会设置为false或者remove.</span>
+  <span class="token key atrule">GroupedFlags</span><span class="token punctuation">:</span>
+    <span class="token key atrule">redstone</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> note
+    <span class="token punctuation">-</span> pressure
+    <span class="token punctuation">-</span> lever
+    <span class="token punctuation">-</span> button
+    <span class="token punctuation">-</span> diode
+    <span class="token key atrule">craft</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> brew
+    <span class="token punctuation">-</span> table
+    <span class="token punctuation">-</span> enchant
+    <span class="token key atrule">trusted</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> use
+    <span class="token punctuation">-</span> tp
+    <span class="token punctuation">-</span> build
+    <span class="token punctuation">-</span> destroy
+    <span class="token punctuation">-</span> container
+    <span class="token punctuation">-</span> move
+    <span class="token punctuation">-</span> leash
+    <span class="token punctuation">-</span> animalkilling
+    <span class="token punctuation">-</span> mobkilling
+    <span class="token punctuation">-</span> shear
+    <span class="token punctuation">-</span> chat
+    <span class="token punctuation">-</span> beacon
+    <span class="token key atrule">fire</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> ignite
+    <span class="token punctuation">-</span> firespread
+  <span class="token comment"># 完全禁用已经设置了的标志，会导致 resadmin 指令也无法改动。</span>
+  <span class="token comment"># 如果你不想要一些特殊标志进行一些特殊的检查，这可以帮助你降低一些服务器资源的占用</span>
+  <span class="token key atrule">TotalFlagDisabling</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> Completely
+  <span class="token punctuation">-</span> Disabled
+  <span class="token punctuation">-</span> Particular
+  <span class="token punctuation">-</span> Flags
+<span class="token comment"># 这可以创建 白名单 / 黑名单</span>
+<span class="token key atrule">ItemList</span><span class="token punctuation">:</span>
+  <span class="token comment"># 菜单名字是不重要的, 而且这是独一无二的.用一个描述性的名字更好.</span>
+  <span class="token key atrule">DefaultList</span><span class="token punctuation">:</span>
+    <span class="token comment"># 菜单类型，可以是(黑名单) blacklist,(白名单)whitelist,或者(忽视名单)ignorelist</span>
+    <span class="token key atrule">Type</span><span class="token punctuation">:</span> blacklist
+    <span class="token comment"># 如果你想, 你可以只应用到一个世界,或者应用到所有世界</span>
+    <span class="token comment"># World: world</span>
+    <span class="token comment"># 你可以只应用到某个组,或者应用到全部标志组</span>
+    <span class="token comment"># Group: default</span>
+    <span class="token comment"># 这是是否允许的名字</span>
+    <span class="token comment"># 如果你想查看物品的名字，可以在游戏中输入 /res material &lt;id&gt;</span>
+    <span class="token comment"># 或者，你可以输入物品ID，然后还有少量的物品名字，不过这样不能清晰的看清列表中允许或禁止什么。</span>
+    <span class="token key atrule">Items</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> BEDROCK
+    <span class="token punctuation">-</span> LAVA
+    <span class="token punctuation">-</span> WATER
+    <span class="token punctuation">-</span> STATIONARY_LAVA
+    <span class="token punctuation">-</span> STATIONARY_WATER
+    <span class="token punctuation">-</span> MOB_SPAWNER
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br></div></div><h2 id="常见问题"><a href="#常见问题" class="header-anchor">#</a> 常见问题</h2> <h4 id="q-怎么圈地"><a href="#q-怎么圈地" class="header-anchor">#</a> Q：怎么圈地？</h4> <p>A：默认圈地工具是木锄头，在你需要保护的地方选择对角线式的两个点（如左上方和右下方）
+然后在其中一个点用圈地工具左键，在另一个点用鼠标右键，输入指令 /res create (领地名字)即可圈地
+或者，可以站在保护的地方的中心，输入指令/res auto (领地名字) (圈地大小) 进行圈地</p> <h4 id="q-如何设置中文"><a href="#q-如何设置中文" class="header-anchor">#</a> Q：如何设置中文?</h4> <p>A：打开[Config.yml]，找到【Language: English】修改为【Language: Chinese】(区分大小写)</p> <h4 id="q-怎么打开gui菜单"><a href="#q-怎么打开gui菜单" class="header-anchor">#</a> Q：怎么打开GUI菜单</h4> <p>A:直接输入指令/res set或者/res pset [玩家]即可打开</p> <h4 id="q-如何查看圈地工具或圈地信息查看工具"><a href="#q-如何查看圈地工具或圈地信息查看工具" class="header-anchor">#</a> Q：如何查看圈地工具或圈地信息查看工具?</h4> <p>A：使用指令/res tool —— 显示领地圈地和查看信息的工具类型<br>
+.</p> <h4 id="q-为什么我的圈地工具不是木锄-怎么换圈地工具"><a href="#q-为什么我的圈地工具不是木锄-怎么换圈地工具" class="header-anchor">#</a> Q：为什么我的圈地工具不是木锄？怎么换圈地工具？</h4> <p>A：打开[Config.yml]，找到【SelectionToolId:】，后方修改为圈地的物品，注意，应圈地工具的左键和右键均不与互交方式冲突，另外，在新版插件中，物品的ID请用英文。<a href="https://minecraft-ids.grahamedgecombe.com/">英文ID网站</a></p> <h4 id="q-为什么op不能创建更多领地-为什么op还会被限制权限"><a href="#q-为什么op不能创建更多领地-为什么op还会被限制权限" class="header-anchor">#</a> Q：为什么OP不能创建更多领地/为什么OP还会被限制权限</h4> <p>A：打开[Config.yml]，找到并修改</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>如果设置为true<span class="token punctuation">,</span>则开启领地Op (/resadmin)
+<span class="token key atrule">AdminOPs</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token comment"># 如果设置为true,则将领地设置上升至管理员也可操作，不需要/resadmin指令，如果是Op的领地，则其他Op操作需要相应的权限AdminFullAccess: false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="q-我是mod服务器-但是这个插件经常报错怎么办"><a href="#q-我是mod服务器-但是这个插件经常报错怎么办" class="header-anchor">#</a> Q：我是Mod服务器，但是这个插件经常报错怎么办</h4> <p>A：打开[Config.yml]，找到【CouldronCompatability: 】，修改为true</p> <h4 id="q-为什么在地皮世界也能圈地"><a href="#q-为什么在地皮世界也能圈地" class="header-anchor">#</a> Q：为什么在地皮世界也能圈地？</h4> <p>A：你需要禁止地皮世界使用领地插件的指令，打开[Config.yml]，找到</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment"># 这是你领地插件的主世界. 通常设置为 'world'。 大写很重要（明示区分大小写） &lt;-[吐槽]作者自己在注释上都没注意大小写</span>
+    <span class="token key atrule">DefaultWorld</span><span class="token punctuation">:</span> world
+    <span class="token key atrule">DisabledWorlds</span><span class="token punctuation">:</span>
+      <span class="token comment"># 禁用此插件的世界列表。</span>
+      <span class="token key atrule">List</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token comment"># 禁止所包含的世界的所有监听器。</span>
+      <span class="token key atrule">DisableListeners</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 禁止所包含的世界的所有领地指令使用。</span>
+      <span class="token key atrule">DisableCommands</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>将其中List修改，例如我的地皮世界为plotworl（注:list和-plotwolrd应该在同一直线上）</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>    <span class="token key atrule">List</span><span class="token punctuation">:</span> 
+    <span class="token punctuation">-</span> plotworld
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="q-如何修改或添加随机传送中的传送范围或传送世界-res-rt"><a href="#q-如何修改或添加随机传送中的传送范围或传送世界-res-rt" class="header-anchor">#</a> Q：如何修改或添加随机传送中的传送范围或传送世界(/res rt)</h4> <p>A：打开[Config.yml]。找到并修改</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">Tp</span><span class="token punctuation">:</span>
+    <span class="token comment"># 以秒为单位，用于传送功能</span>
+    <span class="token comment"># 设置为0禁用</span>
+    <span class="token key atrule">TeleportDelay</span><span class="token punctuation">:</span> <span class="token number">3</span>
+    <span class="token comment"># 当玩家传送到领地时，会在title（标题区）显示附加内容</span>
+    <span class="token key atrule">TeleportTitleMessage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">RandomTeleportation</span><span class="token punctuation">:</span>
+    <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+      <span class="token key atrule">world_nether</span><span class="token punctuation">:</span>
+        <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">MaxCoord</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+        <span class="token key atrule">MinCord</span><span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token key atrule">CenterX</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token key atrule">CenterZ</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token key atrule">world_the_end</span><span class="token punctuation">:</span>
+        <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">MaxCoord</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+        <span class="token key atrule">MinCord</span><span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token key atrule">CenterX</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token key atrule">CenterZ</span><span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token key atrule">world</span><span class="token punctuation">:</span>
+        <span class="token key atrule">Enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token key atrule">MaxCoord</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+        <span class="token key atrule">MinCord</span><span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token key atrule">CenterX</span><span class="token punctuation">:</span> <span class="token number">0</span>
+        <span class="token key atrule">CenterZ</span><span class="token punctuation">:</span> <span class="token number">0</span>
+    <span class="token comment"># 玩家再次使用指令需要等待多长时间。</span>
+    <span class="token key atrule">Cooldown</span><span class="token punctuation">:</span> <span class="token number">5</span>
+    <span class="token comment"># 会有多少次尝试找到正确的传送位置</span>
+    <span class="token comment"># 尽量保持数字低，因为玩家可以在延迟过后再输入一次指令</span>
+    <span class="token key atrule">MaxTries</span><span class="token punctuation">:</span> <span class="token number">20</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h4 id="q-如何让随机传送-领地tp没有延迟-冷却"><a href="#q-如何让随机传送-领地tp没有延迟-冷却" class="header-anchor">#</a> Q：如何让随机传送/领地TP没有延迟/冷却?</h4> <p>A：给予其中几个权限</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>residence.tpdelaybypass <span class="token punctuation">-</span> 无视领地传送延迟。
+residence.randomtp.delaybypass <span class="token punctuation">-</span> 无视随机传送延迟。
+residence.randomtp.cooldownbypass <span class="token punctuation">-</span> 无视随机传送冷却。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="q-如何关闭更新检测"><a href="#q-如何关闭更新检测" class="header-anchor">#</a> Q：如何关闭更新检测？</h4> <p>A：打开[Config.yml]，找到【versionCheck: 】，将true改为false。</p> <h4 id="q-为什么玩家无法圈地-就连可设置的范围都是写0-我怎么修改group-yml都无效"><a href="#q-为什么玩家无法圈地-就连可设置的范围都是写0-我怎么修改group-yml都无效" class="header-anchor">#</a> Q：为什么玩家无法圈地，就连可设置的范围都是写0，我怎么修改Group.yml都无效？</h4> <p>A：检查你权限插件是否正常。打开[Groups.yml]，检查第二行左右【Default: 】，最后一行【player: default】【bekvon: default】，中的default是否同步，或者给予权限：residence.group.[groupname] -从groups.yml中设置玩家的领地组(默认组为default)</p> <h4 id="q-没有上面图片的粒子效果"><a href="#q-没有上面图片的粒子效果" class="header-anchor">#</a> Q：没有上面图片的粒子效果</h4> <p>A：1.8以后的服务器才有此功能</p> <h4 id="q-如何删除领地的时候还钱呢"><a href="#q-如何删除领地的时候还钱呢" class="header-anchor">#</a> Q：如何删除领地的时候还钱呢？</h4> <p>A：打开config.yml，找到【ResMoneyBack】设置为true。</p> <h4 id="q-怎么让领地可以修改为中文"><a href="#q-怎么让领地可以修改为中文" class="header-anchor">#</a> Q：怎么让领地可以修改为中文</h4> <p>A：打开config.yml，把【ResidenceNameRegex: '[^a-zA-Z0-9-_]'】改为【ResidenceNameRegex: [^a-zA-Z0-9-_一-龥]】(注意，这可能会导致部分服务器领地无法收钱）</p> <h4 id="q-我服务器的领地可以无权限破坏"><a href="#q-我服务器的领地可以无权限破坏" class="header-anchor">#</a> Q：我服务器的领地可以无权限破坏！</h4> <p>A：检查经济/创世神/权限插件是否为最新版本。将destroy权限给设置为false才能无法破坏方块，如果无效，请尝试降低插件版本。</p> <h4 id="q-为什么我的领地不收钱"><a href="#q-为什么我的领地不收钱" class="header-anchor">#</a> Q：为什么我的领地不收钱？</h4> <p>A：检查经济插件是否正常。打开[Config.yml]，找到【EnableEconomy: 】检查是否为开启。打开[Groups.yml]，找到【BuyCost: 】是否不为0。</p> <h4 id="q-如何让领地退款"><a href="#q-如何让领地退款" class="header-anchor">#</a> Q：如何让领地退款?</h4> <p>A：打开[Conflg.yml]，找到【ResMoneyBack: false】修改为true。</p> <h4 id="q-如何启用领地聊天前缀"><a href="#q-如何启用领地聊天前缀" class="header-anchor">#</a> Q：如何启用领地聊天前缀</h4> <p>A：打开[Config.yml]，找到【ResidenceChatEnable: true】修改为true，并认真看此条选项一下的内容。</p> <h4 id="q-为什么我的领地收钱非常多"><a href="#q-为什么我的领地收钱非常多" class="header-anchor">#</a> Q：为什么我的领地收钱非常多?</h4> <p>A：打开[Groups.yml]，找到【BuyCost: 】修改，建议在0.01以内。如果你想知道更多收钱机制，可以可以查看上方【领地插件进阶教程】</p> <h4 id="q-如何启用lease-zulin-系统"><a href="#q-如何启用lease-zulin-系统" class="header-anchor">#</a> Q:如何启用Lease(zulin)系统</h4> <p>A:打开[Config.yml]，找到【EnableRentSystem: true】，设置为true，并且继续看Config.yml中下面关于此系统的功能。</p> <h4 id="q-如何玩家创建领地自动禁止某个权限"><a href="#q-如何玩家创建领地自动禁止某个权限" class="header-anchor">#</a> Q：如何玩家创建领地自动禁止某个权限？</h4> <p>A：前往Flag.yml，找到创建后领地的flag设置，添加上你需要的禁止权限，比如移动【move: false】</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment">#玩家领地权限(非主人)</span>
+ResidenceDefault
+<span class="token comment">#玩家领地权限(领地主人,创建者)</span>
+  <span class="token key atrule">CreatorDefault</span><span class="token punctuation">:</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="q-关于如何创建更多的领地权限组"><a href="#q-关于如何创建更多的领地权限组" class="header-anchor">#</a> Q：关于如何创建更多的领地权限组</h4> <p>A：打开[Groups.yml]，复制【NextGroup 到 RenewCost: 0.3这一串内容】并粘贴，然后NextGroup修改为你想要的名字，并且你可以修改更多内容，选项对照上方[Groups.yml]的翻译。</p> <h4 id="q-为什么水流-岩浆无法超过63格"><a href="#q-为什么水流-岩浆无法超过63格" class="header-anchor">#</a> Q：为什么水流/岩浆无法超过63格？</h4> <p>A：打开[Config.yml]找到并依照翻译设置即可</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">Flow</span><span class="token punctuation">:</span>
+      <span class="token comment"># 这是限制水和岩浆流动时高度的设置</span>
+      <span class="token comment"># 这个选项不会限制领地内水和岩浆的高度</span>
+      <span class="token key atrule">Level</span><span class="token punctuation">:</span> <span class="token number">63</span>
+      <span class="token comment"># 如果设置为true, 则会限制岩浆的高度</span>
+      <span class="token key atrule">NoLavaFlow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 如果设置为true, 则会限制水的高度</span>
+      <span class="token key atrule">NoWaterFlow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> world
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><div class="language-yml line-numbers-mode"><pre class="language-yml"><code>    <span class="token key atrule">Place</span><span class="token punctuation">:</span>
+      <span class="token comment"># 这里将会限制水和岩浆开始放置的地方</span>
+      <span class="token comment"># 这个选项不会限制领地内水和岩浆的高度</span>
+      <span class="token key atrule">Level</span><span class="token punctuation">:</span> <span class="token number">63</span>
+      <span class="token comment"># 如果设置为true, 则会限制岩浆的高度</span>
+      <span class="token key atrule">NoLavaPlace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token comment"># 如果设置为true, 则会限制水的高度</span>
+      <span class="token key atrule">NoWaterPlace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+      <span class="token key atrule">Worlds</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> world
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="q-为什么重启服务器领地会消失"><a href="#q-为什么重启服务器领地会消失" class="header-anchor">#</a> Q：为什么重启服务器领地会消失</h4> <p>A：打开[Config.yml]，找到【MultiWorldPlugin: Multiverse-Core】，其中【Multiverse-Core】，修改为你使用的多世界插件</p> <h4 id="q-如何给玩家踢出其他玩家的指令"><a href="#q-如何给玩家踢出其他玩家的指令" class="header-anchor">#</a> Q：如何给玩家踢出其他玩家的指令</h4> <p>A：打开[Groups.yml]，找到【Kick: False】改为true即可</p> <p>本页内容来源于 <a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=631343">MCBBS</a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/9/2020, 4:34:10 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/java-edition/plugins/vault.html" class="prev">
+        vault前置插件
+      </a></span> <span class="next"><a href="/java-edition/plugins/outher.html">
+        其它插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2aa4fc64.js" defer></script><script src="/assets/js/2.7c18b3f7.js" defer></script><script src="/assets/js/13.3fcccb48.js" defer></script>
+  </body>
+</html>

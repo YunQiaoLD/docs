@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Essentials插件 | Minecraft文档站</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/logo.gif">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.ccac5a78.css" as="style"><link rel="preload" href="/assets/js/app.2aa4fc64.js" as="script"><link rel="preload" href="/assets/js/2.7c18b3f7.js" as="script"><link rel="preload" href="/assets/js/10.5d887ca9.js" as="script"><link rel="prefetch" href="/assets/js/11.62615717.js"><link rel="prefetch" href="/assets/js/12.bb96e16e.js"><link rel="prefetch" href="/assets/js/13.3fcccb48.js"><link rel="prefetch" href="/assets/js/14.990aae40.js"><link rel="prefetch" href="/assets/js/3.804d668d.js"><link rel="prefetch" href="/assets/js/4.1cfc2f80.js"><link rel="prefetch" href="/assets/js/5.447f0bc7.js"><link rel="prefetch" href="/assets/js/6.83acb231.js"><link rel="prefetch" href="/assets/js/7.bf9879c2.js"><link rel="prefetch" href="/assets/js/8.b249ef4e.js"><link rel="prefetch" href="/assets/js/9.a721d616.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ccac5a78.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Minecraft文档站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/java-edition/" class="nav-link router-link-active">
+  Java版
+</a></div><div class="nav-item"><a href="/bedrock-edition/" class="nav-link">
+  基岩版
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/java-edition/" class="nav-link router-link-active">
+  Java版
+</a></div><div class="nav-item"><a href="/bedrock-edition/" class="nav-link">
+  基岩版
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>插件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java-edition/plugins/essentials.html" aria-current="page" class="active sidebar-link">essentials基础插件</a></li><li><a href="/java-edition/plugins/multiverse.html" class="sidebar-link">multiverse多世界插件</a></li><li><a href="/java-edition/plugins/vault.html" class="sidebar-link">vault前置插件</a></li><li><a href="/java-edition/plugins/residence.html" class="sidebar-link">residence领地插件</a></li><li><a href="/java-edition/plugins/outher.html" class="sidebar-link">其它插件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="essentials插件"><a href="#essentials插件" class="header-anchor">#</a> Essentials插件</h1> <h2 id="插件介绍"><a href="#插件介绍" class="header-anchor">#</a> 插件介绍</h2> <h3 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h3> <p>Essentials基本是服务端必备插件,他提供了基本的经济,权限,保护等必须的功能<br>
+不过在1.7.10之后,Essentials分割成了几个版本,所以针对不同版本的服务端请选择适用的插件</p> <ul><li><p><code>Essentials</code> 1.7.x</p></li> <li><p><code>EssentialsX</code> 1.8.x-1.15</p></li> <li><p><code>Spigot-Essentials</code> 1.8-1.13</p></li></ul> <h3 id="插件组成"><a href="#插件组成" class="header-anchor">#</a> 插件组成</h3> <p>Essentials 是模块化的,它的安装包被分割成不同的jar文件,之所以这样做是因为如果与你喜欢的插件冲突的话可以进行很方便的替换<br>
+我们的Essentials主要分成两部分&quot;核心&quot;,&quot;额外项&quot;.核心是人们通常使用的部分,额外项是给一些有需要的人使用的，并且需要一些额外的设置,所以不要盲目的安装，除非你知道它们是做什么的</p> <ul><li><p><code>Essentials</code> 这个主要的jar文件包括了绝大部分内容，你几乎能在这里发现所有的API，所有的源代码，以及链接Essentials套件所有其它部分的代码</p></li> <li><p><code>EssentialsChat</code> 包括“core”与“extra”两个部分. “core” 包括了Essentials用户最常用的部分，并包含一部分额外的设置. &quot;extra&quot;部分需要另外一些额外的配置, 并且其中大部分建议不要盲目的启用，除非你知道自己在做什么</p></li> <li><p><code>EssentialsSpawn</code> 包含基本的玩家生成, 这个插件让你可以定义玩家死亡后回到的地方,这个位置可以在游戏内有一位有着适当权限的玩家更改 , 也可以为每个人或组单独设置</p></li> <li><p><code>EssentialsAntiBuild</code> 是一个权限系统, 这个权限允许你显示谁可以建造,或谁可以放置/破坏哪种方块。 举个例子，限制玩家放置岩浆是很有用的</p></li> <li><p><code>EssentialsProtect</code> 是一个基本的世界保护系统, 这个模块允许你去设置基本的规则, 例如放置爬行者的爆炸破坏建筑物以及防止火焰传播, 控制哪些生物可以被生成</p></li> <li><p><code>EssentialsGeoIP</code>提供地理IP查找，该模块可以根据公共IP数据库大致告诉您玩家登录的位置</p></li> <li><p><code>EssentialsGroupManager</code>创建权限系统，该系统用于创建参与玩家的用户组，从而允许诸如“ builder”，“ mod”和“ admin”之类的等级</p></li></ul> <h2 id="插件安装"><a href="#插件安装" class="header-anchor">#</a> 插件安装</h2> <h3 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h3> <p><code>Essentials(1.7.x):</code> <a href="https://dev.bukkit.org/projects/essentials/files">下载地址</a></p> <p><code>EssentialsX(1.8.x-1.15):</code> <a href="https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/">下载地址</a></p> <p><code>Spigot-Essentials(1.8.x-1.13):</code> <a href="https://hub.spigotmc.org/jenkins/job/Spigot-Essentials/">下载地址</a></p> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <p><code>关闭服务器</code><br> <code>打开plugins文件夹</code><br> <code>放入Essentials核心</code><br> <code>选择你想要的分项并放入</code><br> <code>启动服务器</code><br> <code>安装完成！</code></p> <h2 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h2> <p><code>config.yml</code></p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |                     注意事项                         | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token comment"># 对应Essentials版本 pre 2.11.1.2                此文本由 白宝石小组 大刘 制作</span>
+<span class="token comment"># 文本前带有&quot;#&quot;的都是阐释说明的内容,不会对格式产生影响.</span>
+<span class="token comment"># 如果你想要在该文件内添加非单字节内容,请务必要保存为UTF-8格式,而不是ANSI,否则可能出现乱码</span>
+<span class="token comment"># 如果加载插件时出现了问题(例如:ERROR:null),请注意:</span>
+<span class="token comment">#   - 没有tab这样的间隔(译注:锁定键上方的键):YAML文件仅支持普通的空格(译注:双字节空白字例外,且仅可用于说明或提示信息)</span>
+<span class="token comment">#   - 正确的&quot;缩排书写&quot;(译注:不懂的去百度一下Indent):YAML文件的层次结构完全依赖于首行缩排.</span>
+<span class="token comment">#   - 你已经&quot;避免(原文:escaped)&quot;了所有文本信息中的单引号.</span>
+<span class="token comment">#   - 带有符号的文本被用单引号或双引号隔绝开来.</span>
+<span class="token comment">#   - 如果一个冒号后面有文本,则冒号与文本间必须有一个空格.</span>
+<span class="token comment">#   - 有些设置只能设置&quot;true&quot;或&quot;false&quot;</span>
+<span class="token comment">#   - 你保存该文本为UTF-8格式,而不是其他default,ANSI等格式.</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |                Essentials 全局设置                   | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token comment"># OP名字的颜色代码,填写0~9或a~f其中的一个数字或字母,填写'none'来冻结该功能.(译注:可到http://ess.khhq.net/mc/查看效果)</span>
+<span class="token key atrule">ops-name-color</span><span class="token punctuation">:</span> <span class="token string">'c'</span>
+
+<span class="token comment"># 昵称的前缀符号,这样你能知道这不是他们真正的用户名.</span>
+<span class="token key atrule">nickname-prefix</span><span class="token punctuation">:</span> <span class="token string">'~'</span>
+
+<span class="token comment"># 如果你想用其他的插件来设置玩家名字,将其改为&quot;false&quot;.</span>
+<span class="token key atrule">change-displayname</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 当这个选项开启时,在玩家显示的名字上添加的前缀或尾缀,会被显示在在线列表(TAB)中.</span>
+<span class="token comment"># 上面的&quot;change-displayname&quot;必须是true才有效.</span>
+<span class="token key atrule">change-playerlist</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 在玩家显示的名字上添加前缀或尾缀,然后会被显示在聊天、提示信息或在线列表中.</span>
+<span class="token comment"># 上面的&quot;change-displayname&quot;必须是true才有效.</span>
+<span class="token comment"># 如果你不设置该项,且essentialschat被安装了,其将会被默认为&quot;true&quot;.</span>
+<span class="token comment"># 不要忘记去除前面的&quot;#&quot;</span>
+<span class="token key atrule">add-prefix-suffix</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 传送功能的冷却时间(以秒为单位),如/home, /tp等命令.</span>
+<span class="token key atrule">teleport-cooldown</span><span class="token punctuation">:</span> <span class="token number">0</span>
+
+<span class="token comment"># 传送延迟时间(以秒为单位),在玩家被确实传送之前的时间.如果玩家在该时间内移动了或者受到攻击,传送将取消.</span>
+<span class="token key atrule">teleport-delay</span><span class="token punctuation">:</span> <span class="token number">0</span>
+
+<span class="token comment"># 传送时无敌时间(以秒为单位)在玩家被确实传送之前的时间内,其他玩家不能攻击该玩家.</span>
+<span class="token comment"># 这同样可以阻止该玩家攻击其他玩家.</span>
+<span class="token key atrule">teleport-invulnerability</span><span class="token punctuation">:</span> <span class="token number">4</span>
+
+<span class="token comment"># 治疗冷却时间(以秒为单位),/heal命令.</span>
+<span class="token key atrule">heal-cooldown</span><span class="token punctuation">:</span> <span class="token number">60</span>
+
+<span class="token comment"># 禁止作弊命令/give,/item调出的物品黑名单列表.</span>
+<span class="token comment"># 例如 item-spawn-blacklist: 46,11,10</span>
+<span class="token key atrule">item-spawn-blacklist</span><span class="token punctuation">:</span>
+
+<span class="token comment"># 如果你想要调出物品的能力基于权限设置,就把该项设置为&quot;true&quot;.</span>
+<span class="token comment"># 注意:上面的黑名单将被忽略.</span>
+<span class="token comment"># Permissions:</span>
+<span class="token comment">#  - essentials.itemspawn.item-all</span>
+<span class="token comment">#  - essentials.itemspawn.item-[itemname]</span>
+<span class="token comment">#  - essentials.itemspawn.item-[itemid]</span>
+<span class="token comment">#  - essentials.give.item-all</span>
+<span class="token comment">#  - essentials.give.item-[itemname]</span>
+<span class="token comment">#  - essentials.give.item-[itemid]</span>
+<span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/Command_Reference/ICheat#Item.2FGive</span>
+<span class="token key atrule">permission-based-item-spawn</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 使用/spawnmob命令一次性生成生物的最大数量.</span>
+<span class="token key atrule">spawnmob-limit</span><span class="token punctuation">:</span> <span class="token number">10</span>
+
+<span class="token comment"># 当OP使用&quot;/lightning&quot;(闪电)时是否提醒玩家,</span>
+<span class="token key atrule">warn-on-smite</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 服务器公告 和 服务器规定,现在分别存储在 motd.txt 和 rules.txt 中设置.</span>
+
+<span class="token comment"># 当一个命令与其它插件冲突,Essentials基础插件会默认尝试强行让其它插件获得优先权.</span>
+<span class="token comment"># 如果一个命令在列表中,Essentials基础插件会尝试给默认的命令优先权.</span>
+<span class="token comment"># 通常哪一个插件将胜出的几率是随机的.</span>
+<span class="token comment">#</span>
+<span class="token comment"># 如果你有两个插件并且命令相同而且你希望使用essentials,那么你需要了解 命令别名(alias).</span>
+<span class="token comment"># essentials 插件的 'god' 命令 'god' 别名 'egod'.</span>
+<span class="token comment"># 查看 http://wiki.bukkit.org/Bukkit.yml#aliases 了解更多信息</span>
+
+<span class="token key atrule">overridden-commands</span><span class="token punctuation">:</span>
+<span class="token comment">#  - god</span>
+<span class="token comment">#  - info</span>
+
+<span class="token comment"># 命令黑名单,冻结的命令在服务器将完全不可使用.</span>
+<span class="token comment">#当命令冲突时,在此禁用将无效果</span>
+<span class="token key atrule">disabled-commands</span><span class="token punctuation">:</span>
+<span class="token comment">#  - nuke</span>
+<span class="token comment">#  - nick</span>
+
+<span class="token comment"># 这些命令是当开启了/socialspy命令时可以看到的玩家私聊</span>
+<span class="token comment"># 你可以添加一些来自其他插件的命令</span>
+<span class="token comment"># 或者移除一些你不想看到的私聊命令</span>
+<span class="token key atrule">socialspy-commands</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> msg
+  <span class="token punctuation">-</span> w
+  <span class="token punctuation">-</span> r
+  <span class="token punctuation">-</span> mail
+  <span class="token punctuation">-</span> m
+  <span class="token punctuation">-</span> t
+  <span class="token punctuation">-</span> whisper
+  <span class="token punctuation">-</span> emsg
+  <span class="token punctuation">-</span> tell
+  <span class="token punctuation">-</span> er
+  <span class="token punctuation">-</span> reply
+  <span class="token punctuation">-</span> ereply
+  <span class="token punctuation">-</span> email
+  <span class="token punctuation">-</span> action
+  <span class="token punctuation">-</span> describe
+  <span class="token punctuation">-</span> eme
+  <span class="token punctuation">-</span> eaction
+  <span class="token punctuation">-</span> edescribe
+  <span class="token punctuation">-</span> etell
+  <span class="token punctuation">-</span> ewhisper
+  <span class="token punctuation">-</span> pm
+
+<span class="token comment"># 简约权限系统,受限制的命令已被移除.</span>
+<span class="token comment"># 现在我们有了一个白名单,所有不在该名单中的命令将只有OP能够使用.</span>
+<span class="token comment"># 如果你安装了Permissions之类的权限插件,这将不启作用!</span>
+<span class="token comment"># 这种方式只是为了当你想用更简单的方式管理命令时,给你提供方法.</span>
+<span class="token comment"># 这些是没有&quot;essentials.&quot;部分的权限.</span>
+<span class="token key atrule">player-commands</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> afk
+  <span class="token punctuation">-</span> afk.auto
+  <span class="token punctuation">-</span> back
+  <span class="token punctuation">-</span> back.ondeath
+  <span class="token punctuation">-</span> balance
+  <span class="token punctuation">-</span> balance.others
+  <span class="token punctuation">-</span> balancetop
+  <span class="token punctuation">-</span> build
+  <span class="token punctuation">-</span> chat.color
+  <span class="token punctuation">-</span> chat.format
+  <span class="token punctuation">-</span> chat.shout
+  <span class="token punctuation">-</span> chat.question
+  <span class="token punctuation">-</span> clearinventory
+  <span class="token punctuation">-</span> compass
+  <span class="token punctuation">-</span> depth
+  <span class="token punctuation">-</span> delhome
+  <span class="token punctuation">-</span> getpos
+  <span class="token punctuation">-</span> geoip.show
+  <span class="token punctuation">-</span> help
+  <span class="token punctuation">-</span> helpop
+  <span class="token punctuation">-</span> home
+  <span class="token punctuation">-</span> home.others
+  <span class="token punctuation">-</span> ignore
+  <span class="token punctuation">-</span> info
+  <span class="token punctuation">-</span> itemdb
+<span class="token comment">#  - kit</span>
+<span class="token comment">#  - kits.tools</span>
+  <span class="token punctuation">-</span> list
+  <span class="token punctuation">-</span> mail
+  <span class="token punctuation">-</span> mail.send
+  <span class="token punctuation">-</span> me
+  <span class="token punctuation">-</span> motd
+  <span class="token punctuation">-</span> msg
+  <span class="token punctuation">-</span> msg.color
+  <span class="token punctuation">-</span> nick
+  <span class="token punctuation">-</span> near
+  <span class="token punctuation">-</span> pay
+  <span class="token punctuation">-</span> ping
+  <span class="token punctuation">-</span> protect
+  <span class="token punctuation">-</span> r
+  <span class="token punctuation">-</span> rules
+  <span class="token punctuation">-</span> realname
+  <span class="token punctuation">-</span> seen
+<span class="token comment">#  - sell</span>
+  <span class="token punctuation">-</span> sethome
+  <span class="token punctuation">-</span> setxmpp
+  <span class="token punctuation">-</span> signs.create.protection
+  <span class="token punctuation">-</span> signs.create.trade
+  <span class="token punctuation">-</span> signs.break.protection
+  <span class="token punctuation">-</span> signs.break.trade
+  <span class="token punctuation">-</span> signs.use.balance
+  <span class="token punctuation">-</span> signs.use.buy
+  <span class="token punctuation">-</span> signs.use.disposal
+  <span class="token punctuation">-</span> signs.use.enchant
+  <span class="token punctuation">-</span> signs.use.free
+  <span class="token punctuation">-</span> signs.use.gamemode
+  <span class="token punctuation">-</span> signs.use.heal
+  <span class="token punctuation">-</span> signs.use.info
+  <span class="token punctuation">-</span> signs.use.kit
+  <span class="token punctuation">-</span> signs.use.mail
+  <span class="token punctuation">-</span> signs.use.protection
+  <span class="token punctuation">-</span> signs.use.repair
+  <span class="token punctuation">-</span> signs.use.sell
+  <span class="token punctuation">-</span> signs.use.time
+  <span class="token punctuation">-</span> signs.use.trade
+  <span class="token punctuation">-</span> signs.use.warp
+  <span class="token punctuation">-</span> signs.use.weather
+  <span class="token punctuation">-</span> spawn
+  <span class="token punctuation">-</span> suicide
+  <span class="token punctuation">-</span> time
+  <span class="token punctuation">-</span> tpa
+  <span class="token punctuation">-</span> tpaccept
+  <span class="token punctuation">-</span> tpahere
+  <span class="token punctuation">-</span> tpdeny
+  <span class="token punctuation">-</span> warp
+  <span class="token punctuation">-</span> warp.list
+  <span class="token punctuation">-</span> world
+  <span class="token punctuation">-</span> worth
+  <span class="token punctuation">-</span> xmpp
+
+<span class="token comment"># /kit快速工具命令,注意:所有物品后面必须写明数量!</span>
+<span class="token comment"># 所有的kit物品最好容易获得, 在/costs中价格较低,权限要求较低.</span>
+<span class="token comment"># 格式: - 物品ID[:DataValue/Durability] 数量 [附魔:附魔等级]..[itemmeta:value]...</span>
+<span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/Item_Meta</span>
+<span class="token comment">#  延迟时间(delay)以秒为单位.</span>
+<span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/Kits</span>
+<span class="token key atrule">kits</span><span class="token punctuation">:</span>
+  <span class="token key atrule">tools</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 272 1
+      <span class="token punctuation">-</span> 273 1
+      <span class="token punctuation">-</span> 274 1
+      <span class="token punctuation">-</span> 275 1
+      <span class="token punctuation">-</span> 387 1 title<span class="token punctuation">:</span><span class="token important">&amp;6新手帮助</span> author<span class="token punctuation">:</span>服务器 book<span class="token punctuation">:</span>新手帮助
+  <span class="token key atrule">dtools</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">600</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 278 1 efficiency<span class="token punctuation">:</span>1 durability<span class="token punctuation">:</span>1 fortune<span class="token punctuation">:</span>1 name<span class="token punctuation">:</span><span class="token important">&amp;4Giga_Drill_Breaker</span> lore<span class="token punctuation">:</span>这钻头是突破天际的钻头
+      <span class="token punctuation">-</span> 277 1 digspeed<span class="token punctuation">:</span>3 name<span class="token punctuation">:</span>矮人 lore<span class="token punctuation">:</span>挖掘<span class="token punctuation">|</span>挖掘<span class="token punctuation">|</span>挖洞
+      <span class="token punctuation">-</span> 298 1 color<span class="token punctuation">:</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span>255 name<span class="token punctuation">:</span>白色的帽子 lore<span class="token punctuation">:</span>美好的一天<span class="token punctuation">,</span>美好的一天
+      <span class="token punctuation">-</span> 279<span class="token punctuation">:</span>780 1
+  <span class="token key atrule">notch</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">6000</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 397<span class="token punctuation">:</span>3 1 player<span class="token punctuation">:</span>Notch
+  <span class="token key atrule">color</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">6000</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 387 1 title<span class="token punctuation">:</span><span class="token important">&amp;4书_&amp;9与_&amp;6颜色</span> author<span class="token punctuation">:</span>Essentials lore<span class="token punctuation">:</span>游戏内的颜色代码 book<span class="token punctuation">:</span>颜色
+  <span class="token key atrule">firework</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">6000</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 401 1 name<span class="token punctuation">:</span>愤怒的苦力帕 color<span class="token punctuation">:</span>red fade<span class="token punctuation">:</span>green type<span class="token punctuation">:</span>creeper power<span class="token punctuation">:</span><span class="token number">1</span>
+      <span class="token punctuation">-</span> 401 1 name<span class="token punctuation">:</span>星空 color<span class="token punctuation">:</span>yellow<span class="token punctuation">,</span>orange fade<span class="token punctuation">:</span>blue type<span class="token punctuation">:</span>star effect<span class="token punctuation">:</span>trail<span class="token punctuation">,</span>twinkle power<span class="token punctuation">:</span><span class="token number">1</span>
+      <span class="token punctuation">-</span> 401 2 name<span class="token punctuation">:</span>太阳风 color<span class="token punctuation">:</span>yellow<span class="token punctuation">,</span>orange fade<span class="token punctuation">:</span>red shape<span class="token punctuation">:</span>large effect<span class="token punctuation">:</span>twinkle color<span class="token punctuation">:</span>yellow<span class="token punctuation">,</span>orange fade<span class="token punctuation">:</span>red shape<span class="token punctuation">:</span>ball effect<span class="token punctuation">:</span>trail color<span class="token punctuation">:</span>red<span class="token punctuation">,</span>purple fade<span class="token punctuation">:</span>pink shape<span class="token punctuation">:</span>star effect<span class="token punctuation">:</span>trail power<span class="token punctuation">:</span><span class="token number">1</span>
+
+
+<span class="token comment"># Essentials 木牌控制</span>
+<span class="token comment"># 查看网页 http://wiki.ess3.net/wiki/Sign_Tutorial 可以了解如何使用这些.</span>
+<span class="token comment"># 移除#可以激活相应的木牌功能. 想禁用所有的木牌功能, 使用命令/remove 每个牌子.</span>
+<span class="token comment"># 当其他任何类型木牌启用时,木牌彩字支持将默认启用.</span>
+<span class="token comment"># 木牌彩字并不是真实的彩字, 是使用颜色代码实现, 当拥有木牌彩字权限时才会有效.</span>
+
+<span class="token key atrule">enabledSigns</span><span class="token punctuation">:</span>
+  <span class="token comment">#- color</span>
+  <span class="token comment">#- balance</span>
+  <span class="token comment">#- buy</span>
+  <span class="token comment">#- sell</span>
+  <span class="token comment">#- trade</span>
+  <span class="token comment">#- free</span>
+  <span class="token comment">#- disposal</span>
+  <span class="token comment">#- warp</span>
+  <span class="token comment">#- kit</span>
+  <span class="token comment">#- mail</span>
+  <span class="token comment">#- enchant</span>
+  <span class="token comment">#- gamemode</span>
+  <span class="token comment">#- heal</span>
+  <span class="token comment">#- info</span>
+  <span class="token comment">#- spawnmob</span>
+  <span class="token comment">#- repair</span>
+  <span class="token comment">#- time</span>
+  <span class="token comment">#- weather</span>
+
+<span class="token comment"># 玩家与牌子之间互动的时间间隔</span>
+<span class="token comment"># 数值用该在1-20之间,20将几乎没有间隔.</span>
+<span class="token comment"># 较小的数值可以有效减少延迟,但是可能会惹怒玩家</span>
+<span class="token key atrule">sign-use-per-second</span><span class="token punctuation">:</span> <span class="token number">4</span>
+
+<span class="token comment"># 当自动备份被取消时,使用批处理/bash 命令来备份.</span>
+<span class="token key atrule">backup</span><span class="token punctuation">:</span>
+  <span class="token comment"># 时间间隔,以分钟为单位.</span>
+  <span class="token key atrule">interval</span><span class="token punctuation">:</span> <span class="token number">30</span>
+  <span class="token comment"># 除非你在这加入一个有效的备份命令或脚本,否则这个功能是无用的.</span>
+  <span class="token comment"># 使用命令 'save-all' 简单的强制保存世界,而不使用备份.</span>
+  <span class="token comment"># 命令: 'rdiff-backup World1 backups/World1'</span>
+
+<span class="token comment"># 设置该项为true激活为每个地标单独的传送权限.</span>
+<span class="token key atrule">per-warp-permission</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 当使用/list命令时,将玩家按组分类.</span>
+<span class="token comment"># 你可以隐藏或合并组,在下面设定/list的分类.</span>
+<span class="token comment"># 更加详细的说明和示例请查看wiki: http://wiki.ess3.net/wiki/List</span>
+<span class="token key atrule">list</span><span class="token punctuation">:</span>
+    <span class="token comment"># 列出需要合并的组</span>
+    <span class="token comment">#Staff: owner admin moderator</span>
+    <span class="token key atrule">Admins</span><span class="token punctuation">:</span> owner admin
+    <span class="token comment"># 被限制的组,可以显示的玩家名字数量</span>
+    <span class="token comment">#builder: 20</span>
+    <span class="token comment"># 隐藏的组</span>
+    <span class="token comment">#default: hidden</span>
+    <span class="token comment"># 没有组的玩家</span>
+    <span class="token comment">#Players: '*'</span>
+
+<span class="token comment"># 是否在服务器窗口上显示更多的输出信息.</span>
+<span class="token key atrule">debug</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 设置所有消息的语言文件.</span>
+<span class="token comment"># 如果没有设置,将使用默认语言文件.</span>
+<span class="token comment"># 例如,使用中文语言文件,设置locale为zh,即可使用语言文件&quot;messages_zh.properties&quot;</span>
+<span class="token comment"># 不要忘记去除&quot;#&quot;</span>
+<span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/Locale</span>
+<span class="token key atrule">locale</span><span class="token punctuation">:</span> zh
+
+<span class="token comment"># 当玩家退出时,是否关闭他的上帝模式.</span>
+<span class="token key atrule">remove-god-on-disconnect</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 自动AFK(Away From Keyboard,离开状态)</span>
+<span class="token comment"># 以秒为单位,保持静止状态达到该时间,玩家将被自动设置为离开状态.</span>
+<span class="token comment"># 需要玩家拥有 essentials.afk.auto 权限.</span>
+<span class="token comment"># 设置为 -1 取消该功能.</span>
+<span class="token key atrule">auto-afk</span><span class="token punctuation">:</span> <span class="token number">300</span>
+
+<span class="token comment"># 自动T出AFK状态下的玩家</span>
+<span class="token comment"># 以秒为单位,AFK状态达到该时间,玩家将自动被服务器T出.</span>
+<span class="token comment"># 拥有essentials.afk.kickexempt权限的玩家无视此设置.</span>
+<span class="token comment"># 设置为 -1 取消该功能.</span>
+<span class="token key atrule">auto-afk-kick</span><span class="token punctuation">:</span> <span class="token number">-1</span>
+
+<span class="token comment"># 设置为true,如果你想要冻结AFK状态下的玩家.</span>
+<span class="token comment"># 其他玩家和怪物将无法推动或攻击他.</span>
+<span class="token comment"># 这将会使AFK的玩家进入无敌模式.</span>
+<span class="token comment"># 玩家需要使用&quot;/afk&quot;命令来退出AFK状态.</span>
+<span class="token key atrule">freeze-afk-players</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 当玩家AFK状态时,是否允许玩家捡取物品?</span>
+<span class="token comment"># 启用这个功能,当你不希望有人在刷怪塔挂机刷物品.</span>
+<span class="token key atrule">disable-item-pickup-while-afk</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 这个设置控制当一个玩家交互时解除afk状态</span>
+<span class="token comment"># 如果设为false,将只能使用/afk来取消离开状态</span>
+<span class="token key atrule">cancel-afk-on-interact</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 当玩家移动时是否解除他的AFK状态?</span>
+<span class="token comment"># 当玩家聊天或使用命令时,玩家将自动解除AFK状态,无视这个设置</span>
+<span class="token comment"># 禁用这个选项可以减少服务器延迟</span>
+<span class="token key atrule">cancel-afk-on-move</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 你可以在这取消Minecraft的死亡提示.</span>
+<span class="token key atrule">death-messages</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 把世界加入这个列表, 如果你想在那个世界自动关闭上帝模式.</span>
+<span class="token key atrule">no-god-in-worlds</span><span class="token punctuation">:</span>
+<span class="token comment">#  - world_nether</span>
+
+<span class="token comment"># 设置为true,启用每个世界传送单独的权限.</span>
+<span class="token comment"># 支持 /world, /back, /tp[a|o][here|all],但是不支持 warps.</span>
+<span class="token comment"># 给予玩家某个世界的传送权限 essentials.world.&lt;worldname&gt;</span>
+<span class="token comment"># 不包括 /home 命令, 下面有单独的设定.</span>
+<span class="token key atrule">world-teleport-permissions</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 若在使用/give或/item命令时如果没有填写数量.</span>
+<span class="token comment"># 如果这个数值设置小于1,那么给予最大叠加数量的物品</span>
+<span class="token comment"># 如果超大堆叠没有开启,那么数量大于正常堆叠数量(64)时,将给予1组以上物品.</span>
+<span class="token key atrule">default-stack-size</span><span class="token punctuation">:</span> <span class="token number">-1</span>
+
+<span class="token comment"># 超大堆叠允许玩家堆叠物品超过正常最大堆叠.</span>
+<span class="token comment"># 如果玩家拥有essentials.oversizedstacks权限,当使用 /give 或 /item时可以获得超大堆叠物品.</span>
+<span class="token comment"># 超大堆叠物品的上限是多少?</span>
+<span class="token key atrule">oversized-stacksize</span><span class="token punctuation">:</span> <span class="token number">64</span>
+
+<span class="token comment"># 允许修理附魔盔甲和武器</span>
+<span class="token comment"># 如果设置为false,你仍然可以允许某些玩家修理.</span>
+<span class="token comment"># 使用essentials.repair.enchanted权限</span>
+<span class="token key atrule">repair-enchanted</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 在kits和物品生成时,允许 '不安全的' 附魔.</span>
+<span class="token comment"># 警告: 混乱结合和超过常规等级的附魔可能导致客户端,服务端或者插件崩溃.</span>
+<span class="token key atrule">unsafe-enchantments</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment">#是否想要essentials插件保留 /back 坐标在&quot;teleport listener&quot;?</span>
+<span class="token comment"># 如果你设置为true,一些插件可以获得传送坐标.</span>
+<span class="token key atrule">register-back-in-listener</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment">#玩家登录后,多少秒后可以造成攻击伤害 </span>
+<span class="token key atrule">login-attack-delay</span><span class="token punctuation">:</span> <span class="token number">5</span>
+
+<span class="token comment">#设置最大飞行速度, 速度从 0.1 到 1.0 之间</span>
+<span class="token key atrule">max-fly-speed</span><span class="token punctuation">:</span> <span class="token number">0.8</span>
+
+<span class="token comment">#设置行走最大速度, 速度从 0.1 到 1.0 之间</span>
+<span class="token key atrule">max-walk-speed</span><span class="token punctuation">:</span> <span class="token number">0.8</span>
+
+<span class="token comment">#设置每分钟可以发送的最大邮件数量.</span>
+<span class="token key atrule">mails-per-minute</span><span class="token punctuation">:</span> <span class="token number">1000</span>
+
+<span class="token comment"># 设置/tempban 可以临时封禁的最大时间.</span>
+<span class="token comment"># 设置为 -1 可禁用此功能, 另外 essentials.tempban.unlimited 权限可以覆盖此设置.</span>
+<span class="token key atrule">max-tempban-time</span><span class="token punctuation">:</span> <span class="token number">-1</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |                Essentials 家的设置                   | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token comment"># 允许玩家在白天设置他床所在的位置为家.</span>
+<span class="token key atrule">update-bed-at-daytime</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 设置为 true 将给予玩家跨越世界传送回家的权限</span>
+<span class="token comment"># 这个设置只适用于'/home'命令.</span>
+<span class="token comment"># 对于其他传送命令,给予玩家多世界间传送的权限 essentials.world.&lt;世界名称&gt; 可以允许玩家跨世界传送</span>
+<span class="token key atrule">world-home-permissions</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 允许玩家拥有多个家.</span>
+<span class="token comment"># 玩家拥有多个家需要有essentials.sethome.multiple权限, 默认 'default' 下面.</span>
+<span class="token comment"># 定义不同权限的不同家的数量例如:essentials.sethome.multiple.vip</span>
+<span class="token comment"># 用有 essentials.sethome.multiple.unlimited 权限的玩家将不被此项设置所限制.</span>
+<span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/Multihome</span>
+<span class="token key atrule">sethome-multiple</span><span class="token punctuation">:</span>  
+  <span class="token key atrule">default</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token comment"># essentials.sethome.multiple.vip</span>
+  <span class="token key atrule">vip</span><span class="token punctuation">:</span> <span class="token number">5</span>
+  <span class="token comment"># essentials.sethome.multiple.staff</span>
+  <span class="token key atrule">staff</span><span class="token punctuation">:</span> <span class="token number">10</span>
+
+<span class="token comment"># 设置同意传送超时的时间(以秒为单位).</span>
+<span class="token comment"># 设置为 0 取消该功能.</span>
+<span class="token key atrule">tpa-accept-cancellation</span><span class="token punctuation">:</span> <span class="token number">120</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |               Essentials 经济设置                    | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/Essentials_Economy</span>
+
+<span class="token comment"># 设置玩家第一次登录服务器时拥有的金钱,默认为0.</span>
+<span class="token key atrule">starting-balance</span><span class="token punctuation">:</span> <span class="token number">0</span>
+
+<span class="token comment"># worth-# 定义物品的价格,用来使玩家输入&quot;/sell&quot;后,以这种价格将物品卖给服务器.</span>
+<span class="token comment"># 现在该项设置的文件是worth.yml</span>
+
+<span class="token comment"># 定义玩家每次使用命令时所要花的钱,空格由&quot;-&quot;代替,带有&quot;example&quot;的是例子.</span>
+<span class="token comment">#一些命令例如/repair拥有独立的花费,可以在essentials wiki查看更多信息</span>
+<span class="token key atrule">command-costs</span><span class="token punctuation">:</span>
+  <span class="token comment"># /example costs $1000 PER USE</span>
+  <span class="token comment">#example: 1000</span>
+  <span class="token comment"># /kit tools costs $1500 PER USE</span>
+  <span class="token comment">#kit-tools: 1500</span>
+
+<span class="token comment"># 设置该项为一个你想使用的货币符号(译注:货币符号(双字节)有&quot;￥&quot;、&quot;＄&quot;、&quot;￠&quot;和&quot;￡&quot;等).</span>
+<span class="token key atrule">currency-symbol</span><span class="token punctuation">:</span> <span class="token string">'$'</span>
+
+<span class="token comment"># 设置一个玩家所允许拥有的最大钱数.</span>
+<span class="token comment"># 这个数量最大为10万亿(1个1,13个0),这是由于JAVA的限制.</span>
+<span class="token key atrule">max-money</span><span class="token punctuation">:</span> <span class="token number">10000000000000</span>
+
+<span class="token comment"># 设置一个玩家所允许拥有的最大钱数 (必须大于最大金额的负数).</span>
+<span class="token comment"># 设置为0,将完全禁用透支/贷款.用户需要'essentials.eco.loan&quot;权限,钱数才能低于0.</span>
+<span class="token key atrule">min-money</span><span class="token punctuation">:</span> <span class="token number">-10000</span>
+
+<span class="token comment"># 设置为true来记录所有玩家的交易记录(译注,仅记录Essentials所支持的交易命令和功能).</span>
+<span class="token key atrule">economy-log-enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |                  Essentials 帮助                     | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token comment"># 是否设置输入&quot;/help&quot;时,显示其它插件的命令.</span>
+<span class="token key atrule">non-ess-in-help</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 隐藏没给出权限的插件.</span>
+<span class="token comment"># 你可以添加权限到对应玩家或用户组,使之对其显示.</span>
+<span class="token comment"># 个人权限设置是:essentials.help.&lt;plugin&gt;,任何人有essentials.*或'*'将能看到所有帮助.</span>
+<span class="token comment"># 如果下面的设置开启,你可以使用否定命令来移除权限,之后该插件的帮助将不会被看到.</span>
+<span class="token key atrule">hide-permissionless-help</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |              EssentialsChat 聊天设置                 | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token key atrule">chat</span><span class="token punctuation">:</span>
+
+<span class="token comment"># 设置聊天半径,如果安装了EssentialsChat,这将设置玩家喊话的可见范围,以格为单位.设置为0则允许全图聊天.</span>
+<span class="token comment"># 注意开启了间谍模式(权限:essentials.chat.spy)的玩家将看到所有聊天内容,无视该设置.</span>
+<span class="token comment"># 拥有&quot;essentials.chat.shout&quot;权限的玩家可以忽视该设置,只要在聊天内容前面加上&quot;!&quot;符号即可(小写感叹号)；</span>
+<span class="token comment"># 或者拥有&quot;essentials.chat.question&quot;权限的玩家可以忽视该设置,只要在聊天内容前面加上&quot;?&quot;符号即可(小写问号)；</span>
+<span class="token comment"># 你可以添加使用上两行方法的花销,在上经济设置中的&quot;command-costs&quot;下添加&quot;chat-shout&quot;和&quot;chat-question&quot;的设置即可.</span>
+  <span class="token key atrule">radius</span><span class="token punctuation">:</span> <span class="token number">0</span>
+
+  <span class="token comment"># 聊天格式,可以有两种,你可以定义所有聊天为标准格式.</span>
+  <span class="token comment"># 或者你可以给一个用户组特定的聊天格式,提供一些额外的变化.</span>
+  <span class="token comment"># 是否设置为默认聊天格式,需要与ichat插件兼容.</span>
+  <span class="token comment"># 想了解更多的默认聊天格式的信息,请查看wiki: http://wiki.ess3.net/wiki/Chat_Formatting</span>
+
+  <span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">'&lt;{DISPLAYNAME}&gt; {MESSAGE}'</span>
+  <span class="token comment">#format: '&amp;7[{GROUP}]&amp;r {DISPLAYNAME}&amp;7:&amp;r {MESSAGE}'</span>
+
+  <span class="token key atrule">group-formats</span><span class="token punctuation">:</span>
+  <span class="token comment">#  Default: '{WORLDNAME} {DISPLAYNAME}&amp;7:&amp;r {MESSAGE}'</span>
+  <span class="token comment">#  Admins: '{WORLDNAME} &amp;c[{GROUP}]&amp;r {DISPLAYNAME}&amp;7:&amp;c {MESSAGE}'</span>
+
+  <span class="token comment"># 你也可以设置特定组别的聊天格式,删除前面的&quot;#&quot;号来启用.</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |                 Essentials 保护                      | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token key atrule">protect</span><span class="token punctuation">:</span>
+
+  <span class="token comment"># 总体的物理现象或行为的设置</span>
+  <span class="token key atrule">prevent</span><span class="token punctuation">:</span>                                 <span class="token comment"># 阻止以下现象(译注:true就是阻止,false是允许,这里需要注意一下)</span>
+    <span class="token key atrule">lava-flow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                       <span class="token comment"># 阻止 岩浆的流动</span>
+    <span class="token key atrule">water-flow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                      <span class="token comment"># 阻止 水的流动</span>
+    <span class="token key atrule">water-bucket-flow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment"># 阻止 水桶水的流动</span>
+    <span class="token key atrule">fire-spread</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>                      <span class="token comment"># 阻止 火的传播</span>
+    <span class="token key atrule">lava-fire-spread</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>                 <span class="token comment"># 阻止 岩浆引起的火的传播</span>
+    <span class="token key atrule">flint-fire</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                      <span class="token comment"># 阻止 打火石产生火</span>
+    <span class="token key atrule">lightning-fire-spread</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>            <span class="token comment"># 阻止 闪电引起的火的传播</span>
+    <span class="token key atrule">portal-creation</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment"># 阻止 传送门的创造</span>
+    <span class="token key atrule">tnt-explosion</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                   <span class="token comment"># 阻止 TNT的爆炸</span>
+    <span class="token key atrule">tnt-playerdamage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                <span class="token comment"># 阻止 TNT对玩家造成伤害</span>
+    <span class="token key atrule">tnt-minecart-explosion</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>          <span class="token comment"># 阻止 TNT矿车 爆炸</span>
+    <span class="token key atrule">tnt-minecart-playerdamage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>       <span class="token comment"># 阻止 TNT矿车 对玩家造成伤害</span>
+    <span class="token key atrule">fireball-explosion</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>               <span class="token comment"># 阻止 火球的爆炸(译注:恶魂发射的火球)</span>
+    <span class="token key atrule">fireball-fire</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                   <span class="token comment"># 阻止 火球的燃烧</span>
+    <span class="token key atrule">fireball-playerdamage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>           <span class="token comment"># 阻止 火球对玩家造成伤害</span>
+    <span class="token key atrule">witherskull-explosion</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>            <span class="token comment"># 阻止 凋零攻击的爆炸</span>
+    <span class="token key atrule">witherskull-playerdamage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>        <span class="token comment"># 阻止 凋零攻击对玩家照成伤害</span>
+    <span class="token key atrule">wither-spawnexplosion</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>            <span class="token comment"># 阻止 凋零出生时的爆炸</span>
+    <span class="token key atrule">wither-blockreplace</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>              <span class="token comment"># 阻止 凋零破坏方块</span>
+    <span class="token key atrule">creeper-explosion</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment"># 阻止 爬行者的爆炸</span>
+    <span class="token key atrule">creeper-playerdamage</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>            <span class="token comment"># 阻止 爬行者对玩家造成伤害</span>
+    <span class="token key atrule">creeper-blockdamage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>              <span class="token comment"># 阻止 爬行者炸毁方块</span>
+    <span class="token key atrule">enderdragon-blockdamage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>          <span class="token comment"># 阻止 末影龙破坏方块</span>
+    <span class="token key atrule">enderman-pickup</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment"># 阻止 末影人拾取方块</span>
+    <span class="token key atrule">villager-death</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                  <span class="token comment"># 阻止 村民被杀死</span>
+    <span class="token comment"># 若改为true,怪物将不会跟随玩家</span>
+    <span class="token comment"># 具有权限&quot;essentials.protect.entitytarget.bypass&quot;的玩家将无视该项.</span>
+    <span class="token key atrule">entitytarget</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># 阻止生物的出生(true就是阻止,false是允许)</span>
+    <span class="token key atrule">spawn</span><span class="token punctuation">:</span>
+      <span class="token key atrule">creeper</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>             <span class="token comment">#阻止 爬行者     的生成</span>
+      <span class="token key atrule">skeleton</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>            <span class="token comment">#阻止 骷髅       的生成</span>
+      <span class="token key atrule">spider</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>              <span class="token comment">#阻止 蜘蛛       的生成</span>
+      <span class="token key atrule">giant</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 巨型僵尸   的生成</span>
+      <span class="token key atrule">zombie</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>              <span class="token comment">#阻止 僵尸       的生成</span>
+      <span class="token key atrule">slime</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 史莱姆     的生成</span>
+      <span class="token key atrule">ghast</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 恶魂       的生成</span>
+      <span class="token key atrule">pig_zombie</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>          <span class="token comment">#阻止 僵尸猪人   的生成</span>
+      <span class="token key atrule">enderman</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>            <span class="token comment">#阻止 末影人     的生成</span>
+      <span class="token key atrule">cave_spider</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>         <span class="token comment">#阻止 洞穴蜘蛛   的生成</span>
+      <span class="token key atrule">silverfish</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>          <span class="token comment">#阻止 蠹虫       的生成</span>
+      <span class="token key atrule">blaze</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 烈焰人     的生成</span>
+      <span class="token key atrule">magma_cube</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>          <span class="token comment">#阻止 岩浆史莱姆 的生成</span>
+      <span class="token key atrule">ender_dragon</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>        <span class="token comment">#阻止 末影龙     的生成</span>
+      <span class="token key atrule">pig</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment">#阻止 猪         的生成</span>
+      <span class="token key atrule">sheep</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 羊         的生成</span>
+      <span class="token key atrule">cow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment">#阻止 牛         的生成</span>
+      <span class="token key atrule">chicken</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>             <span class="token comment">#阻止 鸡         的生成</span>
+      <span class="token key atrule">squid</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 乌贼       的生成</span>
+      <span class="token key atrule">wolf</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                <span class="token comment">#阻止 狼         的生成</span>
+      <span class="token key atrule">mushroom_cow</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>        <span class="token comment">#阻止 哞菇       的生成</span>
+      <span class="token key atrule">snowman</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>             <span class="token comment">#阻止 雪人       的生成</span>
+      <span class="token key atrule">ocelot</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>              <span class="token comment">#阻止 豹猫       的生成</span>
+      <span class="token key atrule">iron_golem</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>          <span class="token comment">#阻止 铁傀儡     的生成</span>
+      <span class="token key atrule">villager</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>            <span class="token comment">#阻止 村民       的生成</span>
+      <span class="token key atrule">wither</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>              <span class="token comment">#阻止 凋零       的生成</span>
+      <span class="token key atrule">bat</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                 <span class="token comment">#阻止 蝙蝠       的生成</span>
+      <span class="token key atrule">witch</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>               <span class="token comment">#阻止 女巫       的生成</span>
+
+  <span class="token comment"># 爬行着可以爆炸的最大高度,-1将允许它在任何位置爆炸.</span>
+  <span class="token comment"># 如果你想要彻底阻止它的爆炸的话,设置上面的prevent一栏中的creeper-explosion为true.</span>
+  <span class="token key atrule">creeper</span><span class="token punctuation">:</span>
+    <span class="token key atrule">max-height</span><span class="token punctuation">:</span> <span class="token number">-1</span>
+
+  <span class="token comment"># 取消几种默认的物理现象或行为(译注:伤害大多数对玩家而言,对怪物仍有效)</span>
+  <span class="token key atrule">disable</span><span class="token punctuation">:</span>
+    <span class="token comment"># 取消掉落伤害</span>
+    <span class="token key atrule">fall</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 拥有&quot;essentials.protect.pvp&quot;权限的玩家将仍可以攻击其他玩家</span>
+    <span class="token comment"># 若设置为true,没有上述权限的玩家将无法攻击其他玩家</span>
+    <span class="token key atrule">pvp</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 取消溺水和窒息的伤害</span>
+    <span class="token comment"># (分为两项,通常,你会想要设置两项为同样设置)</span>
+    <span class="token key atrule">drown</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>              <span class="token comment"># 取消溺水伤害</span>
+    <span class="token key atrule">suffocate</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>          <span class="token comment"># 取消窒息伤害(被埋在方块中,例如沙子)</span>
+
+    <span class="token comment"># 取消岩浆伤害,但掉落岩浆中的物品将仍被烧成灰烬</span>
+    <span class="token key atrule">lavadmg</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 取消弓箭伤害</span>
+    <span class="token key atrule">projectiles</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 取消仙人掌伤害</span>
+    <span class="token key atrule">contactdmg</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 取消火焰伤害</span>
+    <span class="token key atrule">firedmg</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 取消被雷劈的伤害</span>
+    <span class="token key atrule">lightning</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    
+    <span class="token comment"># 取消&quot;凋零&quot;效果伤害</span>
+    <span class="token key atrule">wither</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+    <span class="token comment"># 禁用某些天气</span>
+    <span class="token key atrule">weather</span><span class="token punctuation">:</span>
+      <span class="token key atrule">storm</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                         <span class="token comment"># 禁用雨天,寒冷生态环境为雪天</span>
+      <span class="token key atrule">thunder</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                       <span class="token comment"># 禁用雷电</span>
+      <span class="token key atrule">lightning</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>                     <span class="token comment"># 禁用闪电</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |               Essentials 建筑控制                    | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+  <span class="token comment"># Disable various default physics and behaviors</span>
+  <span class="token comment"># 查看更多信息,请访问 http://wiki.ess3.net/wiki/AntiBuild</span>
+
+    <span class="token comment"># 玩家是否可以建造: </span>
+    <span class="token comment"># 设置为 true 可以禁用那些没有权限玩家的建造</span>
+    <span class="token comment"># 设置为 false 将使 EssentialsAntiBuild 从不阻止玩家建造</span>
+    <span class="token key atrule">build</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+    <span class="token comment"># 玩家是否可以使用物品: </span>
+    <span class="token comment"># 设置为 true 可以禁用那些没有权限玩家的使用物品</span>
+    <span class="token comment"># 设置为 false 将使 EssentialsAntiBuild 从不阻止玩家使用物品</span>
+    <span class="token key atrule">use</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+    <span class="token comment"># 玩家无法建造时是否提示玩家</span>
+    <span class="token key atrule">warn-on-build-disallow</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+  <span class="token comment"># 当以下方块被放置或破坏,或物品被使用时会出现警告</span>
+  <span class="token comment"># 你加载了一次Essentials后,就可以在plugins/Essentials/items.csv中找到物品ID列表.</span>
+  <span class="token comment"># 10 = 动态岩浆 :: 11 = 静态岩浆 :: 46 = TNT :: 327 = 岩浆桶</span>
+  <span class="token key atrule">alert</span><span class="token punctuation">:</span>
+    <span class="token key atrule">on-placement</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">46</span><span class="token punctuation">,</span><span class="token number">327</span>
+    <span class="token key atrule">on-use</span><span class="token punctuation">:</span> <span class="token number">327</span>
+    <span class="token key atrule">on-break</span><span class="token punctuation">:</span>
+
+  <span class="token key atrule">blacklist</span><span class="token punctuation">:</span>
+
+    <span class="token comment"># 阻止玩家放置以下方块</span>
+    <span class="token key atrule">placement</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">46</span><span class="token punctuation">,</span><span class="token number">327</span>
+
+    <span class="token comment"># 阻止玩家使用以下物品</span>
+    <span class="token key atrule">usage</span><span class="token punctuation">:</span> <span class="token number">327</span>
+
+    <span class="token comment"># 阻止玩家破坏以下方块</span>
+    <span class="token key atrule">break</span><span class="token punctuation">:</span>
+
+    <span class="token comment"># 阻止活塞推动以下方块</span>
+    <span class="token key atrule">piston</span><span class="token punctuation">:</span>
+
+<span class="token comment">############################################################</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment"># |         Essentials 出生设置 / 新玩家设置             | #</span>
+<span class="token comment"># +------------------------------------------------------+ #</span>
+<span class="token comment">############################################################</span>
+
+<span class="token key atrule">newbies</span><span class="token punctuation">:</span>
+  <span class="token comment"># 是否显示某玩家第一次进服时的欢迎信息</span>
+  <span class="token comment"># 若开启,编辑内容,{DISPLAYNAME}将自动转换为玩家名字.</span>
+  <span class="token comment"># 若取消,改为''</span>
+  <span class="token comment">#announce-format: ''</span>
+  <span class="token key atrule">announce-format</span><span class="token punctuation">:</span> <span class="token string">'&amp;d欢迎新玩家{DISPLAYNAME}来到服务器!'</span>
+
+  <span class="token comment"># 当我们第一次出生时,出现在哪个出生点？</span>
+  <span class="token comment"># 如果你想要使用世界自带的出生点,则设置为&quot;none&quot;.</span>
+  <span class="token key atrule">spawnpoint</span><span class="token punctuation">:</span> newbies
+
+  <span class="token comment"># 是否想要玩家第一次进入服务器时赠送新手礼物? 设置为 ''禁用此功能.</span>
+  <span class="token comment"># 这个赠送不会花费金钱,也可以给予权限.</span>
+  <span class="token comment">#kit: ''</span>
+  <span class="token key atrule">kit</span><span class="token punctuation">:</span> tools
+
+<span class="token comment"># 设置为 lowest, 如果你想使用 Multiverse 处理重生.</span>
+<span class="token comment"># 设置为 high, 如果你想使用 EssentialsSpawn插件 处理重生.</span>
+<span class="token comment"># 设置为 highest, 如果你想强制使用 EssentialsSpawn插件 处理重生.</span>
+<span class="token key atrule">respawn-listener-priority</span><span class="token punctuation">:</span> lowest
+
+<span class="token comment"># 如果设置为true,玩家死后会重生在自己家,而不是出生点.</span>
+<span class="token key atrule">respawn-at-home</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+
+<span class="token comment"># 文件结尾 &lt;-- 到此, 你已经完成了ESS的设置.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br><span class="line-number">428</span><br><span class="line-number">429</span><br><span class="line-number">430</span><br><span class="line-number">431</span><br><span class="line-number">432</span><br><span class="line-number">433</span><br><span class="line-number">434</span><br><span class="line-number">435</span><br><span class="line-number">436</span><br><span class="line-number">437</span><br><span class="line-number">438</span><br><span class="line-number">439</span><br><span class="line-number">440</span><br><span class="line-number">441</span><br><span class="line-number">442</span><br><span class="line-number">443</span><br><span class="line-number">444</span><br><span class="line-number">445</span><br><span class="line-number">446</span><br><span class="line-number">447</span><br><span class="line-number">448</span><br><span class="line-number">449</span><br><span class="line-number">450</span><br><span class="line-number">451</span><br><span class="line-number">452</span><br><span class="line-number">453</span><br><span class="line-number">454</span><br><span class="line-number">455</span><br><span class="line-number">456</span><br><span class="line-number">457</span><br><span class="line-number">458</span><br><span class="line-number">459</span><br><span class="line-number">460</span><br><span class="line-number">461</span><br><span class="line-number">462</span><br><span class="line-number">463</span><br><span class="line-number">464</span><br><span class="line-number">465</span><br><span class="line-number">466</span><br><span class="line-number">467</span><br><span class="line-number">468</span><br><span class="line-number">469</span><br><span class="line-number">470</span><br><span class="line-number">471</span><br><span class="line-number">472</span><br><span class="line-number">473</span><br><span class="line-number">474</span><br><span class="line-number">475</span><br><span class="line-number">476</span><br><span class="line-number">477</span><br><span class="line-number">478</span><br><span class="line-number">479</span><br><span class="line-number">480</span><br><span class="line-number">481</span><br><span class="line-number">482</span><br><span class="line-number">483</span><br><span class="line-number">484</span><br><span class="line-number">485</span><br><span class="line-number">486</span><br><span class="line-number">487</span><br><span class="line-number">488</span><br><span class="line-number">489</span><br><span class="line-number">490</span><br><span class="line-number">491</span><br><span class="line-number">492</span><br><span class="line-number">493</span><br><span class="line-number">494</span><br><span class="line-number">495</span><br><span class="line-number">496</span><br><span class="line-number">497</span><br><span class="line-number">498</span><br><span class="line-number">499</span><br><span class="line-number">500</span><br><span class="line-number">501</span><br><span class="line-number">502</span><br><span class="line-number">503</span><br><span class="line-number">504</span><br><span class="line-number">505</span><br><span class="line-number">506</span><br><span class="line-number">507</span><br><span class="line-number">508</span><br><span class="line-number">509</span><br><span class="line-number">510</span><br><span class="line-number">511</span><br><span class="line-number">512</span><br><span class="line-number">513</span><br><span class="line-number">514</span><br><span class="line-number">515</span><br><span class="line-number">516</span><br><span class="line-number">517</span><br><span class="line-number">518</span><br><span class="line-number">519</span><br><span class="line-number">520</span><br><span class="line-number">521</span><br><span class="line-number">522</span><br><span class="line-number">523</span><br><span class="line-number">524</span><br><span class="line-number">525</span><br><span class="line-number">526</span><br><span class="line-number">527</span><br><span class="line-number">528</span><br><span class="line-number">529</span><br><span class="line-number">530</span><br><span class="line-number">531</span><br><span class="line-number">532</span><br><span class="line-number">533</span><br><span class="line-number">534</span><br><span class="line-number">535</span><br><span class="line-number">536</span><br><span class="line-number">537</span><br><span class="line-number">538</span><br><span class="line-number">539</span><br><span class="line-number">540</span><br><span class="line-number">541</span><br><span class="line-number">542</span><br><span class="line-number">543</span><br><span class="line-number">544</span><br><span class="line-number">545</span><br><span class="line-number">546</span><br><span class="line-number">547</span><br><span class="line-number">548</span><br><span class="line-number">549</span><br><span class="line-number">550</span><br><span class="line-number">551</span><br><span class="line-number">552</span><br><span class="line-number">553</span><br><span class="line-number">554</span><br><span class="line-number">555</span><br><span class="line-number">556</span><br><span class="line-number">557</span><br><span class="line-number">558</span><br><span class="line-number">559</span><br><span class="line-number">560</span><br><span class="line-number">561</span><br><span class="line-number">562</span><br><span class="line-number">563</span><br><span class="line-number">564</span><br><span class="line-number">565</span><br><span class="line-number">566</span><br><span class="line-number">567</span><br><span class="line-number">568</span><br><span class="line-number">569</span><br><span class="line-number">570</span><br><span class="line-number">571</span><br><span class="line-number">572</span><br><span class="line-number">573</span><br><span class="line-number">574</span><br><span class="line-number">575</span><br><span class="line-number">576</span><br><span class="line-number">577</span><br><span class="line-number">578</span><br><span class="line-number">579</span><br><span class="line-number">580</span><br><span class="line-number">581</span><br><span class="line-number">582</span><br><span class="line-number">583</span><br><span class="line-number">584</span><br><span class="line-number">585</span><br><span class="line-number">586</span><br><span class="line-number">587</span><br><span class="line-number">588</span><br><span class="line-number">589</span><br><span class="line-number">590</span><br><span class="line-number">591</span><br><span class="line-number">592</span><br><span class="line-number">593</span><br><span class="line-number">594</span><br><span class="line-number">595</span><br><span class="line-number">596</span><br><span class="line-number">597</span><br><span class="line-number">598</span><br><span class="line-number">599</span><br><span class="line-number">600</span><br><span class="line-number">601</span><br><span class="line-number">602</span><br><span class="line-number">603</span><br><span class="line-number">604</span><br><span class="line-number">605</span><br><span class="line-number">606</span><br><span class="line-number">607</span><br><span class="line-number">608</span><br><span class="line-number">609</span><br><span class="line-number">610</span><br><span class="line-number">611</span><br><span class="line-number">612</span><br><span class="line-number">613</span><br><span class="line-number">614</span><br><span class="line-number">615</span><br><span class="line-number">616</span><br><span class="line-number">617</span><br><span class="line-number">618</span><br><span class="line-number">619</span><br><span class="line-number">620</span><br><span class="line-number">621</span><br><span class="line-number">622</span><br><span class="line-number">623</span><br><span class="line-number">624</span><br><span class="line-number">625</span><br><span class="line-number">626</span><br><span class="line-number">627</span><br><span class="line-number">628</span><br><span class="line-number">629</span><br><span class="line-number">630</span><br><span class="line-number">631</span><br><span class="line-number">632</span><br><span class="line-number">633</span><br><span class="line-number">634</span><br><span class="line-number">635</span><br><span class="line-number">636</span><br><span class="line-number">637</span><br><span class="line-number">638</span><br><span class="line-number">639</span><br><span class="line-number">640</span><br><span class="line-number">641</span><br><span class="line-number">642</span><br><span class="line-number">643</span><br><span class="line-number">644</span><br><span class="line-number">645</span><br><span class="line-number">646</span><br><span class="line-number">647</span><br><span class="line-number">648</span><br><span class="line-number">649</span><br><span class="line-number">650</span><br><span class="line-number">651</span><br><span class="line-number">652</span><br><span class="line-number">653</span><br><span class="line-number">654</span><br><span class="line-number">655</span><br><span class="line-number">656</span><br><span class="line-number">657</span><br><span class="line-number">658</span><br><span class="line-number">659</span><br><span class="line-number">660</span><br><span class="line-number">661</span><br><span class="line-number">662</span><br><span class="line-number">663</span><br><span class="line-number">664</span><br><span class="line-number">665</span><br><span class="line-number">666</span><br><span class="line-number">667</span><br><span class="line-number">668</span><br><span class="line-number">669</span><br><span class="line-number">670</span><br><span class="line-number">671</span><br><span class="line-number">672</span><br><span class="line-number">673</span><br><span class="line-number">674</span><br><span class="line-number">675</span><br><span class="line-number">676</span><br><span class="line-number">677</span><br><span class="line-number">678</span><br><span class="line-number">679</span><br><span class="line-number">680</span><br><span class="line-number">681</span><br><span class="line-number">682</span><br><span class="line-number">683</span><br><span class="line-number">684</span><br><span class="line-number">685</span><br><span class="line-number">686</span><br><span class="line-number">687</span><br><span class="line-number">688</span><br><span class="line-number">689</span><br><span class="line-number">690</span><br><span class="line-number">691</span><br><span class="line-number">692</span><br><span class="line-number">693</span><br><span class="line-number">694</span><br><span class="line-number">695</span><br><span class="line-number">696</span><br><span class="line-number">697</span><br></div></div><h2 id="相关功能教程"><a href="#相关功能教程" class="header-anchor">#</a> 相关功能教程</h2> <h3 id="_1-备份设置"><a href="#_1-备份设置" class="header-anchor">#</a> 1.备份设置</h3> <p>在保存服务器地图方面，我们一般会使用AutoSaveWorld这个插件，但是其实Essentials本身就有地图备份相关的功能，此功能已经能满足大部分服主的要求，而不需要去安装新的插件。</p> <p>为了使用Essentials的备份功能我们首先得在config文件中开启相关功能</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">backup</span><span class="token punctuation">:</span>
+  <span class="token key atrule">interval</span><span class="token punctuation">:</span> <span class="token number">60</span>
+  <span class="token key atrule">command</span><span class="token punctuation">:</span> <span class="token string">'save-all'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这样服务器会每60分钟进行一次备份</p> <h3 id="_2-help指令相关设置"><a href="#_2-help指令相关设置" class="header-anchor">#</a> 2.help指令相关设置</h3> <p>/help对于玩家来说是个比较有用的指令，当你忘记某个指令时可以输入这个来查询，但是现在help指令渐渐成为了一个比较鸡肋的指令，因为过多的插件导致help列出的指令过多，因而当你要想查找某个指令时你得花费大量的时间一页一页的找。如今Essentials插件的help设置能让你的help列表彻底脱胎换骨。</p> <p>Essentials插件提供了3种设置方式以提供不同的/help显示效果。Essentials会尽可能的遍历所有服务器插件然后获取其中所有的指令，但是如果插件未按标准编写，即在plugin.yml中没有注册过的指令是不会出现在help列表中的</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">non-ess-in-help</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">hide-permissionless-help</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这种模式help会显示所有玩家有权限的指令</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>essentials.help.&lt;插件名<span class="token punctuation">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>你也可以这样来给玩家没有权限插件的help</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">non-ess-in-help</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">hide-permissionless-help</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这样会显示所有指令</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">non-ess-in-help</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在此模式下玩家只能看到一些基础的并且玩家有权限使用的指令</p> <h4 id="高级定制"><a href="#高级定制" class="header-anchor">#</a> 高级定制</h4> <p>如果这样的设置你还不满足，你想更进一步的定制/help指令，Essentials提供了一个更加强大的功能</p> <p>你可以通过在Essentials插件目录中添加一个help.txt来自定义/help指令显示的内容。help.txt中的内容将会完全取代默认的help指令列表</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment">#欢迎</span>
+欢迎你<span class="token punctuation">{</span>PLAYER<span class="token punctuation">}</span>
+<span class="token key atrule">来自</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>ADDRESS<span class="token punctuation">}</span>
+服务器IP：<span class="token punctuation">{</span>IP<span class="token punctuation">}</span>
+你现在的存款：<span class="token punctuation">{</span>BALANCE<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><code>#欢迎</code> 代表章节名称（每个章节名称前面必须加#）玩家输入/help 欢迎</p> <p>(help.txt必须以UTF-8无BOM编码保存)<br>
+你可以定义多个章节来做到不同的章节显示不同的插件指令<br>
+而且完美支持所有颜色代码<br>
+这样玩家就不用面对那杂乱无章的指令列表了<br>
+在编辑help.txt时可以添加如下变量</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">玩家展示名称</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>PLAYER<span class="token punctuation">}</span>
+
+<span class="token key atrule">用户名</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>USERNAME<span class="token punctuation">}</span>
+
+<span class="token key atrule">服务器IP</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>IP<span class="token punctuation">}</span>
+
+<span class="token key atrule">玩家IP</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>ADDRESS<span class="token punctuation">}</span>
+
+<span class="token key atrule">金钱</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>BALANCE<span class="token punctuation">}</span>
+
+<span class="token key atrule">未读email</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>MAILS<span class="token punctuation">}</span>
+
+<span class="token key atrule">当前世界名</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>WORLD<span class="token punctuation">}</span>
+
+<span class="token key atrule">世界列表</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>WORLDS<span class="token punctuation">}</span>
+
+<span class="token key atrule">在线玩家数</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>ONLINE<span class="token punctuation">}</span>
+
+<span class="token key atrule">特殊玩家</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>UNIQUE<span class="token punctuation">}</span>
+
+<span class="token key atrule">玩家列表</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>PLAYERLIST<span class="token punctuation">}</span>
+
+<span class="token key atrule">服务器时间</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>TIME<span class="token punctuation">}</span>
+
+<span class="token key atrule">服务器日期</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>DATE<span class="token punctuation">}</span>
+
+<span class="token key atrule">游戏中PM/AM</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>WORLDTIME12<span class="token punctuation">}</span>
+
+<span class="token key atrule">游戏中时间</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>WORLDTIME24<span class="token punctuation">}</span>
+
+<span class="token key atrule">游戏中日期</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>WORLDDATE<span class="token punctuation">}</span>
+
+<span class="token key atrule">插件列表</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>PLUGINS<span class="token punctuation">}</span>
+
+<span class="token key atrule">bukkit版本</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>VERSION<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="_3-kits工具包相关设置"><a href="#_3-kits工具包相关设置" class="header-anchor">#</a> 3.kits工具包相关设置</h3> <p>kit工具包是Essentials的一个重要功能，你可以用它来发放新手礼包，发放奖励甚至用它来做个系统商店都是可以的。</p> <p>熟练的使用kit相关功能可以使你避免在服务器中再安装不必要的插件。</p> <p>首先先是kit每个工具包的格式</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">kits</span><span class="token punctuation">:</span>
+  &lt;kit name<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> &lt;delay between usage<span class="token punctuation">&gt;</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> &lt;item number<span class="token punctuation">&gt;</span> &lt;amount<span class="token punctuation">&gt;</span> &lt;meta<span class="token punctuation">&gt;</span>
+      <span class="token punctuation">-</span> &lt;item number<span class="token punctuation">&gt;</span> &lt;amount<span class="token punctuation">&gt;</span> &lt;meta<span class="token punctuation">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>另附上中文config文件内容</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">kits</span><span class="token punctuation">:</span>
+  <span class="token key atrule">tools</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 272 1
+      <span class="token punctuation">-</span> 273 1
+      <span class="token punctuation">-</span> 274 1
+      <span class="token punctuation">-</span> 275 1
+  <span class="token key atrule">dtools</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">600</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 278 1 efficiency<span class="token punctuation">:</span>1 durability<span class="token punctuation">:</span>1 fortune<span class="token punctuation">:</span>1 name<span class="token punctuation">:</span><span class="token important">&amp;4Giga_Drill_Breaker</span> lore<span class="token punctuation">:</span>这钻头是突破天际的钻头
+      <span class="token punctuation">-</span> 277 1 digspeed<span class="token punctuation">:</span>3 name<span class="token punctuation">:</span>矮人 lore<span class="token punctuation">:</span>挖掘<span class="token punctuation">|</span>挖掘<span class="token punctuation">|</span>挖洞
+      <span class="token punctuation">-</span> 298 1 color<span class="token punctuation">:</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span>255 name<span class="token punctuation">:</span>白色的帽子 lore<span class="token punctuation">:</span>美好的一天<span class="token punctuation">,</span>美好的一天
+      <span class="token punctuation">-</span> 279<span class="token punctuation">:</span>780 1
+  <span class="token key atrule">notch</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">6000</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 397<span class="token punctuation">:</span>3 1 player<span class="token punctuation">:</span>Notch
+  <span class="token key atrule">color</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">6000</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 387 1 title<span class="token punctuation">:</span><span class="token important">&amp;4书_&amp;9与_&amp;6颜色</span> author<span class="token punctuation">:</span>Essentials lore<span class="token punctuation">:</span>游戏内的颜色代码 book<span class="token punctuation">:</span>颜色
+  <span class="token key atrule">firework</span><span class="token punctuation">:</span>
+    <span class="token key atrule">delay</span><span class="token punctuation">:</span> <span class="token number">6000</span>
+    <span class="token key atrule">items</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 401 1 name<span class="token punctuation">:</span>愤怒的苦力帕 color<span class="token punctuation">:</span>red fade<span class="token punctuation">:</span>green type<span class="token punctuation">:</span>creeper power<span class="token punctuation">:</span><span class="token number">1</span>
+      <span class="token punctuation">-</span> 401 1 name<span class="token punctuation">:</span>星空 color<span class="token punctuation">:</span>yellow<span class="token punctuation">,</span>orange fade<span class="token punctuation">:</span>blue type<span class="token punctuation">:</span>star effect<span class="token punctuation">:</span>trail<span class="token punctuation">,</span>twinkle power<span class="token punctuation">:</span><span class="token number">1</span>
+      <span class="token punctuation">-</span> 401 2 name<span class="token punctuation">:</span>太阳风 color<span class="token punctuation">:</span>yellow<span class="token punctuation">,</span>orange fade<span class="token punctuation">:</span>red shape<span class="token punctuation">:</span>large effect<span class="token punctuation">:</span>twinkle color<span class="token punctuation">:</span>yellow<span class="token punctuation">,</span>orange fade<span class="token punctuation">:</span>red shape<span class="token punctuation">:</span>ball effect<span class="token punctuation">:</span>trail color<span class="token punctuation">:</span>red<span class="token punctuation">,</span>purple fade<span class="token punctuation">:</span>pink shape<span class="token punctuation">:</span>star effect<span class="token punctuation">:</span>trail power<span class="token punctuation">:</span><span class="token number">1</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>1.delay代表的是领取此工具包的延迟 如果你设置为3600那么这个工具包只能每小时领一次如果你设置为 -1 那么这个工具包只能领取一次。<br>
+2.你可以可以在config中对每个工具包定义他的使用价格如</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">kit-tools</span><span class="token punctuation">:</span> <span class="token number">100</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>那么使用tools这个工具包将花费玩家100$</p> <p>3.由以上两个示例我们可以看到kit工具包指令支持几乎mc中所有的道具。不过你也许不知道kit工具包中的道具也是支持变量的如</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>      <span class="token punctuation">-</span> 278 1 efficiency<span class="token punctuation">:</span>1 durability<span class="token punctuation">:</span>1 fortune<span class="token punctuation">:</span>1 name<span class="token punctuation">:</span><span class="token important">&amp;4Giga_Drill_Breaker</span> lore<span class="token punctuation">:</span><span class="token punctuation">{</span>PLAYER<span class="token punctuation">}</span>的超级钻石镐
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>3.kit工具包的权限设定也非常的方便你可以给予玩家以下权限，来单独限制玩家可使用的工具包</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>essentials.kits.&lt;kitname<span class="token punctuation">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_3-essentials的木牌控制相关"><a href="#_3-essentials的木牌控制相关" class="header-anchor">#</a> 3.Essentials的木牌控制相关</h3> <p>领取工具包需要一个个输入指令，这样子未免有些太麻烦了，不过不要紧Essentials提供了完整的木牌系统来简化你的操作。</p> <p>为了启用木牌领取工具包你首先得在config文件中找到</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">enabledSigns</span><span class="token punctuation">:</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>并将 - kit 前面的#去除，然后重启插件。</p> <p>牌子输入格式如下</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code><span class="token hr punctuation">------------------</span>
+|    [Kit]       |
+|    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>KitName</span><span class="token punctuation">&gt;</span></span>   |
+|    [Group]     |
+<span class="token title important">|    [Cost]      |
+<span class="token punctuation">------------------</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><code>&lt;kitName&gt;</code>代表了工具包名称，如tools</p> <p><code>[group]</code>代表了可使用这个牌子的用户组，如果不设置那么根据玩家是否拥有essentials.kits.</p> <p><code>&lt;kitname&gt;</code> 权限来判断玩家是否可以使用牌子获取工具包.或者你可以在这一项输入 Everyone 代表所有玩家都可以使用。</p> <p><code>[cost]</code>代表了使用的花费如果不设置默认为免费</p> <h3 id="_4-建筑控制相关设置"><a href="#_4-建筑控制相关设置" class="header-anchor">#</a> 4.建筑控制相关设置</h3> <p>权限系统基本是每个服主的必修课，Essentials的建筑控制正是基于权限系统对玩家一切使用方块的行为进行限制，从而可以使服主完全限制玩家的行为，包括放置，破坏，扔掉，拾取，使用指定方块，并且可以限制玩家与指定方块交互，如限制玩家使用按钮，开关等。</p> <p>首先是最基本的建筑权限</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>essentials.build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>给予玩家此权限代表了玩家可以使用并放置所有方块。</p> <p>如果当一个玩家没有 Essentials.build权限或者 build: false那么Essentials接着会检查如下权限</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>essentials.build.place.&lt;id<span class="token punctuation">&gt;</span>
+ essentials.build.place.&lt;id<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>&lt;data<span class="token punctuation">&gt;</span>
+ essentials.build.break.&lt;id<span class="token punctuation">&gt;</span>
+ essentials.build.break.&lt;id<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>&lt;data<span class="token punctuation">&gt;</span>
+ essentials.build.interact.&lt;id<span class="token punctuation">&gt;</span>
+ essentials.build.interact.&lt;id<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>&lt;data<span class="token punctuation">&gt;</span>
+ essentials.build.craft.&lt;id<span class="token punctuation">&gt;</span>
+ essentials.build.craft.&lt;id<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>&lt;data<span class="token punctuation">&gt;</span>
+ essentials.build.pickup.&lt;id<span class="token punctuation">&gt;</span>
+ essentials.build.pickup.&lt;id<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>&lt;data<span class="token punctuation">&gt;</span>
+ essentials.build.drop.&lt;id<span class="token punctuation">&gt;</span>
+ essentials.build.drop.&lt;id<span class="token punctuation">&gt;</span><span class="token punctuation">:</span>&lt;data<span class="token punctuation">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>以上都是最基础的英文单词，相信大家都看的懂我就不一个个翻译了。</p> <p>唯一需要解释的是 interact 权限 这代表了玩家与方块交互 例如使用按钮等。</p> <p>但是放置方块，或者破坏方块也属于交互的一种，所以如果你想让一个玩家能放置或者破坏一个方块你需要同时给予那个玩家与此方块交互和放置两个权限。</p> <p>通过给予玩家以上权限你就可以做到例如单独让玩家可以破坏某个方块，或者玩家只可以按按钮不能破坏方块之类的功能。</p> <p>那如果你想单独让玩家不能破坏某个方块该如何设置呢</p> <p>这里首先得说明一下groupmanager的权限设置格式</p> <p>大家都知道如果我输入</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>/mangaddp builder essentials.build.place.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>就是给予builder用户组放置石头的权限</p> <p>而如果我输入</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>/mangaddp builder <span class="token punctuation">-</span>essentials.build.place.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这两个指令之间只相差了一个 - 但是效果完全相反，添加了此权限玩家将不能放置石头。 - 代表了移除玩家的此权限。</p> <p>当一个玩家同时拥有</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code>essentials.build.place.1
+<span class="token punctuation">-</span>essentials.build.place.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这两个权限时玩家将无法放置石头</p> <p>因为在groupmanager判断权限时优先判断 -权限 这意味着就算你拥有建筑权限 你被加入了-essentials.build.place.1 那么你也是无法放置石头的。</p> <p>以此为基础我们可以单独设置玩家不可以放置，使用的方块。</p> <p>如果你想一次设定多个方块 你可以用 * 来代替 如羊毛方块的ID是35 一直到35:15</p> <p>你可以给予玩家 Essentials.build.place.35:* 来给予玩家所有羊毛方块的放置权限</p> <h3 id="_5-list玩家列表相关设置"><a href="#_5-list玩家列表相关设置" class="header-anchor">#</a> 5.list玩家列表相关设置</h3> <p>在Essentials的list列表设置中服主可以自定义以下内容</p> <div class="language- extra-class"><pre><code>合并:你可以自定义一个展示用户组，将几个用户组的玩家全部显示在一个展示用户组中。
+隐藏:你可以完全隐藏你不想显示的用户组。
+限制:你可以限制每个用户组在list列表中的数量上限，超过上限的部分将会被隐藏。
+</code></pre></div><p>这个配置部分允许您覆盖/编辑/list命令,从而显示一个更加整齐，简洁的list列表。</p> <p>在默认情况下,你可以定义所有用户组的显示顺序，所有未定义的用户组将会按照首字母排序。</p> <p>在config文件中你可以通过搜索</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">list</span><span class="token punctuation">:</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>来找到相关设定位置</p> <h4 id="_1-合并"><a href="#_1-合并" class="header-anchor">#</a> 1.合并</h4> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code> <span class="token key atrule">Staff</span><span class="token punctuation">:</span> owner admin moderator
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这样设定的话，所有owner admin moderator用户组的玩家在list指令中会全部显示在staff用户组中</p> <h4 id="_2-隐藏"><a href="#_2-隐藏" class="header-anchor">#</a> 2.隐藏</h4> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">default</span><span class="token punctuation">:</span> hidden
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这样设置的话 default 将会被隐藏，所有此用户组的玩家将不会在list列表中显示</p> <h4 id="_3-限制"><a href="#_3-限制" class="header-anchor">#</a> 3.限制</h4> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code> <span class="token key atrule">builder</span><span class="token punctuation">:</span> <span class="token number">20</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这样设置的话所有builder用户组的玩家只会显示20个，超过的部分会被隐藏。</p> <p>所有未定义的用户组都将会正常显示</p> <p>下面给出一个例子包括上述所有设置</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code> <span class="token key atrule">list</span><span class="token punctuation">:</span>
+   <span class="token key atrule">Admin</span><span class="token punctuation">:</span> owner admin
+   <span class="token key atrule">stealth</span><span class="token punctuation">:</span> hidden
+   <span class="token key atrule">builder</span><span class="token punctuation">:</span> <span class="token number">20</span>
+   <span class="token key atrule">default</span><span class="token punctuation">:</span> <span class="token number">0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_6-chat聊天格式相关设置"><a href="#_6-chat聊天格式相关设置" class="header-anchor">#</a> 6.chat聊天格式相关设置</h3> <p>通过Essentials的chat聊天相关设置你可以自定义玩家在聊天过程中名字的前缀等。</p> <p>注意：要使用这些功能你必须安装Essentialschat插件。</p> <h4 id="显示名-display-names"><a href="#显示名-display-names" class="header-anchor">#</a> 显示名（display names）</h4> <p>在Minecraft中,你的displayname就是你在聊天过程中显示的名字，或者是在tab列表，插件中应用到的名字。</p> <p>显示名由groupmanager插件决定可以在对应世界文件夹group.yml中修改。</p> <p>bukkit最多允许显示名有16个字符，所以建议将 显示名的前缀+名字+后缀压缩在16个字符以内。</p> <p>在Essentials的config文件中有6个与显示名有关的设定</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment"># OP名字的颜色代码,填写0~9或a~f其中的一个数字或字母,填写'none'来冻结该功能.(译注:可到http://ess.khhq.net/mc/查看颜色代码)</span>
+<span class="token key atrule">ops-name-color</span><span class="token punctuation">:</span> <span class="token string">'c'</span>
+
+<span class="token comment"># 昵称的前缀符号,这样你能知道这不是他们真正的用户名.</span>
+<span class="token key atrule">nickname-prefix</span><span class="token punctuation">:</span> <span class="token string">'昵称:'</span>
+
+<span class="token comment"># 设置最大昵称长度, 昵称前缀也包括在内.</span>
+<span class="token key atrule">max-nick-length</span><span class="token punctuation">:</span> <span class="token number">15</span>
+
+<span class="token comment"># 如果你想用其他的插件来设置玩家名字,将其改为&quot;false&quot;.</span>
+<span class="token key atrule">change-displayname</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 当这个选项开启时,在玩家显示的名字上添加的前缀或尾缀,会被显示在在线列表(TAB)中.</span>
+<span class="token comment"># 上面的&quot;change-displayname&quot;必须是true才有效.</span>
+<span class="token key atrule">change-playerlist</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># 添加前缀后缀(上面的&quot;change-displayname&quot;必须是true才有效)</span>
+<span class="token comment"># 如果你不设置该项,且essentialschat被安装了,其将会被默认为&quot;true&quot;.</span>
+<span class="token key atrule">add-prefix-suffix</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>这里我就直接复制中文config中的设定了，因为有全部的中文注释了。我在这里就不再赘述了</p> <h4 id="聊天格式"><a href="#聊天格式" class="header-anchor">#</a> 聊天格式</h4> <p>这里的设定将会改变玩家在聊天时显示的样式。</p> <p>下面是一个例子</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token punctuation">{</span>DISPLAYNAME<span class="token punctuation">}</span> <span class="token punctuation">{</span>MESSAGE<span class="token punctuation">}</span> <span class="token punctuation">{</span>GROUP<span class="token punctuation">}</span> <span class="token punctuation">{</span>WORLDNAME<span class="token punctuation">}</span> <span class="token punctuation">{</span>SHORTWORLDNAME<span class="token punctuation">}</span> <span class="token punctuation">{</span>TEAMPREFIX<span class="token punctuation">}</span> <span class="token punctuation">{</span>TEAMSUFFIX<span class="token punctuation">}</span> <span class="token punctuation">{</span>TEAMNAME<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token punctuation">{</span>MESSAGE<span class="token punctuation">}</span> 聊天的内容.
+<span class="token punctuation">{</span>GROUP<span class="token punctuation">}</span> 玩家所属用户组名称.
+<span class="token punctuation">{</span>DISPLAYNAME<span class="token punctuation">}</span> 显示名包括了玩家的前缀以及后缀.
+<span class="token punctuation">{</span>WORLDNAME<span class="token punctuation">}</span> 玩家所处世界的名字.
+<span class="token punctuation">{</span>SHORTWORLDNAME<span class="token punctuation">}</span> 玩家所处世界的首字母.
+<span class="token punctuation">{</span>TEAMPREFIX<span class="token punctuation">}</span> <span class="token punctuation">{</span>TEAMSUFFIX<span class="token punctuation">}</span> <span class="token punctuation">{</span>TEAMNAME<span class="token punctuation">}</span> 计分板团队变量.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>你可以按照自己的喜好自由组合以上变量，并且完全支持颜色代码</p> <p>下面给几个例子</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">'&lt;{DISPLAYNAME}&gt; {MESSAGE}'</span>
+<span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">'&amp;8[&amp;7{GROUP}&amp;8]&amp;f {DISPLAYNAME}&amp;7:&amp;f {MESSAGE}'</span>
+<span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">'{WORLDNAME} {DISPLAYNAME}&amp;7:&amp;f {MESSAGE}'</span>
+<span class="token key atrule">format</span><span class="token punctuation">:</span> <span class="token string">'{WORLDNAME} &amp;8[&amp;7{GROUP}&amp;7]&amp;f {DISPLAYNAME}&amp;7:&amp;c {MESSAGE}'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>本页内容来源于 <a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=290356&amp;page=1#pid5561433">MCBBS</a> <a href="https://mineplugin.org/Essentials">Minecraft插件百科</a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/9/2020, 4:34:10 AM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/java-edition/plugins/multiverse.html">
+        multiverse多世界插件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2aa4fc64.js" defer></script><script src="/assets/js/2.7c18b3f7.js" defer></script><script src="/assets/js/10.5d887ca9.js" defer></script>
+  </body>
+</html>
