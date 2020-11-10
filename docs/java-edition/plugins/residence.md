@@ -66,6 +66,8 @@
 
 ## 命令
 
+::: details 点击查看代码
+
 ```yml
 更为详细的指令介绍可以在服务器中查看【鼠标接触指令即可看见详细信息】
 []为必填项目，<>是选填项目，例如<领地名>，不填则选择为你当前领地，(true=允许,false=不允许)
@@ -170,7 +172,11 @@ true/false可以缩写成t/f,remove/dedefault是还原系统默认配置
 /res tool —— 显示领地圈地和查看信息的工具类型
 ```
 
+:::
+
 ## 权限
+
+::: details 点击查看代码
 
 ```yml
 加粗为重要权限，有（OP）代表OP权限并且默认OP拥有，有（default)代表玩家权限，默认拥有
@@ -210,7 +216,11 @@ residence.bypass.destroy - 无视领地禁止破坏方块设置。
 residence.admin - (OP) 管理员权限，可以使用 /resadmin 指令.
 ```
 
+:::
+
 ## 袭击者功能
+
+::: details 点击查看代码
 
 ```yml
 袭击者属于测试功能，还有待增加功能和优化，相关设定尚未完成
@@ -232,9 +242,13 @@ PS:我很好奇一个保护插件为什么装个小游戏功能
 输入指令 /res defend [领地名] - 对领地进行防卫
 ```
 
+:::
+
 ## 配置文件
 
 `config.yml`
+
+::: details 点击查看代码
 
 ```yml
 # 这是领地插件的全局设置。 汉化：羽神
@@ -765,9 +779,13 @@ Raid:
   FriendlyFire: true
 ```
 
+:::
+
 `Groups.yml` 领地权限组设置，设置领地大小与价格的地方
 
 <a href="https://www.mcbbs.net/forum.php?mod=attachment&aid=MTM2NTUzMXwxZjczYzJmNHwxNjA0ODkzODAyfDg4MTg4NHw2MzEzNDM%3D">完整版下载</a>
+
+::: details 点击查看代码
 
 ```yml
 # 这里的组是相对于 '<worldname>。yml' 文件的权限组，汉化：羽神
@@ -941,6 +959,8 @@ GroupAssignments:
   player: default
 ```
 
+:::
+
 `Flag.yml` 所有领地标志(Flag)设置的地方，超过 90+种！
 
 汉化版本：4.9.1.3  
@@ -948,6 +968,8 @@ GroupAssignments:
 详细 Flag 的用法请看 <a href="https://github.com/bluesadi/ResidenceChineseTutorial/wiki/%E6%A0%87%E5%BF%97%E7%9A%84%E9%BB%98%E8%AE%A4%E8%AE%BE%E7%BD%AE%E5%92%8C%E8%A1%8C%E4%B8%BA-Flag-Default-Settings-and-Behavior">中文 Wiki</a>
 
 <a href="https://www.mcbbs.net/forum.php?mod=attachment&aid=MTM2NTUzMnwzOTkyYmFmNnwxNjA0ODkzODAyfDg4MTg4NHw2MzEzNDM%3D">完整版下载地址</a>
+
+::: details 点击查看代码
 
 ```yml
 # 这是标志的全局设置. 汉化:羽神
@@ -1300,31 +1322,54 @@ ItemList:
     - MOB_SPAWNER
 ```
 
+:::
+
 ## 常见问题
 
 #### Q：怎么圈地？  
+
+::: details 点击查看
 
 A：默认圈地工具是木锄头，在你需要保护的地方选择对角线式的两个点（如左上方和右下方）
 然后在其中一个点用圈地工具左键，在另一个点用鼠标右键，输入指令 /res create (领地名字)即可圈地
 或者，可以站在保护的地方的中心，输入指令/res auto (领地名字) (圈地大小) 进行圈地  
 
+:::
+
 #### Q：如何设置中文?
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到【Language: English】修改为【Language: Chinese】(区分大小写)  
 
+:::
 #### Q：怎么打开GUI菜单
+
+::: details 点击查看
 
 A:直接输入指令/res set或者/res pset [玩家]即可打开  
 
+:::
+
 #### Q：如何查看圈地工具或圈地信息查看工具?
 
+::: details 点击查看
+
 A：使用指令/res tool —— 显示领地圈地和查看信息的工具类型  
-.
+
+:::
+
 #### Q：为什么我的圈地工具不是木锄？怎么换圈地工具？
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到【SelectionToolId:】，后方修改为圈地的物品，注意，应圈地工具的左键和右键均不与互交方式冲突，另外，在新版插件中，物品的ID请用英文。<a href="https://minecraft-ids.grahamedgecombe.com/">英文ID网站</a>
 
+:::
+
 #### Q：为什么OP不能创建更多领地/为什么OP还会被限制权限
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到并修改  
 
@@ -1334,11 +1379,19 @@ AdminOPs: true
 # 如果设置为true,则将领地设置上升至管理员也可操作，不需要/resadmin指令，如果是Op的领地，则其他Op操作需要相应的权限AdminFullAccess: false
 ```
 
+:::
+
 #### Q：我是Mod服务器，但是这个插件经常报错怎么办
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到【CouldronCompatability: 】，修改为true  
 
+:::
+
 #### Q：为什么在地皮世界也能圈地？
+
+::: details 点击查看
 
 A：你需要禁止地皮世界使用领地插件的指令，打开[Config.yml]，找到  
 
@@ -1361,7 +1414,11 @@ A：你需要禁止地皮世界使用领地插件的指令，打开[Config.yml]�
     - plotworld
 ```
 
+:::
+
 #### Q：如何修改或添加随机传送中的传送范围或传送世界(/res rt)
+
+::: details 点击查看
 
 A：打开[Config.yml]。找到并修改  
 
@@ -1399,7 +1456,11 @@ Tp:
     MaxTries: 20
 ```
 
+:::
+
 #### Q：如何让随机传送/领地TP没有延迟/冷却?
+
+::: details 点击查看
 
 A：给予其中几个权限  
 
@@ -1409,51 +1470,99 @@ residence.randomtp.delaybypass - 无视随机传送延迟。
 residence.randomtp.cooldownbypass - 无视随机传送冷却。
 ```
 
+:::
+
 #### Q：如何关闭更新检测？
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到【versionCheck: 】，将true改为false。  
 
+:::
+
 #### Q：为什么玩家无法圈地，就连可设置的范围都是写0，我怎么修改Group.yml都无效？
+
+::: details 点击查看
 
 A：检查你权限插件是否正常。打开[Groups.yml]，检查第二行左右【Default: 】，最后一行【player: default】【bekvon: default】，中的default是否同步，或者给予权限：residence.group.[groupname] -从groups.yml中设置玩家的领地组(默认组为default)  
 
+:::
+
 #### Q：没有上面图片的粒子效果
+
+::: details 点击查看
 
 A：1.8以后的服务器才有此功能  
 
+:::
+
 #### Q：如何删除领地的时候还钱呢？
+
+::: details 点击查看
 
 A：打开config.yml，找到【ResMoneyBack】设置为true。  
 
+:::
+
 #### Q：怎么让领地可以修改为中文
+
+::: details 点击查看
 
 A：打开config.yml，把【ResidenceNameRegex: '[^a-zA-Z0-9-_]'】改为【ResidenceNameRegex: [^a-zA-Z0-9-_一-龥]】(注意，这可能会导致部分服务器领地无法收钱）  
 
+:::
+
 #### Q：我服务器的领地可以无权限破坏！
+
+::: details 点击查看
 
 A：检查经济/创世神/权限插件是否为最新版本。将destroy权限给设置为false才能无法破坏方块，如果无效，请尝试降低插件版本。  
 
+:::
+
 #### Q：为什么我的领地不收钱？
+
+::: details 点击查看
 
 A：检查经济插件是否正常。打开[Config.yml]，找到【EnableEconomy: 】检查是否为开启。打开[Groups.yml]，找到【BuyCost: 】是否不为0。  
 
+:::
+
 #### Q：如何让领地退款?
+
+::: details 点击查看
 
 A：打开[Conflg.yml]，找到【ResMoneyBack: false】修改为true。  
 
+:::
+
 #### Q：如何启用领地聊天前缀
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到【ResidenceChatEnable: true】修改为true，并认真看此条选项一下的内容。  
 
+:::
+
 #### Q：为什么我的领地收钱非常多?
+
+::: details 点击查看
 
 A：打开[Groups.yml]，找到【BuyCost: 】修改，建议在0.01以内。如果你想知道更多收钱机制，可以可以查看上方【领地插件进阶教程】  
 
+:::
+
 #### Q:如何启用Lease(zulin)系统
+
+::: details 点击查看
 
 A:打开[Config.yml]，找到【EnableRentSystem: true】，设置为true，并且继续看Config.yml中下面关于此系统的功能。  
 
+:::
+
 #### Q：如何玩家创建领地自动禁止某个权限？
+
+::: details 点击查看
 
 A：前往Flag.yml，找到创建后领地的flag设置，添加上你需要的禁止权限，比如移动【move: false】  
 
@@ -1464,11 +1573,19 @@ ResidenceDefault
   CreatorDefault:
 ```
 
+:::
+
 #### Q：关于如何创建更多的领地权限组
+
+::: details 点击查看
 
 A：打开[Groups.yml]，复制【NextGroup 到 RenewCost: 0.3这一串内容】并粘贴，然后NextGroup修改为你想要的名字，并且你可以修改更多内容，选项对照上方[Groups.yml]的翻译。  
 
+:::
+
 #### Q：为什么水流/岩浆无法超过63格？
+
+::: details 点击查看
 
 A：打开[Config.yml]找到并依照翻译设置即可
 
@@ -1498,12 +1615,22 @@ Flow:
       - world
 ```
 
+:::
+
 #### Q：为什么重启服务器领地会消失
+
+::: details 点击查看
 
 A：打开[Config.yml]，找到【MultiWorldPlugin: Multiverse-Core】，其中【Multiverse-Core】，修改为你使用的多世界插件  
 
+:::
+
 #### Q：如何给玩家踢出其他玩家的指令
 
+::: details 点击查看
+
 A：打开[Groups.yml]，找到【Kick: False】改为true即可  
+
+:::
 
 本页内容来源于 <a href="https://www.mcbbs.net/forum.php?mod=viewthread&tid=631343">MCBBS</a>  

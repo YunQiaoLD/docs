@@ -41,6 +41,8 @@
 
 ## 命令
 
+::: details 点击查看代码
+
 ```yml
 #命令语法
         mv [FILTER] [PAGE #]
@@ -111,7 +113,11 @@
         mv gamerules [WORLD]
 ```
 
+:::
+
 ## 权限
+
+::: details 点击查看代码
 
 ```yml
 权限列表
@@ -163,9 +169,13 @@
             multiverse.core.silent
 ```
 
+:::
+
 ### 配置文件
 
 config.yml(部分)  
+
+::: details 点击查看代码
 
 ```yml
 multiverse-configuration:
@@ -194,8 +204,11 @@ multiverse-configuration:
         defaultportalsearch: 'false'
         portalsearchradius: '128'
 ```
+:::
 
 worlds.yml  
+
+::: details 点击查看代码
 
 ```yml
 worlds.yml
@@ -299,5 +312,7 @@ worlds.yml
         playerLimit: '-1'
         allowFlight: 'true'
 ```
+
+:::
 
 本页内容来源于 <a href="https://www.mcbbs.net/thread-666177-1-1.html">MCBBS</a>  

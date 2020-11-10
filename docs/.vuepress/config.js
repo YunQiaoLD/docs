@@ -1,6 +1,6 @@
 module.exports = {
 	title: "Minecraft文档站",
-	description: "",
+	description: " ",
 	dest: "./dist",
 	port: "7777",
 	head: [["link", { rel: "icon", href: "/logo.gif" }]],
